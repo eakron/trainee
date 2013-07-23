@@ -15,9 +15,38 @@ angular.module('services', [])
 
 angular.module('controllers', [])
   .controller('TraineeCtrl', ['$scope', 'Questions', function ($scope, Questions) {
+
     Questions.get(function (questions) {
       $scope.questions = questions;
     });
+
+
+  $(function(){$("input").on("click", function (event) {
+    var $this = $(this);
+    var question_string = $this.parent().children().first().text();
+
+    var find = function (list, key, value) {
+      for (var i = 0; i < list.length; i++) {
+        if (list[i][key] === value) {
+          // return list[i]["answer"];
+          return list[i]["a"];
+        }
+      }
+    };
+
+
+    var correct = find($scope.questions, "question", question_string);
+    var attempt = $this.val();
+
+    console.log(correct);
+    console.log(attempt);
+
+    if (correct === attempt) {
+      alert("WOW");
+    }
+
+  });});
+
   }]);
 
 var questions = [
