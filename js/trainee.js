@@ -4,46 +4,6 @@ angular.module('trainee', ['trainee.controllers', 'trainee.services'])
     $routeProvider.otherwise({redirectTo: '/questions/random'});
   }]);
 
-angular.module('trainee.services', [])
-  .factory('Questions', ['$http', function ($http) {
-    return {
-      name: 'Question Service',
-      get: function (callback) {
-        // $http.get('data.json').success(function (data) {
-        //   callback(data);
-        // });
-
-        // Filter temporarily incorrect answers
-        var filtered_questions = _.filter(test_questions, function (q) { return q.answer[0] !== null; });
-        callback(filtered_questions);
-      }
-    };
-  }]);
-
-angular.module('trainee.controllers', [])
-  .controller('RandomQuestionCtrl', ['$scope', 'Questions', function ($scope, Questions) {
-
-    $scope.correct = false;
-    $scope.attempted = false;
-    $scope.red = function () {
-      return $scope.attempted && !$scope.correct;
-    };
-
-    Questions.get(function (questions) {
-      var randomnum = Math.floor(Math.random()*questions.length);
-      $scope.question = questions[randomnum];
-    });
-
-    $scope.checkAnswer = function () {
-      console.log("Given: " + $scope.answer.slice(0,1) + ". Real: " + $scope.question.answer[0]);
-      if ($scope.question.answer[0] === $scope.answer.slice(0,1))
-        $scope.correct = true;
-      $scope.attempted = true;
-      console.log("Attempted: " + $scope.attempted + ". Correct: " + $scope.correct);
-    };
-
-  }]);
-
 var test_questions = [{
     "id": 0,
     "question": "1. You are attempting to add new keywords to a SharePoint and receive a message that \r\nstates The Site Does Not Contain A Default Keywords Store. How should you correct \r\nthis issue?",
