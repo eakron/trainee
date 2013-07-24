@@ -6,8 +6,8 @@
 					<input ng-change="checkAnswer()" ng-model="answer" type="radio" name="1" value="C" />{{question.c}}</br>
 					<input ng-change="checkAnswer()" ng-model="answer" type="radio" name="1" value="D" />{{question.d}}</br>
 				</div>
-				<a ng-hide="index===1" ng-href="#/questions/ordered/{{ index-1 }}/">Previous</a>
-				<a ng-hide="index===78" ng-href="#/questions/ordered/{{ index+1 }}/">Next</a>
+				<a ng-hide="index===0" ng-href="#/questions/ordered/{{ index-1 }}/">Previous</a>
+				<a ng-hide="index===77" ng-href="#/questions/ordered/{{ index+1 }}/">Next</a>
 			</div>
 			<div ng-show="isMultiple">
 				<p>{{ question.question }}</p>
@@ -17,6 +17,6 @@
 					<input ng-change="checkAnswerBox()" ng-model="answer_c" type="checkbox" name="1" value="C" ng-true-value="C" ng-false-value="" />{{question.c}}</br>
 					<input ng-change="checkAnswerBox()" ng-model="answer_d" type="checkbox" name="1" value="D" ng-true-value="D" ng-false-value="" />{{question.d}}</br>
 				</div>
-				<a ng-hide="index===1" ng-href="#/questions/ordered/{{ index-1 }}/">Previous</a>
-				<a ng-hide="index===78" ng-href="#/questions/ordered/{{ index+1 }}/">Next</a>
+				<a ng-hide="index===0" ng-href="#/questions/ordered/{{ index-1 }}/">Previous</a>
+				<a ng-hide="index===77" ng-href="#/questions/ordered/{{ index+1 }}/">Next</a>
 			</div>
