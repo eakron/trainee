@@ -1,6 +1,10 @@
-			<p>{{ question.question }}</p>
-			<input type="radio" name="1" value="{{question.a}}">{{question.a}}<br>
-			<input type="radio" name="1" value="{{question.b}}">{{question.b}}<br>
-			<input type="radio" name="1" value="{{question.c}}">{{question.c}}<br>
-			<input type="radio" name="1" value="{{question.d}}">{{question.d}}<br>
-			<a ng-href="#/questions/random/">One more please!</a>
+			<div>
+				<p>{{ question.question }}</p>
+				<form ng-class="{'red': red(), 'green': correct}">
+					<input ng-change="checkAnswer()" ng-model="answer" type="radio" name="1" value="{{question.a}}" />{{question.a}}</br>
+					<input ng-change="checkAnswer()" ng-model="answer" type="radio" name="1" value="{{question.b}}" />{{question.b}}</br>
+					<input ng-change="checkAnswer()" ng-model="answer" type="radio" name="1" value="{{question.c}}" />{{question.c}}</br>
+					<input ng-change="checkAnswer()" ng-model="answer" type="radio" name="1" value="{{question.d}}" />{{question.d}}</br>
+				</form>
+				<a ng-href="#/questions/random/">One more please!</a>
+			</div>
