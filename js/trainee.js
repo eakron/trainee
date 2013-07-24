@@ -1,6 +1,7 @@
 angular.module('trainee', ['trainee.controllers', 'trainee.services'])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/questions/random', {templateUrl: 'partials/randomquestion.html', controller: 'RandomQuestionCtrl'});
+    $routeProvider.when('/questions/ordered/:index', {templateUrl: 'partials/orderedquestion.html', controller: 'OrderedQuestionCtrl'});
     $routeProvider.otherwise({redirectTo: '/questions/random'});
   }]);
 
