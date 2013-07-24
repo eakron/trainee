@@ -33,6 +33,9 @@ angular.module('trainee.controllers', [])
       var answers = [$scope.answer_a, $scope.answer_b, $scope.answer_c, $scope.answer_d]
         .filter(function (a) { return a; });
 
+      console.log(answers);
+      console.log($scope.question.answer);
+
       // Use _.isEqual() to compare arrays
       if (_.isEqual($scope.question.answer, answers))
         $scope.correct = true;
