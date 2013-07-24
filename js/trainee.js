@@ -12,6 +12,9 @@ angular.module('trainee.services', [])
         // $http.get('data.json').success(function (data) {
         //   callback(data);
         // });
+
+        // Filter temporarily incorrect answers
+        questions = _.reject(questions, function (q) { return !q.answer; });
         callback(questions);
       }
     };
