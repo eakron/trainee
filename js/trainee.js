@@ -14,8 +14,8 @@ angular.module('trainee.services', [])
         // });
 
         // Filter temporarily incorrect answers
-        questions = _.reject(questions, function (q) { return !q.answer; });
-        callback(questions);
+        var filtered_questions = _.filter(test_questions, function (q) { return q.answer[0] !== null; });
+        callback(filtered_questions);
       }
     };
   }]);
@@ -44,7 +44,7 @@ angular.module('trainee.controllers', [])
 
   }]);
 
-var questions = [{
+var test_questions = [{
     "id": 0,
     "question": "1. You are attempting to add new keywords to a SharePoint and receive a message that \r\nstates The Site Does Not Contain A Default Keywords Store. How should you correct \r\nthis issue?",
     "answer": ["C"],
