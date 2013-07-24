@@ -44,4 +44,13 @@ angular.module('trainee.controllers', [])
       $scope.attempted = true;
     };
 
+  }])
+  .controller('OrderedQuestionCtrl', ['$scope', '$routeParams', 'Questions', function ($scope, $routeParams, Questions) {
+    console.log("HELLO FROM ORDER" + $routeParams["index"]);
+    $scope.index = parseInt($routeParams["index"]);
+
+    Questions.get(function (questions) {
+      $scope.question = questions[$scope.index];
+    });
+
   }]);
