@@ -1,6 +1,6 @@
-angular.module('trainee', ['controllers', 'services']);
+angular.module('trainee', ['trainee.controllers', 'trainee.services']);
 
-angular.module('services', [])
+angular.module('trainee.services', [])
   .factory('Questions', ['$http', function ($http) {
     return {
       name: 'Question Service',
@@ -13,7 +13,7 @@ angular.module('services', [])
     };
   }]);
 
-angular.module('controllers', [])
+angular.module('trainee.controllers', [])
   .controller('TraineeCtrl', ['$scope', 'Questions', function ($scope, Questions) {
 
     Questions.get(function (questions) {
