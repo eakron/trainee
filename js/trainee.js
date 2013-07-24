@@ -28,20 +28,19 @@ angular.module('controllers', [])
     var find = function (list, key, value) {
       for (var i = 0; i < list.length; i++) {
         if (list[i][key] === value) {
-          // return list[i]["answer"];
-          return list[i]["a"];
+          return list[i];
         }
       }
     };
 
 
-    var correct = find($scope.questions, "question", question_string);
+    var qo = find($scope.questions, "question", question_string);
     var attempt = $this.val();
 
-    console.log(correct);
+    console.log(qo);
     console.log(attempt);
 
-    if (correct === attempt) {
+    if (qo["answer"][0] === attempt.slice(0,1)) {
       alert("WOW");
     }
 
