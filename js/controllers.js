@@ -19,13 +19,26 @@ angular.module('trainee.controllers', [])
 
     // Check if answer is correct on changes to the form
     $scope.checkAnswer = function () {
-      console.log("Given: " + $scope.answer.slice(0,1) + ". Real: " + $scope.question.answer[0]);
-      if ($scope.question.answer[0] === $scope.answer.slice(0,1))
+      console.log("Given: " + $scope.answer + ". Real: " + $scope.question.answer[0]);
+      if ($scope.question.answer[0] === $scope.answer)
         $scope.correct = true;
       else
         $scope.correct = false;
       $scope.attempted = true;
       console.log("Attempted: " + $scope.attempted + ". Correct: " + $scope.correct);
+    };
+
+    // Specialized check for checkboxes
+    $scope.checkAnswerBox = function () {
+      var answers = [$scope.answer_a, $scope.answer_b, $scope.answer_c, $scope.answer_d]
+        .filter(function (a) { return a; });
+
+      // Use _.isEqual() to compare arrays
+      if (_.isEqual($scope.question.answer, answers))
+        $scope.correct = true;
+      else
+        $scope.correct = false;
+      $scope.attempted = true;
     };
 
   }]);
