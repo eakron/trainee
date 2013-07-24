@@ -1,11 +1,15 @@
-angular.module('trainee', ['trainee.controllers', 'trainee.services']);
+angular.module('trainee', ['trainee.controllers', 'trainee.services'])
+  .config(['$routeProvider', function($routeProvider) {
+    $routeProvider.when('/questions/random', {templateUrl: 'partials/randomquestion.html', controller: 'RandomQuestionCtrl'});
+    $routeProvider.otherwise({redirectTo: '/questions/random'});
+  }]);
 
 angular.module('trainee.services', [])
   .factory('Questions', ['$http', function ($http) {
     return {
       name: 'Question Service',
       get: function (callback) {
-        // $http.get('http://example.com').success(function (data) {
+        // $http.get('data.json').success(function (data) {
         //   callback(data);
         // });
         callback(questions);
@@ -14,37 +18,12 @@ angular.module('trainee.services', [])
   }]);
 
 angular.module('trainee.controllers', [])
-  .controller('TraineeCtrl', ['$scope', 'Questions', function ($scope, Questions) {
+  .controller('RandomQuestionCtrl', ['$scope', 'Questions', function ($scope, Questions) {
 
     Questions.get(function (questions) {
-      $scope.questions = questions;
+      var randomnum = Math.floor(Math.random()*questions.length);
+      $scope.question = questions[randomnum];
     });
-
-
-  $(function(){$("input").on("click", function (event) {
-    var $this = $(this);
-    var question_string = $this.parent().children().first().text();
-
-    var find = function (list, key, value) {
-      for (var i = 0; i < list.length; i++) {
-        if (list[i][key] === value) {
-          return list[i];
-        }
-      }
-    };
-
-
-    var qo = find($scope.questions, "question", question_string);
-    var attempt = $this.val();
-
-    console.log(qo);
-    console.log(attempt);
-
-    if (qo["answer"][0] === attempt.slice(0,1)) {
-      alert("WOW");
-    }
-
-  });});
 
   }]);
 
