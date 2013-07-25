@@ -7,7 +7,7 @@ angular.module('trainee.services', [])
         //   callback(data);
         // });
 
-        callback(test);
+        callback(test_questions);
       }
     };
   }]);
