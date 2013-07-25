@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Regular.ttf"); }
+
 ul {
   list-style: none; }
 
@@ -13,7 +17,8 @@ ul {
 body {
   padding-top: 60px;
   /* 60px to make the container go all the way to the bottom of the topbar */
-  background: #fd6a62; }
+  background: #fd6a62;
+  font-family: Raleway; }
 
 .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
   width: 950px; }
@@ -31,8 +36,11 @@ body {
   padding: 50px;
   margin-top: 60px;
   background: white;
-  -webkit-box-shadow: 0px 1px 18px rgba(50, 50, 50, 0.27);
-  -moz-box-shadow: 0px 1px 18px rgba(50, 50, 50, 0.27);
-  box-shadow: 0px 1px 18px rgba(50, 50, 50, 0.27); }
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); }
   .center-content .center-content-inner {
     min-height: 300px; }
+  .center-content p {
+    font-size: 18px;
+    line-height: 1.5; }
