@@ -1,10 +1,12 @@
+
+
+$backgroundcolor:			#fd6a62;
+
 ul {
 	list-style: none;
 }
 
-body {
-	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-}
+
 
 .red {
 	background-color:red;
@@ -14,11 +16,40 @@ body {
 	background-color:green;
 }
 
+/*****************************************************
+				GENERAL
+*****************************************************/
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+	background: $backgroundcolor;
+}
 
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container{
+	width: 950px;
+}
 
 /*****************************************************
 				NAVBAR
 *****************************************************/
 .navbar-inner{
 	background: white;
+}
+
+
+
+
+/*****************************************************
+				CONTENT
+*****************************************************/
+ .center-content{
+ 	padding: 50px;
+ 	margin-top: 60px;
+	background: white;
+	.center-content-inner{
+		min-height:300px;
+	}
+
+-webkit-box-shadow: 0px 1px 18px rgba(50, 50, 50, 0.27);
+-moz-box-shadow:    0px 1px 18px rgba(50, 50, 50, 0.27);
+box-shadow:         0px 1px 18px rgba(50, 50, 50, 0.27);
 }
