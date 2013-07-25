@@ -10,3 +10,9 @@ body {
 
 .green {
   background-color: green; }
+
+/*****************************************************
+				NAVBAR
+*****************************************************/
+.navbar-inner {
+  background: white; }
