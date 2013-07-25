@@ -16,7 +16,7 @@ CSS compliler:
 Sass  
 Requires Ruby and Sass installed
 
-How to:
+How to install Sass:  
 $ gem install sass 
 
 Run from root folder of the repo to start sass watch:  
