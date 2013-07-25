@@ -30,14 +30,14 @@ angular.module('trainee.controllers')
 
     // Specialized check for checkboxes
     $scope.checkAnswerBox = function () {
-      var answers = [$scope.answer_a, $scope.answer_b, $scope.answer_c, $scope.answer_d]
-        .filter(function (a) { return a; });
+      var answerList = [$scope.answer_a, $scope.answer_b, $scope.answer_c, $scope.answer_d];
+      var answers = _.filter(answerList, function (a) { return a; });
 
       console.log(answers);
       console.log($scope.question.answer);
 
-      // Use _.isEqual() to compare arrays
-      if (_.isEqual($scope.question.answer, answers))
+      // Use angular.equals() to compare arrays
+      if (angular.equals($scope.question.answer, answers))
         $scope.correct = true;
       else
         $scope.correct = false;
