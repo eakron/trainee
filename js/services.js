@@ -7,9 +7,7 @@ angular.module('trainee.services', [])
         //   callback(data);
         // });
 
-        // Filter temporarily incorrect answers
-        var filtered_questions = filtered_questions || _.filter(test_questions, function (q) { return q.answer[0] !== null; });
-        callback(filtered_questions);
+        callback(test);
       }
     };
   }]);
