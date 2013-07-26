@@ -1,24 +1,40 @@
-			<div ng-hide="isMultiple" class="center-content">
-				<div class="center-content-inner">
-					<p>{{ question.question }}</p>
-					<div ng-class="{'red': red(), 'green': correct}">
-						<input ng-change="checkAnswer()" ng-model="answer" type="radio" name="1" value="A" />{{question.a}}</br>
-						<input ng-change="checkAnswer()" ng-model="answer" type="radio" name="1" value="B" />{{question.b}}</br>
-						<input ng-change="checkAnswer()" ng-model="answer" type="radio" name="1" value="C" />{{question.c}}</br>
-						<input ng-change="checkAnswer()" ng-model="answer" type="radio" name="1" value="D" />{{question.d}}</br>
-					</div>
-				</div>
-				<a ng-href="#/questions/random/">One more please!</a>
-			</div>
-			<div ng-show="isMultiple" class="center-content">
-				<div class="center-content-inner">
-					<p>{{ question.question }}</p>
-					<div ng-class="{'red': red(), 'green': correct}">
-						<input ng-change="checkAnswerBox()" ng-model="answer_a" type="checkbox" name="1" value="A" ng-true-value="A" ng-false-value="" />{{question.a}}</br>
-						<input ng-change="checkAnswerBox()" ng-model="answer_b" type="checkbox" name="1" value="B" ng-true-value="B" ng-false-value="" />{{question.b}}</br>
-						<input ng-change="checkAnswerBox()" ng-model="answer_c" type="checkbox" name="1" value="C" ng-true-value="C" ng-false-value="" />{{question.c}}</br>
-						<input ng-change="checkAnswerBox()" ng-model="answer_d" type="checkbox" name="1" value="D" ng-true-value="D" ng-false-value="" />{{question.d}}</br>
-					</div>
-				</div>
-				<a ng-href="#/questions/random/">One more please!</a>
-			</div>
+<div ng-hide="isMultiple" class="center-content">
+    <div class="center-content-inner">
+        <p>{{ question.question }}</p>
+        <div ng-class="{'red': red(), 'green': correct}">
+            <label class="label_radio">
+                <input ng-change="checkAnswer()" ng-model="answer" type="radio" name="1" value="A" />{{question.a}}</br>
+            </label>
+            <label class="label_radio">
+              <input ng-change="checkAnswer()" ng-model="answer" type="radio" name="1" value="B" />{{question.b}}</br>
+            </label>
+            <label class="label_radio">
+              <input ng-change="checkAnswer()" ng-model="answer" type="radio" name="1" value="C" />{{question.c}}</br>
+            </label>
+            <label class="label_radio">
+              <input ng-change="checkAnswer()" ng-model="answer" type="radio" name="1" value="D" />{{question.d}}</br>
+            </label>
+        </div>
+    </div>
+    <a ng-href="#/questions/random/">One more please!</a>
+</div>
+<div ng-show="isMultiple" class="center-content">
+    <div class="center-content-inner">
+        <p>{{ question.question }}</p>
+        <div ng-class="{'red': red(), 'green': correct}">
+            <label class="label_check">
+              <input ng-change="checkAnswerBox()" ng-model="answer_a" type="checkbox" name="1" value="A" ng-true-value="A" ng-false-value="" />{{question.a}}</br>
+            </label>
+            <label class="label_check">
+              <input ng-change="checkAnswerBox()" ng-model="answer_b" type="checkbox" name="1" value="B" ng-true-value="B" ng-false-value="" />{{question.b}}</br>
+            </label>
+            <label class="label_check">
+              <input ng-change="checkAnswerBox()" ng-model="answer_c" type="checkbox" name="1" value="C" ng-true-value="C" ng-false-value="" />{{question.c}}</br>
+            </label>
+            <label class="label_check">
+              <input ng-change="checkAnswerBox()" ng-model="answer_d" type="checkbox" name="1" value="D" ng-true-value="D" ng-false-value="" />{{question.d}}</br>
+            </label>
+        </div>
+    </div>
+    <a ng-href="#/questions/random/">One more please!</a>
+</div>
