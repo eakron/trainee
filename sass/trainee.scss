@@ -58,9 +58,67 @@ body {
 		line-height: 1.5;
 		margin-bottom: 30px;
 	}
+	a{
+		width: 120px;
+		float: right;
+	}
+	input{
+		margin-left: 60px;
+	}
 	opacity:0.9;
 
 	-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/*****************************************************
+				REBECKAS COLORS
+*****************************************************/
+
+
+.pink{
+    background-color:  #EFCDF8;
+}
+.bluegreen{
+    background-color:  #e8aecc;
+}
+.purple{
+    background-color:  #a8ebd1;
+}
+.lightgreen{
+    background-color:  #bad3ef;
+}
+.magnus{
+    background-color: #b2ffe5;
+}
+.butteryellow{
+    background-color: #fffec2;
+}
+.slajmgreen{
+    background-color: #d1fe86;
+}
+.violpurple{
+    background-color: #e0c1fa;
+}
+.stina{
+    background-color: #0ac2d2;
+}
+.elephant{
+    background-color: #7bb7fa;
+}
+.panda{
+    background-color: #60d7a9;
+}
+.labradoodle{
+    background-color: #fdc162;
+}
+.dog{
+    background-color: #fd6a62;
+}
+.palecat{
+    background-color: #f68dbb;
 }
