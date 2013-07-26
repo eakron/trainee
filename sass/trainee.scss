@@ -73,7 +73,28 @@ body {
 }
 
 
+/*****************************************************
+				CONTENT
+*****************************************************/
+.center-content-inner label{
+	margin-left: 40px;
+	margin-right: 40px;
+	> p{
+		font-size: 16px;
+	}
+}
 
+input+p{
+	border-bottom: 3px solid transparent;
+	display: inline;
+}
+input:checked+p.correct {
+	border-bottom: 3px solid #67c62d;
+	display: inline;
+	&.correct{
+
+	}
+}
 
 /*****************************************************
 				REBECKAS COLORS
