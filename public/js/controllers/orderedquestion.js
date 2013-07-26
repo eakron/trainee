@@ -1,5 +1,9 @@
 angular.module('trainee.controllers')
   .controller('OrderedQuestionCtrl', ['$scope', '$routeParams', 'Questions', function ($scope, $routeParams, Questions) {
+
+    // Rainbowify
+    rainbow.changeColor();
+
     $scope.index = parseInt($routeParams["index"], 10);
 
     Questions.get(function (questions) {
