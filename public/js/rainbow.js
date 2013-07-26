@@ -14,7 +14,8 @@ $(function () {
             'panda',
             'labradoodle',
             'dog',
-            'palecat'
+            'palecat',
+            'sparkling-faerie-horse'
         ];
         var $rainbow = $('.rainbow');
         $rainbow.removeClass();
