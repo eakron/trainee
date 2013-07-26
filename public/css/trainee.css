@@ -1,58 +1,66 @@
-ul {
-  list-style: none; }
+@font-face {
+	font-family: Raleway;
+	  src: url("../fonts/Raleway-Regular.ttf");
+}
 
-body {
-  padding-top: 60px;
-  /* 60px to make the container go all the way to the bottom of the topbar */ }
+
+$backgroundcolor:			#fd6a62;
+
+ul {
+	list-style: none;
+}
+
+
 
 .red {
-  background-color: red; }
+	background-color:red;
+}
 
 .green {
-  background-color: green; }
+	background-color:green;
+}
 
-.pink{
-    background-color:  #EFCDF8;
+/*****************************************************
+				GENERAL
+*****************************************************/
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+	background: $backgroundcolor;
+	font-family: Raleway;
 }
-.bluegreen{
-    background-color:  #e8aecc;
+
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container{
+	width: 950px;
 }
-.purple{
-    background-color:  #a8ebd1;
+
+/*****************************************************
+				NAVBAR
+*****************************************************/
+.navbar-inner{
+	background: white;
 }
-.lightgreen{
-    background-color:  #bad3ef;
-}
-.magnus{
-    background-color: #b2ffe5;
-}
-.butteryellow{
-    background-color: #fffec2;
-}
-.slajmgreen{
-    background-color: #d1fe86;
-}
-.violpurple{
-    background-color: #e0c1fa;
-}
-.stina{
-    background-color: #0ac2d2;
-}
-.elephant{
-    background-color: #7bb7fa;
-}
-.panda{
-    background-color: #60d7a9;
-}
-.labradoodle{
-    background-color: #fdc162;
-}
-.dog{
-    background-color: #fd6a62;
-}
-.palecat{
-    background-color: #f68dbb;
-}
-.rainbow{
-    
+
+
+
+
+/*****************************************************
+				CONTENT
+*****************************************************/
+ .center-content{
+ 	padding: 50px;
+ 	margin-top: 60px;
+	background: white;
+	.center-content-inner{
+		min-height:300px;
+	}
+	p{
+		font-size: 18px;
+		line-height: 1.5;
+		margin-bottom: 30px;
+	}
+	opacity:0.9;
+
+	-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
