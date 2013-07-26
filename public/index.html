@@ -7,6 +7,7 @@
     <!-- Le styles -->
     <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="lib/fancy-checkboxes/style.css" rel="stylesheet">
     <link href="css/trainee.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -17,9 +18,9 @@
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="lib/bootstrap/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="lib/bootstrap/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="lib/bootstrap/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="lib/bootstrap/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="lib/bootstrap/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="lib/bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="lib/bootstrap/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="lib/bootstrap/ico/favicon.png">
   </head>
 
   <body ng-cloak>
@@ -48,6 +49,20 @@
       <div ng-view></div>
     </div> <!-- /container -->
 
+<FORM action="#" method="get" accept-charset="utf-8"  class="has-js">
+    <FIELDSET class="checkboxes">
+        <LABEL class="label_check" for="checkbox-01"><INPUT name="sample-checkbox-01" id="checkbox-01" value="1" type="checkbox" checked=""> I agree to the terms &amp; conditions.</LABEL>
+        <LABEL class="label_check" for="checkbox-02"><INPUT name="sample-checkbox-02" id="checkbox-02" value="1" type="checkbox"> Please send me regular updates.</LABEL>
+    </FIELDSET>
+    <FIELDSET class="radios">
+        <LABEL class="label_radio r_on" for="radio-01"><INPUT name="sample-radio" id="radio-01" value="1" type="radio" checked=""> This is option A...</LABEL>
+        <LABEL class="label_radio" for="radio-02"><INPUT name="sample-radio" id="radio-02" value="2" type="radio"> and this is option B...</LABEL>
+        <LABEL class="label_radio" for="radio-03"><INPUT name="sample-radio" id="radio-03" value="3" type="radio"> or simply choose option C</LABEL>
+    </FIELDSET>
+</FORM>
+
+
+
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -61,5 +76,6 @@
     <script src="js/trainee.js"></script>
     <script src="js/rainbow.js"></script>
     <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="lib/fancy-checkboxes/fancy-checkboxes.js"></script>
   </body>
 </html>
