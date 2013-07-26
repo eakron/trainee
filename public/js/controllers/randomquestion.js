@@ -1,6 +1,8 @@
 angular.module('trainee.controllers')
   .controller('RandomQuestionCtrl', ['$scope', 'Questions', function ($scope, Questions) {
 
+    rainbow.changeColor();
+
     // Grab the random question
     Questions.get(function (questions) {
       var randomnum = Math.floor(Math.random()*questions.length);
@@ -16,7 +18,6 @@ angular.module('trainee.controllers')
 
     // Determine whether to use radio or checkbox
     $scope.isMultiple = $scope.question.answer.length > 1;
-    rainbow.changecolor();
 
     // Check if answer is correct on changes to the form
     $scope.checkAnswer = function () {
