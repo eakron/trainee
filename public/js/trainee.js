@@ -5,11 +5,304 @@ angular.module('trainee', ['trainee.controllers', 'trainee.services'])
     $routeProvider.otherwise({redirectTo: '/questions/random'});
   }]);
 
-var test_questions = [{
+var test_questions = [
+{
+    "id": 0,
+    "source" : "certexam",
+    "question": "QUESTION 24\nA company is planning to upgrade from SharePoint 2010 to SharePoint 2013.\nYou need to find out the web traffic capacity of the SharePoint farm by using a Microsoft Visual Studio\nTeam System project file.\nWhich tool should you use?",
+    "answer": ["D"],
+    "a": "A. Network Monitor",
+    "b": "B. SharePoint Health Analyzer",
+    "c": "C. SharePoint Diagnostic Studio",
+    "d": "D. Load Testing Kit (LTK)",
+    "a_answer": "",
+    "b_answer": "",
+    "c_answer": "",
+    "d_answer": ""
+},
+{
+    "id": 0,
+    "source" : "certexam",
+    "question": " QUESTION 25\nYou install SharePoint Server in a three-tiered server farm that meets the minimum requirements fo SharePoint 2013 and surrounding technologies. The content databases will reside on Fibre Channel drives in a storage area network (SAN). The backup solution will utilize SAN snapshots.\nYou are estimating storage requirements. You plan to migrate 6 TB of current content from file shares to SharePoint.\nYou need to choose the content database size that will optimize performance, minimize administrative overhead, and minimize the number of content databases.\nWhich content database size should you choose?",
+    "answer": ["C"],
+    "a": "A. 100 GB",
+    "b": "B. 200 GB",
+    "c": "C. 3 TB",
+    "d": "D. 6 TB",
+    "a_answer": "",
+    "b_answer": "",
+    "c_answer": "",
+    "d_answer": ""
+},
+{
+    "id": 0,
+    "source" : "certexam",
+    "question": " QUESTION 26\nA web application is configured in a SharePoint environment.\nA user receives an application error message that includes a correlation ID.\nYou need to find out the cause of the error.\nWhich two actions can you perform to achieve this goal? (Each correct answer presents a complete\nsolution. Choose two.)",
+    "answer": ["A,B"],
+    "a": "A. Locate the correlation ID in the Security event log.",
+    "b": "B. Enable the Developer Dashboard and review the content.",
+    "c": "C. Locate the correlation ID in the Unified Logging Service (ULS).",
+    "d": "D. Locate the correlation ID in the System event log.",
+    "a_answer": "",
+    "b_answer": "",
+    "c_answer": "",
+    "d_answer": ""
+},
+{
+    "id": 0,
+    "source" : "certexam",
+    "question": " QUESTION 28\nA company has a SharePoint environment that consists of two web applications. The first web application is\nused as the corporate intranet site, and the second web application hosts several custom apps. The custom\napps use Microsoft Business Connectivity Services (BCS) Web Parts to retrieve data from external\nsystems.\nThe home page of the second web application displays information from three custom apps and renders\nslowly.\nYou need to identify the custom app that is causing the slow response times.\nWhich tool should you use?",
+    "answer": ["A"],
+    "a": "A. SharePoint Web Analytics service application",
+    "b": "B. SharePoint audit log reports",
+    "c": "C. SharePoint Health Analyzer",
+    "d": "D. Developer Dashboard",
+    "a_answer": "",
+    "b_answer": "",
+    "c_answer": "",
+    "d_answer": ""
+},
+{
+    "id": 0,
+    "source" : "certexam",
+    "question": " QUESTION 29\nYou are managing a SharePoint farm.\nThe SharePoint databases are configured to run on a dedicated instance of Microsoft SQL Server 2008 R2\nService Pack 1.\nYou need to optimize query executions.\nWhat should you do?",
+    "answer": ["A"],
+    "a": "A. Move the SharePoint databases to a RAID 10 volume.",
+    "b": "B. Move the SharePoint databases to a RAID 5 volume.",
+    "c": "C. Set the maximum degree of parallelism for SQL Server instances to 4.",
+    "d": "D. Set the maximum degree of parallelism for SQL Server instances to 0.",
+    "a_answer": "",
+    "b_answer": "",
+    "c_answer": "",
+    "d_answer": ""
+},
+{
+    "id": 0,
+    "source" : "certexam",
+    "question": " QUESTION 30\nYou are managing a site collection in a SharePoint farm.\nYou need to configure the minimum level of permissions necessary for users to manage lists in the site\ncollection.\nWhat permission level should you configure?",
+    "answer": ["C"],
+    "a": "A. Full Control",
+    "b": "B. Create",
+    "c": "C. Design",
+    "d": "D. Contribute",
+    "a_answer": "",
+    "b_answer": "",
+    "c_answer": "",
+    "d_answer": ""
+},
+{
+    "id": 0,
+    "source" : "certexam",
+    "question": " QUESTION 33\nYou are managing a SharePoint farm.\nYou need to collect information about the health of a web application.\nWhat should you use?",
+    "answer": ["D"],
+    "a": "A. SharePoint Health Analyzer",
+    "b": "B. Windows Management Instrumentation (WMI)",
+    "c": "C. SharePoint Developer Dashboard",
+    "d": "D. Timer jobs",
+    "a_answer": "",
+    "b_answer": "",
+    "c_answer": "",
+    "d_answer": ""
+},
+{
+    "id": 0,
+    "source" : "certexam",
+    "question": "QUESTION 56 \nYou are managing a SharePoint farm. The SharePoint databases are configured to run on a dedicated \ninstance of Microsoft SQL Server 2008 R2 Service Pack 1. You need to optimize query executions. \nWhat should you do? \n",
+    "answer": ["D"],
+    "a": "A. Move the master database to a RAID 10 volume.",
+    "b": "B. Set the maximum degree of parallelism for SQL Server instances to 0.",
+    "c": "C. Set the maximum degree of parallelism for SQL Server instances to 4.",
+    "d": "D. Set the maximum degree of parallelism for SQL Server instances to 1.",
+    "a_answer": "",
+    "b_answer": "",
+    "c_answer": "",
+    "d_answer": ""
+},
+
+{
+    "id": 0,
+    "source" : "certexam",
+    "question": " QUESTION 57 \nYou are managing SharePoint Online site collections.\nYou need to assign the minimum permission level necessary to create subsites.\nWhich permission level should you assign?\n",
+    "answer": ["C"],
+    "a": "A. Approve",
+    "b": "B. Design",
+    "c": "C. Manage Hierarchy",
+    "d": "D. Contribute",
+    "a_answer": "",
+    "b_answer": "",
+    "c_answer": "",
+    "d_answer": ""
+},
+
+{
+    "id": 0,
+    "source" : "certexam",
+    "question": " QUESTION 59 \nA SharePoint farm includes two front-end web servers, one application server, and two clustered servers\nthat run Microsoft SQL Server. The SharePoint Foundation Web Application service is not running on the\napplication server.\nYou plan to configure the SharePoint farm to receive and store email messages and email message\nattachments in libraries.\nYou need to ensure that users can send email messages and attachments directly to libraries across the\nentire farm. You must accomplish this goal by using the least amount of effort.\nWhich two actions should you perform? (Each correct answer presents part of the solution.\nChoose two.)\n",
+    "answer": ["B,D"],
+    "a": "A. Install and configure the Simple Mail Transfer Protocol (SMTP) service on each application server.",
+    "b": "B. Install and configure the Simple Mail Transfer Protocol (SMTP) service on each front-end web server.",
+    "c": "C. Enable incoming email by using the Automatic settings mode.",
+    "d": "D. Enable incoming email by using the Advanced settings mode.",
+    "a_answer": "",
+    "b_answer": "",
+    "c_answer": "",
+    "d_answer": ""
+},
+{
+    "id": 0,
+    "source" : "certexam",
+    "question": " QUESTION 61\nYou are managing a site collection in a SharePoint farm.\nYou need to configure the minimum level of permissions necessary for users to manage lists in the site\ncollection.\nWhat permission level should you configure?",
+    "answer": ["D"],
+    "a": "A. Contribute",
+    "b": "B. Read",
+    "c": "C. Full Control",
+    "d": "D. Design",
+    "a_answer": "",
+    "b_answer": "",
+    "c_answer": "",
+    "d_answer": ""
+},
+{
+    "id": 0,
+    "source" : "certexam",
+    "question": " QUESTION 63\nYou are managing a SharePoint farm.\nYou need to enable friendly URLs for a term set.\nWhat should you configure?\n",
+    "answer": ["B"],
+    "a": "A. Term set tagging",
+    "b": "B. Managed navigation",
+    "c": "C. Custom properties",
+    "d": "D. Search refinement",
+    "a_answer": "",
+    "b_answer": "",
+    "c_answer": "",
+    "d_answer": ""
+},
+{
+    "id": 0,
+    "source" : "certexam",
+    "question": " QUESTION 65 \nYou are managing a SharePoint farm. The SharePoint databases are configured to run on a dedicated \ninstance of Microsoft SQL Server 2008 R2 Service Pack 1.\nYou need to optimize query executions.\nWhat should you do?\n",
+    "answer": ["D"],
+    "a": "A. Move the master database to a RAID 10 volume.",
+    "b": "B. Move the SharePoint databases to a RAID 10 volume.",
+    "c": "C. Set the maximum degree of parallelism for SQL Server instances to 0.",
+    "d": "D. Move the master database to a RAID 5 volume.",
+    "a_answer": "",
+    "b_answer": "",
+    "c_answer": "",
+    "d_answer": ""
+},
+{
+    "id": 0,
+    "source" : "certexam",
+    "question": " QUESTION 66 \nYou are managing a site collection in a SharePoint farm.\nYou need to configure the minimum level of permissions necessary for users to manage lists in the site collection.\nWhat permission level should you configure?\n",
+    "answer": ["C"],
+    "a": "A. Limited Access",
+    "b": "B. View Only",
+    "c": "C. Edit",
+    "d": "D. Create",
+    "a_answer": "",
+    "b_answer": "",
+    "c_answer": "",
+    "d_answer": ""
+},
+{
+    "id": 0,
+    "source" : "certexam",
+    "question": " QUESTION 68\nYou are the farm administrator for a single-server SharePoint 2010 Foundation environment.\nThe company plans to upgrade to SharePoint 2013 Foundation.\nYou need to ensure that the existing server meets the minimum requirements.\nWhich three requirements must you meet? (Each correct answer presents part of the solution.\nChoose three.)\n",
+    "answer": ["B,C,D"],
+    "a": "A. 64-bit edition of Windows Server 2008 SP2",
+    "b": "B. 64-bit processor",
+    "c": "C. 8 GB of RAM",
+    "d": "D. 80 GB of free disk space for the system drive",
+    "a_answer": "",
+    "b_answer": "",
+    "c_answer": "",
+    "d_answer": ""
+},
+{
+    "id": 0,
+    "source" : "certexam",
+    "question": "QUESTION 69 \nYou are managing a site collection in a SharePoint farm. \nYou need to configure the minimum level of permissions necessary for users to manage lists in the site collection.\nWhat permission level should you configure?\n",
+    "answer": ["A"],
+    "a": "A. Edit",
+    "b": "B. Contribute",
+    "c": "C. Read",
+    "d": "D. Limited Access",
+    "a_answer": "",
+    "b_answer": "",
+    "c_answer": "",
+    "d_answer": ""
+},{
+        "id": 0,
+        "source" : "certexam",
+        "question": "You are the term store manager of a SharePoint environment. \n\nYou need to make term sets available across the entire farm. You must ensure that users can reuse terms but not edit terms. \n\nWhich two actions should you perform? (Each correct answer presents part of the solution. \nChoose two.) ",
+        "answer": ["A,B"],
+        "a": "A. Prohibit the use of keywords other than those in a specific term set. ",
+        "b": "B. Create a global term set. ",
+        "c": "C. Enable term pinning. ",
+        "e": "E. Create a local term set. ",
+        "explanation":"Anyone can add a new term to an open term set. Only people who were identified as contributors to a term set group can add terms to a closed term set in the group. For example, a term set that represents cost centers would probably be closed. A term set that represents contributors to a charity might be open. On global term set see step 8) below. Make a term set available to other site collections After you create a term set on the authoring site collection, you have to make it available to publishing site collections. You can make a term set available to all site collections or to specific site collections. "
+    },
+    {
+        "id": 0,
+        "source" : "certexam",
+        "question": "A company is planning to deploy My Sites to its 25,000 employees. The company will maintain dedicated content databases for the storage of personal site collections. \n\nYou need to create the minimum number of content databases required to support the My Sites. \n\nWhat should you do? ",
+        "answer": ["D"],
+        "a": "A. Create three content databases. Set the value of the WarningSiteCount property of each content database to 10,000. ",
+        "b": "B. Create one content database. Set the value of the WarningSiteCount property of the content databaseto 25,000.",
+        "c": "C. Create one content database. Set the value of the MaxSiteCount property of the content database to 25,000.",
+        "d": "D. Create three content databases. Set the value of the MaxSiteCount property of each content databaseto 10,000.",
+        "explanation": ""
+    },
+    {
+        "id": 0,
+        "source": "certexam",
+        "question": "You are managing a SharePoint farm. The SharePoint databases are configured to run on a dedicated instance of Microsoft SQL Server 2008 R2 Service Pack 1. \nYou need to optimize query executions.\nWhat should you do?",
+        "answer": ["B"],
+        "a": "A. Set the maximum degree of parallelism for SQL Server instances to 4. ",
+        "b": "B. Set the maximum degree of parallelism for SQL Server instances to 1. ",
+        "c": "C. Move the master database to a RAID 5 volume.",
+        "d": "D. Set the maximum degree of parallelism for SQL Server instances to 32.",
+        "explanation": "Explanation: The read performance will double with a RAID 10 volume.\nIncorrect:\nnot A, not D: The master database records all the system-level information for a SQL Server system. Thisincludes instance-wide metadata such as logon accounts, endpoints, linked servers, and systemconfiguration settings.\nNot C: This is already the default settings.\n* By default, the Max Degree Of Parallelism setting has a value of 0, which means that the maximumnumber of processors used for parallel processing is controlled automatically. Essentially, SQL Server usesthe actual number of available processors, depending on the workload. To limit the number of processorsused for parallel processing to a set amount (up to the maximum supported by SQL Server), change theMax Degree Of Parallelism setting to a value greater than 1. A value of 1 tells SQL Server not to useparallel processing."
+    },
+    {
+        "id": 0,
+        "source": "certexam",
+        "question": "You are managing a site collection in a SharePoint farm.You need to configure the minimum level of permissions necessary for users to manage lists in the sitecollection.What permission level should you configure?",
+        "answer": ["C"],
+        "a": "A. View Only",
+        "b": "B. Edit",
+        "c": "C. Full Control",
+        "d": "D. Read",
+        "explanation": ""
+    },
+    {
+        "id": 0,
+        "source": "certexam",
+        "question": "You are managing a SharePoint environment. All SharePoint databases reside on servers that runMicrosoft SQL Server 2012.You observe an increase in the consumption of disk space by the SharePoint configuration database.You need to minimize disk space usage.Which recovery model should you set?",
+        "answer": ["D"],
+        "a": "A. Transactional",
+        "b": "B. Full",
+        "c": "C. Bulk-logged",
+        "d": "D. Simple",
+        "explanation": ""
+    },
+    {
+        "id": 0,
+        "source": "certexam",
+        "question": "A SharePoint environment contains a single web application at http://web01.You create a site collection under the web application. The site collection has the URL http://sharepoint.contoso.com.You need to ensure that the site collection is also accessible at http://intranet.contoso.com.What should you do?",
+        "answer": ["C"],
+        "a": "A. Add intranet.contoso.com as an alternate access mapping for the web application.",
+        "b": "B. Extend the web application and add intranet.contoso.com to the Intranet Zone.",
+        "c": "C. Run the Set-SPSiteUrl Windows PowerShell cmdlet.",
+        "d": "D. Run the New-SPSite Windows PowerShell cmdlet.",
+        "explanation": ""
+    },
+
+{
     "id": 0,
     "question": " You are attempting to add new keywords to a SharePoint and receive a message that \r\nstates The Site Does Not Contain A Default Keywords Store. How should you correct \r\nthis issue?",
     "answer": ["C"],
-    "a": "A. Add an enterprise keywords site column to the site�s content types.\r\n",
+    "a": "A. Add an enterprise keywords site column to the sites content types.\r\n",
     "b": "B. In Central Administration, add an MMS application to the SharePoint farm.\r\n",
     "c": "C. Edit the MMS Connection and then select This Service Application Is The Default \r\nStorage Location For Keywords.\r\n",
     "d": "D. Activate the managed keyword service application in Central Administration.\r\n\r",
@@ -38,7 +331,7 @@ var test_questions = [{
     "c": "C. Enable Team Site Navigation\r\n",
     "d": "D. Use This Term Set For Site Navigation\r\n\r",
     "a_answer": " Incorrect: Although managed navigation is the goal you are working toward, \r\nthere is no menu item by this name within the Intended Use tab.",
-    "b_answer": " Incorrect: Making a term set unavailable for tagging is an effective way to group \r\nterms together (for example, by an alphabetical grouping, such as A�F), but does \r\nnot enable the term set for navigation.\r",
+    "b_answer": " Incorrect: Making a term set unavailable for tagging is an effective way to group \r\nterms together (for example, by an alphabetical grouping, such as A), but does \r\nnot enable the term set for navigation.\r",
     "c_answer": " Incorrect: There is no option by this name in the Intended Use tab.\r\nD. Correct: The correct selection to enable managed navigation, it designates that a \r\nparticular term set be used explicitly for the navigation of a site (or sites).\r\n\r\n\r\n\r\n\r\n\r\nObjective 1.2: Thought experiment\r\n\r\nIn order to effectively maintain separation of content, you would most likely need to build a \r\nweb application that uses separate security credentials and content databases.",
     "d_answer": " Correct: The correct selection to enable managed navigation, it designates that a \r\nparticular term set be used explicitly for the navigation of a site (or sites).\r\n\r\n\r\n\r\n\r\n\r\nObjective 1.2: Thought experiment\r\n\r\nIn order to effectively maintain separation of content, you would most likely need to build a \r\nweb application that uses separate security credentials and content databases. Although this \r\nrequirement might not by itself preclude the use of host named site collections, the lack of \r\n"
 }, {
@@ -220,7 +513,7 @@ var test_questions = [{
     "a_answer": " Incorrect: There is no such cmdlet.",
     "b_answer": " Incorrect: There is no such cmdlet.\r",
     "c_answer": " Incorrect: SharePoint cannot scan a document as part of a workflow operation.\r\nD. Correct: A document can be scanned as part of the download process.\r\n\r\n\r\n\r\n4. Correct answers: B, C, D\r\nA.",
-    "d_answer": " Correct: A document can be scanned as part of the download process.\r\n\r\n\r\n\r\n4. Correct answers: B, C, D\r\nA. Incorrect: The �publishing� farm does not need to generate a secure token \r\ncertificate.\r\nB. Correct: The �consuming� farm must generate a root certificate.\r\nC. Correct: The �consuming� farm must generate a secure token certificate.\r\n"
+    "d_answer": " Correct: A document can be scanned as part of the download process.\r\n\r\n\r\n\r\n4. Correct answers: B, C, D\r\nA. Incorrect: The publishing farm does not need to generate a secure token \r\ncertificate.\r\nB. Correct: The consuming farm must generate a root certificate.\r\nC. Correct: The consuming farm must generate a secure token certificate.\r\n"
 }, {
     "id": 0,
     "question": "3. At which levels can you choose to explicitly allow anonymous access (authorization)?",
@@ -289,10 +582,10 @@ var test_questions = [{
     "b": "B. A root certificate generated from the consuming farm\r\n",
     "c": "C. An STS certificate generated from the consuming farm\r\n",
     "d": "D. A root certificate generated by the publishing farm\r\n\r",
-    "a_answer": " Incorrect: The �publishing� farm does not need to generate a secure token \r\ncertificate.",
-    "b_answer": " Correct: The �consuming� farm must generate a root certificate.\r",
+    "a_answer": " Incorrect: The publishing farm does not need to generate a secure token \r\ncertificate.",
+    "b_answer": " Correct: The consuming farm must generate a root certificate.\r",
     "c_answer": " Incorrect: There is no such cmdlet.\r\nD. Incorrect: There is no such cmdlet.\r\n\r\n\r\n\r\n\r\n\r\nObjective 3.2: Thought experiment\r\n\r\nSMTP would need to be configured in the SharePoint environment.",
-    "d_answer": " Incorrect: There is no such cmdlet.\r\n\r\n\r\n\r\n\r\n\r\nObjective 3.2: Thought experiment\r\n\r\nSMTP would need to be configured in the SharePoint environment. Due to the sales team�s \r\nrequirements, the drop box e-mail could potentially receive a lot of spam and the occasional \r\n"
+    "d_answer": " Incorrect: There is no such cmdlet.\r\n\r\n\r\n\r\n\r\n\r\nObjective 3.2: Thought experiment\r\n\r\nSMTP would need to be configured in the SharePoint environment. Due to the sales teams \r\nrequirements, the drop box e-mail could potentially receive a lot of spam and the occasional \r\n"
 }, {
     "id": 0,
     "question": " Which of the following options is available for using an RMS server in a SharePoint \r\nfarm?",
@@ -388,7 +681,7 @@ var test_questions = [{
     "a_answer": " Incorrect: Active Users and Computers is used to administer the Active Directory \r\nstructure.",
     "b_answer": " Correct: ADSI Edit is used to build the SCP container in Active Directory.\r",
     "c_answer": " Incorrect: There is no such connection group OOB.\r\nD. Incorrect: There is no such connection group OOB.\r\n\r\n\r\n\r\n2. Correct answer: C\r\nA.",
-    "d_answer": " Incorrect: There is no such connection group OOB.\r\n\r\n\r\n\r\n2. Correct answer: C\r\nA. Incorrect: The term �Uncustomized� does not describe the status of a published \r\ncontent type.\r\nB. Incorrect: The term �Customized� does not describe the status of a published \r\n"
+    "d_answer": " Incorrect: There is no such connection group OOB.\r\n\r\n\r\n\r\n2. Correct answer: C\r\nA. Incorrect: The term Uncustomized does not describe the status of a published \r\ncontent type.\r\nB. Incorrect: The term Customized does not describe the status of a published \r\n"
 }, {
     "id": 0,
     "question": " Which of the following e-mail scenarios support the prevention of spam filtering and \r\nvirus prevention through incoming e-mail connectivity to a list or library in SharePoint?",
@@ -399,8 +692,8 @@ var test_questions = [{
     "d": "D. Advanced scenario\r\n\r",
     "a_answer": " Incorrect: Although a supported scenario, Basic provides no spam filtering or virus \r\nprotection because incoming e-mail is not routed through an Exchange server.",
     "b_answer": " Incorrect: There is no such incoming e-mail scenario in SharePoint.\r",
-    "c_answer": " Incorrect: The term �Sealed� does not describe the status of a published content \r\ntype.\r\nD.",
-    "d_answer": " Correct: The term �Unsealed� describes the status of a published content type.\r\n\r\n"
+    "c_answer": " Incorrect: The term Sealed does not describe the status of a published content \r\ntype.\r\nD.",
+    "d_answer": " Correct: The term Unsealed describes the status of a published content type.\r\n\r\n"
 }, {
     "id": 0,
     "question": "2. Which of the following cmdlets is used to create a new proxy group for use with service \r\napplications?",
@@ -505,8 +798,8 @@ var test_questions = [{
     "b": "B. Customized\r\n",
     "c": "C. Sealed\r\n",
     "d": "D. Unsealed\r\n\r",
-    "a_answer": " Incorrect: The term �Uncustomized� does not describe the status of a published \r\ncontent type.",
-    "b_answer": " Incorrect: The term �Customized� does not describe the status of a published \r\ncontent type.\r",
+    "a_answer": " Incorrect: The term Uncustomized does not describe the status of a published \r\ncontent type.",
+    "b_answer": " Incorrect: The term Customized does not describe the status of a published \r\ncontent type.\r",
     "c_answer": " Correct: Outlook Web Access presents the team mailbox in the SharePoint site.\r\nD. Incorrect: Although this should be configured for the farm, it is not a component \r\nof team mailboxes.",
     "d_answer": " Incorrect: Although this should be configured for the farm, it is not a component \r\nof team mailboxes.\r\n\r\n"
 }, {
@@ -517,8 +810,8 @@ var test_questions = [{
     "b": "B. Customized\r\n\r\n\r\n\r\n\r\n\r\n\r\n\f\r\n",
     "c": "C. Sealed\r\n",
     "d": "D. Unsealed\r\n\r",
-    "a_answer": " Incorrect: The term �Uncustomized� does not describe the status of a published \r\ncontent type.",
-    "b_answer": " Incorrect: The term �Customized� does not describe the status of a published \r\ncontent type.\r",
+    "a_answer": " Incorrect: The term Uncustomized does not describe the status of a published \r\ncontent type.",
+    "b_answer": " Incorrect: The term Customized does not describe the status of a published \r\ncontent type.\r",
     "c_answer": " Incorrect: Business Connectivity Services is not required for site access requests.\r\nD. Incorrect: User Profile Services is not required for site access requests.\r\n\r\n\r\n\r\n2. Correct answers: B, C\r\nA.",
     "d_answer": " Incorrect: User Profile Services is not required for site access requests.\r\n\r\n\r\n\r\n2. Correct answers: B, C\r\nA. Incorrect: Although you can enable authentication at the web application level, \r\nyou cannot provide authorization at this level.\r\nB. Correct: Sites and site collections can be secured for anonymous access.\r\nC. Correct: Individual lists and libraries can be secured for anonymous access.\r\n"
 }, {
@@ -555,7 +848,7 @@ var test_questions = [{
     "d": "D. Trusted Claims Provider authentication\r\n\r",
     "a_answer": " Correct: Windows Authentication is supported.",
     "b_answer": " Incorrect: Basic Authentication is not supported.\r",
-    "c_answer": " Incorrect: Partial answer � OpenSearch is one of the available protocols.\r\nD. Correct: All three of these protocols can be used with a result source in a SharePoint \r\nfarm.",
+    "c_answer": " Incorrect: Partial answer  OpenSearch is one of the available protocols.\r\nD. Correct: All three of these protocols can be used with a result source in a SharePoint \r\nfarm.",
     "d_answer": " Correct: All three of these protocols can be used with a result source in a SharePoint \r\nfarm.\r\n\r\n"
 }, {
     "id": 0,
@@ -640,7 +933,7 @@ var test_questions = [{
     "a_answer": " Incorrect: -HostNamed is not a valid switch.",
     "b_answer": " Incorrect: -HostHeaderSite is not a valid switch.\r",
     "c_answer": " Incorrect: Each content database can be associated with only one web application.\r\nD. Incorrect: Each content database can be associated with only one web application.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\f\r\nAnswers CHAPTER 5 485\r\n\r\n3. Correct answer: D\r\nA.",
-    "d_answer": " Incorrect: Each content database can be associated with only one web application.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\f\r\nAnswers CHAPTER 5 485\r\n\r\n3. Correct answer: D\r\nA. Incorrect: Get-SPSiteCollection is not a valid Windows PowerShell cmdlet for use \r\nwith SharePoint.\r\nB. Incorrect: Get-SPDatabase �webapplication is used to display the content databases \r\n"
+    "d_answer": " Incorrect: Each content database can be associated with only one web application.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\f\r\nAnswers CHAPTER 5 485\r\n\r\n3. Correct answer: D\r\nA. Incorrect: Get-SPSiteCollection is not a valid Windows PowerShell cmdlet for use \r\nwith SharePoint.\r\nB. Incorrect: Get-SPDatabase webapplication is used to display the content databases \r\n"
 }, {
     "id": 0,
     "question": "2. Which of the following links is used from My Site to create a new SSSC?",
@@ -733,8 +1026,8 @@ var test_questions = [{
     "b": "B. Exchange\r\n",
     "c": "C. OpenSearch\r\n",
     "d": "D. All of the above\r\n\r",
-    "a_answer": " Incorrect: Partial answer � SharePoint is one of the available protocols.",
-    "b_answer": " Incorrect: Partial answer � Exchange is one of the available protocols.\r",
+    "a_answer": " Incorrect: Partial answer  SharePoint is one of the available protocols.",
+    "b_answer": " Incorrect: Partial answer  Exchange is one of the available protocols.\r",
     "c_answer": "g",
     "d_answer": "h"
 }, {
@@ -852,9 +1145,9 @@ var test_questions = [{
     "a": "A. $site=Get-SPSiteCollection\r\n",
     "b": "B. $site.usage\r\n",
     "c": "C. Get-SPDatabase -webapplication\r\n",
-    "d": "D. $site=get-spsite �identity http://\u003curl\u003e\r\nE. $site.usage\r\nF. Site settings, site collection administration, storage metrics\r\n\r",
+    "d": "D. $site=get-spsite identity http://\u003curl\u003e\r\nE. $site.usage\r\nF. Site settings, site collection administration, storage metrics\r\n\r",
     "a_answer": " Incorrect: Get-SPSiteCollection is not a valid Windows PowerShell cmdlet for use \r\nwith SharePoint.",
-    "b_answer": " Incorrect: Get-SPDatabase �webapplication is used to display the content databases \r\nthat are associated with a particular web application.\r",
+    "b_answer": " Incorrect: Get-SPDatabase webapplication is used to display the content databases \r\nthat are associated with a particular web application.\r",
     "c_answer": "g",
     "d_answer": "h"
 }, {
