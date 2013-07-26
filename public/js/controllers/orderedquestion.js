@@ -1,5 +1,7 @@
 angular.module('trainee.controllers')
   .controller('OrderedQuestionCtrl', ['$scope', '$routeParams', 'Questions', function ($scope, $routeParams, Questions) {
+    // Rainbowify
+    rainbow.changeColor();
     $scope.index = parseInt($routeParams["index"], 10);
 
     Questions.get(function (questions) {
@@ -15,7 +17,7 @@ angular.module('trainee.controllers')
 
     // Determine whether to use radio or checkbox
     $scope.isMultiple = $scope.question.answer.length > 1;
-
+    
     // Check if answer is correct on changes to the form
     $scope.checkAnswer = function () {
       console.log("Given: " + $scope.answer + ". Real: " + $scope.question.answer[0]);

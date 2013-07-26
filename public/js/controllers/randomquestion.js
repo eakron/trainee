@@ -16,6 +16,7 @@ angular.module('trainee.controllers')
 
     // Determine whether to use radio or checkbox
     $scope.isMultiple = $scope.question.answer.length > 1;
+    rainbow.changecolor();
 
     // Check if answer is correct on changes to the form
     $scope.checkAnswer = function () {
