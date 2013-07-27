@@ -1,7 +1,12 @@
 angular.module('trainee.controllers')
-  .controller('RandomQuestionCtrl', ['$scope', 'Questions', function ($scope, Questions) {
+  .controller('RandomQuestionCtrl', ['$scope', 'Questions', 'Persistence', function ($scope, Questions, Persistence) {
 
     rainbow.changeColor();
+
+    var correct_answers = Persistence.get('correct_answers') || 0,
+        incorrect_answers = Persistence.get('incorrect_answers') || 0;
+
+    $scope.percentage = Math.floor(correct_answers / (correct_answers + incorrect_answers) * 100) || 0;
 
     // Grab the random question
     Questions.get(function (questions) {
@@ -11,10 +16,6 @@ angular.module('trainee.controllers')
 
     // Setup some defaults for answer checking
     $scope.correct = false;
-    $scope.attempted = false;
-    $scope.red = function () {
-      return $scope.attempted && !$scope.correct;
-    };
 
     // Determine whether to use radio or checkbox
     $scope.isMultiple = $scope.question.answer.length > 1;
@@ -22,12 +23,16 @@ angular.module('trainee.controllers')
     // Check if answer is correct on changes to the form
     $scope.checkAnswer = function () {
       console.log("Given: " + $scope.answer + ". Real: " + $scope.question.answer[0]);
-      if ($scope.question.answer[0] === $scope.answer)
+      if ($scope.question.answer[0] === $scope.answer) {
         $scope.correct = true;
-      else
+        correct_answers++;
+        Persistence.set('correct_answers', correct_answers);
+      }
+      else {
         $scope.correct = false;
-      $scope.attempted = true;
-      console.log("Attempted: " + $scope.attempted + ". Correct: " + $scope.correct);
+        incorrect_answers++;
+        Persistence.set('incorrect_answers', incorrect_answers);
+      }
     };
 
     // Specialized check for checkboxes
@@ -39,12 +44,21 @@ angular.module('trainee.controllers')
       console.log(answers);
       console.log($scope.question.answer);
 
-      // Use angular.equals() to compare arrays
-      if (angular.equals($scope.question.answer, answers))
-        $scope.correct = true;
-      else
-        $scope.correct = false;
-      $scope.attempted = true;
-    };
+      // Only count incorrect answers after number of valid choices
+      var tries = 0;
 
+      // Use angular.equals() to compare arrays
+      if (angular.equals($scope.question.answer, answers)) {
+        $scope.correct = true;
+        correct_answers++;
+        Persistence.set('correct_answers', correct_answers);
+      }
+      else {
+        $scope.correct = false;
+        if (tries++ >= answers.length) {
+          incorrect_answers++;
+          Persistence.set('incorrect_answers', incorrect_answers);
+        }
+      }
+    };
   }]);
