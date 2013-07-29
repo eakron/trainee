@@ -24,8 +24,8 @@ var test_questions = [
 {
     "id": 0,
     "source" : "certexam",
-    "question": "QUESTION 6 \n A company named Contoso, Ltd. has a SharePoint farm. The farm has one Search service application \n configured. The Search service application contains five crawl databases, all of which contain content. Contoso plans to crawl knowledge base content from its partner company Litware, Inc. The knowledge base content must be stored in a dedicated crawl database. You need to configure crawling. What should you do?",
-    "answer": ["D"],
+    "question": "QUESTION 6  A company named Contoso, Ltd. has a SharePoint farm. The farm has one Search service application  configured. The Search service application contains five crawl databases, all of which contain content. Contoso plans to crawl knowledge base content from its partner company Litware, Inc. The knowledge base content must be stored in a dedicated crawl database. You need to configure crawling. What should you do?",
+    "answer": ["A"],
     "a": "A. Add a crawl database that contains the Litware knowledge base to the existing Search service",
     "b": "B. Provision a new Search service application. Configure the service application to crawl the Litware knowledge base content.",
     "c": "C. Set the MaxCrawlDatabase parameter to 6.",
@@ -86,8 +86,8 @@ var test_questions = [
 {
     "id": 0,
     "source" : "certexam",
-    "question": "QUESTION 56 \n You are managing a SharePoint farm. The SharePoint databases are configured to run on a dedicated\n instance of Microsoft SQL Server 2008 R2 Service Pack 1. You need to optimize query executions. \n What should you do?\n",
-    "answer": ["D"],
+    "question": "QUESTION 56  You are managing a SharePoint farm. The SharePoint databases are configured to run on a dedicated instance of Microsoft SQL Server 2008 R2 Service Pack 1. You need to optimize query executions.  What should you do?",
+    "answer": ["A"],
     "a": "A. Move the master database to a RAID 10 volume.",
     "b": "B. Set the maximum degree of parallelism for SQL Server instances to 0.",
     "c": "C. Set the maximum degree of parallelism for SQL Server instances to 4.",
@@ -276,8 +276,8 @@ var test_questions = [
 {
     "id": 0,
     "source" : "certexam",
-    "question": " QUESTION 29\nYou are managing a SharePoint farm.\nThe SharePoint databases are configured to run on a dedicated instance of Microsoft SQL Server 2008 R2\nService Pack 1.\nYou need to optimize query executions.\nWhat should you do?",
-    "answer": ["A"],
+    "question": " QUESTION 29You are managing a SharePoint farm.The SharePoint databases are configured to run on a dedicated instance of Microsoft SQL Server 2008 R2Service Pack 1.You need to optimize query executions.What should you do?",
+    "answer": ["B"],
     "a": "A. Move the SharePoint databases to a RAID 10 volume.",
     "b": "B. Move the SharePoint databases to a RAID 5 volume.",
     "c": "C. Set the maximum degree of parallelism for SQL Server instances to 4.",
