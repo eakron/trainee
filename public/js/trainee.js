@@ -1051,7 +1051,7 @@ var test_questions = [
     "d_answer": " Incorrect: Read can be altered.\r\n\r\n\r\n\r\n\r\n\r\nObjective 4.4: Thought experiment\r\n\r\nYou might start by building a new result source that is capable of selecting just a single type \r\nof file. Next, you could create a query rule that returns a particular result set that includes the \r\nfile type you chose.\r\n\r\n"
 }, {
     "id": 0,
-    "question": "5.2\r\nC. Novell eDirectory version 8.7.3\r\nD. IBM Tivoli version 5.2\r\nE. All of the above\r\n\r\n\r\n\r\n\r\n\r\n\r\n\f\r\n2. Which of the following authentication types is supported for use with SharePoint Active \r\nDirectory import?",
+    "question": "2. Which of the following authentication types is supported for use with SharePoint Active \r\nDirectory import?",
     "answer": ["A", "C", "D"],
     "a": "A. Windows authentication\r\n",
     "b": "B. Basic authentication\r\n",
