@@ -24,6 +24,12 @@ angular.module('trainee.controllers')
 
     // Grab the random question
     Questions.get(function (questions) {
+      size = questions.length;
+
+      // Used for next/prev buttons
+      $scope.hasNext     = size > $scope.index;
+      $scope.hasPrevious = size < $scope.index;
+
       $scope.question = questions[$scope.index];
     });
 
