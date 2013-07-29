@@ -1,5 +1,15 @@
 angular.module('trainee.controllers')
-  .controller('OrderedQuestionCtrl', ['$scope', '$routeParams', 'Questions', function ($scope, $routeParams, Questions) {
+  .controller('OrderedQuestionCtrl',
+              ['$scope',
+               '$routeParams',
+               'Questions',
+               'Score',
+               'Helpers',
+               function ($scope,
+                         $routeParams,
+                         Questions,
+                         Score,
+                         Helpers) {
 
     // Rainbowify
     rainbow.changeColor();

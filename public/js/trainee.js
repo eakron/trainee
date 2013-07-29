@@ -1051,7 +1051,7 @@ var test_questions = [
     "d_answer": " Incorrect: Read can be altered.\r\n\r\n\r\n\r\n\r\n\r\nObjective 4.4: Thought experiment\r\n\r\nYou might start by building a new result source that is capable of selecting just a single type \r\nof file. Next, you could create a query rule that returns a particular result set that includes the \r\nfile type you chose.\r\n\r\n"
 }, {
     "id": 0,
-    "question": "5.2\r\nC. Novell eDirectory version 8.7.3\r\nD. IBM Tivoli version 5.2\r\nE. All of the above\r\n\r\n\r\n\r\n\r\n\r\n\r\n\f\r\n2. Which of the following authentication types is supported for use with SharePoint Active \r\nDirectory import?",
+    "question": "2. Which of the following authentication types is supported for use with SharePoint Active \r\nDirectory import?",
     "answer": ["A", "C", "D"],
     "a": "A. Windows authentication\r\n",
     "b": "B. Basic authentication\r\n",
@@ -1353,10 +1353,10 @@ var test_questions = [
     "id": 0,
     "question": "3. Which of the following should you use to monitor the size of a single site within a site \r\ncollection?",
     "answer": ["D"],
-    "a": "A. $site=Get-SPSiteCollection\r\n",
-    "b": "B. $site.usage\r\n",
-    "c": "C. Get-SPDatabase -webapplication\r\n",
-    "d": "D. $site=get-spsite identity http://\u003curl\u003e\r\nE. $site.usage\r\nF. Site settings, site collection administration, storage metrics\r\n\r",
+    "a": "A. $site=Get-SPSiteCollection\r\n$site.usage\r\n",
+    "b": "B. Get-SPDatabase -webapplication\r\n",
+    "c": "C. Site settings, site collection administration, storage metrics\r\n",
+    "d": "D. $site=get-spsite identity http://\u003curl\u003e\r\n$site.usage\r\n\r\n\r",
     "a_answer": " Incorrect: Get-SPSiteCollection is not a valid Windows PowerShell cmdlet for use \r\nwith SharePoint.",
     "b_answer": " Incorrect: Get-SPDatabase webapplication is used to display the content databases \r\nthat are associated with a particular web application.\r",
     "c_answer": "g",

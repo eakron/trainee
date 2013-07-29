@@ -1,7 +1,18 @@
 angular.module('trainee.controllers')
-  .controller('RandomQuestionCtrl', ['$scope', 'Questions', function ($scope, Questions) {
+  .controller('RandomQuestionCtrl',
+              ['$scope',
+               'Questions',
+               'Score',
+               'Helpers',
+               function ($scope,
+                         Questions,
+                         Score,
+                         Helpers) {
 
     rainbow.changeColor();
+    Score.bind("RandomQuestion");
+
+    $scope.percentage = Score.percentage();
 
     // Grab the random question
     Questions.get(function (questions) {
@@ -11,10 +22,6 @@ angular.module('trainee.controllers')
 
     // Setup some defaults for answer checking
     $scope.correct = false;
-    $scope.attempted = false;
-    $scope.red = function () {
-      return $scope.attempted && !$scope.correct;
-    };
 
     // Determine whether to use radio or checkbox
     $scope.isMultiple = $scope.question.answer.length > 1;
@@ -22,29 +29,43 @@ angular.module('trainee.controllers')
     // Check if answer is correct on changes to the form
     $scope.checkAnswer = function () {
       console.log("Given: " + $scope.answer + ". Real: " + $scope.question.answer[0]);
-      if ($scope.question.answer[0] === $scope.answer)
+      if ($scope.question.answer[0] === $scope.answer) {
         $scope.correct = true;
-      else
+        Score.correct("RandomQuestion");
+      }
+      else {
         $scope.correct = false;
-      $scope.attempted = true;
-      console.log("Attempted: " + $scope.attempted + ". Correct: " + $scope.correct);
+        Score.incorrect("RandomQuestion");
+      }
+      console.log(Score.percentage("RandomQuestion"));
     };
 
     // Specialized check for checkboxes
     $scope.checkAnswerBox = function () {
-      var answerList = [$scope.answer_a, $scope.answer_b, $scope.answer_c, $scope.answer_d];
+      var answerList = [$scope.answer_a,
+                        $scope.answer_b,
+                        $scope.answer_c,
+                        $scope.answer_d];
       // Remove empty entries
-      var answers = _.filter(answerList, function (a) { return a; });
+      var answers = Helpers.filterEmpty(answerList);
 
       console.log(answers);
       console.log($scope.question.answer);
 
-      // Use angular.equals() to compare arrays
-      if (angular.equals($scope.question.answer, answers))
-        $scope.correct = true;
-      else
-        $scope.correct = false;
-      $scope.attempted = true;
-    };
+      // Only count incorrect answers after number of valid choices
+      var tries = 0;
 
+      // Use angular.equals() to compare arrays
+      if (angular.equals($scope.question.answer, answers)) {
+        $scope.correct = true;
+        Score.correct("RandomQuestion");
+      }
+      else {
+        $scope.correct = false;
+        if (tries++ >= answers.length) {
+          Score.incorrect("RandomQuestion");
+        }
+      }
+      console.log(Score.percentage("RandomQuestion"));
+    };
   }]);
