@@ -1,12 +1,10 @@
 angular.module('trainee.controllers')
-  .controller('RandomQuestionCtrl', ['$scope', 'Questions', 'Persistence', function ($scope, Questions, Persistence) {
+  .controller('RandomQuestionCtrl', ['$scope', 'Questions', 'Persistence', 'Score', function ($scope, Questions, Persistence, Score) {
 
     rainbow.changeColor();
+    Score.bind("RandomQuestion");
 
-    var correct_answers = Persistence.get('correct_answers') || 0,
-        incorrect_answers = Persistence.get('incorrect_answers') || 0;
-
-    $scope.percentage = Math.floor(correct_answers / (correct_answers + incorrect_answers) * 100) || 0;
+    $scope.percentage = Score.percentage();
 
     // Grab the random question
     Questions.get(function (questions) {
@@ -25,14 +23,13 @@ angular.module('trainee.controllers')
       console.log("Given: " + $scope.answer + ". Real: " + $scope.question.answer[0]);
       if ($scope.question.answer[0] === $scope.answer) {
         $scope.correct = true;
-        correct_answers++;
-        Persistence.set('correct_answers', correct_answers);
+        Score.correct("RandomQuestion");
       }
       else {
         $scope.correct = false;
-        incorrect_answers++;
-        Persistence.set('incorrect_answers', incorrect_answers);
+        Score.incorrect("RandomQuestion");
       }
+      console.log(Score.percentage("RandomQuestion"));
     };
 
     // Specialized check for checkboxes
@@ -50,15 +47,14 @@ angular.module('trainee.controllers')
       // Use angular.equals() to compare arrays
       if (angular.equals($scope.question.answer, answers)) {
         $scope.correct = true;
-        correct_answers++;
-        Persistence.set('correct_answers', correct_answers);
+        Score.correct("RandomQuestion");
       }
       else {
         $scope.correct = false;
         if (tries++ >= answers.length) {
-          incorrect_answers++;
-          Persistence.set('incorrect_answers', incorrect_answers);
+          Score.incorrect("RandomQuestion");
         }
       }
+      console.log(Score.percentage("RandomQuestion"));
     };
   }]);
