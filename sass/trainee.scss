@@ -30,7 +30,11 @@ body {
 }
 
 .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container{
-	width: 950px;
+	max-width: 950px;
+
+}
+a:focus{
+	outline: none;
 }
 
 /*****************************************************
@@ -38,6 +42,16 @@ body {
 *****************************************************/
 .navbar{
 	background-color: white;
+	-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav > .active > a:focus, .navbar-nav > .active > a {
+	background-color: #ececec;
+	&:hover{
+		background-color: #d9d9d9;
+	}
 }
 
 
@@ -50,6 +64,7 @@ body {
  	padding: 50px;
  	margin-top: 60px;
 	background: white;
+	margin-bottom: 30px;
 	.center-content-inner{
 		min-height:300px;
 	}
@@ -59,8 +74,7 @@ body {
 		margin-bottom: 30px;
 	}
 	a{
-		width: 120px;
-		float: right;
+		float:right;
 	}
 	input{
 		margin-left: 60px;
@@ -72,13 +86,15 @@ body {
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 
+.push-down{
+	margin-top: 60px;
+}
+
 
 /*****************************************************
 				input
 *****************************************************/
 .center-content-inner label{
-	margin-left: 40px;
-	margin-right: 40px;
 	> p{
 		font-size: 16px;
 	}
@@ -96,6 +112,9 @@ input:checked+p.correct {
 	}
 }
 
+label{
+	font-weight: normal;
+}
 /*****************************************************
 				REBECKAS COLORS
 *****************************************************/

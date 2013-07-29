@@ -21,13 +21,24 @@ body {
   font-family: Raleway; }
 
 .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-  width: 950px; }
+  max-width: 950px; }
+
+a:focus {
+  outline: none; }
 
 /*****************************************************
 				NAVBAR
 *****************************************************/
 .navbar {
-  background-color: white; }
+  background-color: white;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); }
+
+.navbar-nav > .active > a:focus, .navbar-nav > .active > a {
+  background-color: #ececec; }
+  .navbar-nav > .active > a:focus:hover, .navbar-nav > .active > a:hover {
+    background-color: #d9d9d9; }
 
 /*****************************************************
 				CONTENT
@@ -36,6 +47,7 @@ body {
   padding: 50px;
   margin-top: 60px;
   background: white;
+  margin-bottom: 30px;
   opacity: 0.9;
   -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
@@ -47,19 +59,18 @@ body {
     line-height: 1.5;
     margin-bottom: 30px; }
   .center-content a {
-    width: 120px;
     float: right; }
   .center-content input {
     margin-left: 60px; }
 
+.push-down {
+  margin-top: 60px; }
+
 /*****************************************************
 				input
 *****************************************************/
-.center-content-inner label {
-  margin-left: 40px;
-  margin-right: 40px; }
-  .center-content-inner label > p {
-    font-size: 16px; }
+.center-content-inner label > p {
+  font-size: 16px; }
 
 input + p {
   border-bottom: 3px solid transparent;
@@ -68,6 +79,9 @@ input + p {
 input:checked + p.correct {
   border-bottom: 3px solid #67c62d;
   display: inline; }
+
+label {
+  font-weight: normal; }
 
 /*****************************************************
 				REBECKAS COLORS
