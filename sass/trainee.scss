@@ -33,6 +33,9 @@ body {
 	max-width: 950px;
 
 }
+a:focus{
+	outline: none;
+}
 
 /*****************************************************
 				NAVBAR
@@ -42,6 +45,13 @@ body {
 	-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav > .active > a:focus, .navbar-nav > .active > a {
+	background-color: #ececec;
+	&:hover{
+		background-color: #d9d9d9;
+	}
 }
 
 
