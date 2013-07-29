@@ -25,7 +25,7 @@ var test_questions = [
     "id": 0,
     "source" : "certexam",
     "question": "QUESTION 6  A company named Contoso, Ltd. has a SharePoint farm. The farm has one Search service application  configured. The Search service application contains five crawl databases, all of which contain content. Contoso plans to crawl knowledge base content from its partner company Litware, Inc. The knowledge base content must be stored in a dedicated crawl database. You need to configure crawling. What should you do?",
-    "answer": ["D"],
+    "answer": ["A"],
     "a": "A. Add a crawl database that contains the Litware knowledge base to the existing Search service",
     "b": "B. Provision a new Search service application. Configure the service application to crawl the Litware knowledge base content.",
     "c": "C. Set the MaxCrawlDatabase parameter to 6.",
