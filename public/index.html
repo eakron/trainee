@@ -15,7 +15,6 @@
       <script src="lib/bootstrap/js/html5shiv.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="lib/bootstrap/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="lib/bootstrap/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="lib/bootstrap/ico/apple-touch-icon-72-precomposed.png">
@@ -39,7 +38,7 @@
             <li><a ng-href="#/questions/random/">Random Question</a></li>
             <li><a ng-href="#/questions/ordered/0/">Questions</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </div>
 
@@ -47,14 +46,14 @@
       <div ng-view></div>
     </div>
 
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="lib/underscore.js"></script>
     <script src="lib/jquery.js"></script>
     <script src="lib/angular.js"></script>
     <script src="js/services.js"></script>
+    <script src="js/services/helpers.js"></script>
+    <script src="js/services/persistence.js"></script>
+    <script src="js/services/questions.js"></script>
+    <script src="js/services/score.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/controllers/randomquestion.js"></script>
     <script src="js/controllers/orderedquestion.js"></script>
