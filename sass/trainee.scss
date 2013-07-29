@@ -62,8 +62,7 @@ body {
 		margin-bottom: 30px;
 	}
 	a{
-		width: 120px;
-		float: right;
+		float:right;
 	}
 	input{
 		margin-left: 60px;
@@ -75,13 +74,15 @@ body {
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 
+.push-down{
+	margin-top: 60px;
+}
+
 
 /*****************************************************
 				input
 *****************************************************/
 .center-content-inner label{
-	margin-left: 40px;
-	margin-right: 40px;
 	> p{
 		font-size: 16px;
 	}
@@ -99,6 +100,9 @@ input:checked+p.correct {
 	}
 }
 
+label{
+	font-weight: normal;
+}
 /*****************************************************
 				REBECKAS COLORS
 *****************************************************/

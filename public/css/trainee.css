@@ -50,19 +50,18 @@ body {
     line-height: 1.5;
     margin-bottom: 30px; }
   .center-content a {
-    width: 120px;
     float: right; }
   .center-content input {
     margin-left: 60px; }
 
+.push-down {
+  margin-top: 60px; }
+
 /*****************************************************
 				input
 *****************************************************/
-.center-content-inner label {
-  margin-left: 40px;
-  margin-right: 40px; }
-  .center-content-inner label > p {
-    font-size: 16px; }
+.center-content-inner label > p {
+  font-size: 16px; }
 
 input + p {
   border-bottom: 3px solid transparent;
@@ -71,6 +70,9 @@ input + p {
 input:checked + p.correct {
   border-bottom: 3px solid #67c62d;
   display: inline; }
+
+label {
+  font-weight: normal; }
 
 /*****************************************************
 				REBECKAS COLORS
