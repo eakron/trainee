@@ -21,8 +21,7 @@ body {
   font-family: Raleway; }
 
 .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-  max-width: 950px;
-  margin-bottom: 30px; }
+  max-width: 950px; }
 
 /*****************************************************
 				NAVBAR
@@ -40,6 +39,7 @@ body {
   padding: 50px;
   margin-top: 60px;
   background: white;
+  margin-bottom: 30px;
   opacity: 0.9;
   -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
