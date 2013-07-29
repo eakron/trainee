@@ -2,12 +2,10 @@ angular.module('trainee.controllers')
   .controller('RandomQuestionCtrl',
               ['$scope',
                'Questions',
-               'Persistence',
                'Score',
                'Helpers',
                function ($scope,
                          Questions,
-                         Persistence,
                          Score,
                          Helpers) {
 
