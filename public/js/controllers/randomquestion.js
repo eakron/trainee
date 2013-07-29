@@ -1,5 +1,15 @@
 angular.module('trainee.controllers')
-  .controller('RandomQuestionCtrl', ['$scope', 'Questions', 'Persistence', 'Score', function ($scope, Questions, Persistence, Score) {
+  .controller('RandomQuestionCtrl',
+              ['$scope',
+               'Questions',
+               'Persistence',
+               'Score',
+               'Helpers',
+               function ($scope,
+                         Questions,
+                         Persistence,
+                         Score,
+                         Helpers) {
 
     rainbow.changeColor();
     Score.bind("RandomQuestion");
@@ -34,7 +44,10 @@ angular.module('trainee.controllers')
 
     // Specialized check for checkboxes
     $scope.checkAnswerBox = function () {
-      var answerList = [$scope.answer_a, $scope.answer_b, $scope.answer_c, $scope.answer_d];
+      var answerList = [$scope.answer_a,
+                        $scope.answer_b,
+                        $scope.answer_c,
+                        $scope.answer_d];
       // Remove empty entries
       var answers = _.filter(answerList, function (a) { return a; });
 
