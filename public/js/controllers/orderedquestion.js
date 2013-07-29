@@ -51,6 +51,7 @@ angular.module('trainee.controllers')
         Score.incorrect();
       }
       console.log(Score.percentage());
+      $scope.percentage = Score.percentage();
     };
 
     // Specialized check for checkboxes
@@ -77,5 +78,6 @@ angular.module('trainee.controllers')
         }
       }
       console.log(Score.percentage());
+      $scope.percentage = Score.percentage();
     };
   }]);
