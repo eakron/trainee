@@ -49,7 +49,7 @@ angular.module('trainee.controllers')
                         $scope.answer_c,
                         $scope.answer_d];
       // Remove empty entries
-      var answers = _.filter(answerList, function (a) { return a; });
+      var answers = Helpers.filterEmpty(answerList);
 
       console.log(answers);
       console.log($scope.question.answer);
