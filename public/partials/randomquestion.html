@@ -42,30 +42,51 @@
       </div>
     </div>
   </div>
-  
 </div>
+
+
 <div ng-show="isMultiple" class="center-content">
   <div class="center-content-inner">
-    <p>{{ question.question }}</p>
-    <div>
-      <label class="label_check">
-        <input ng-change="checkAnswerBox()" ng-model="answer_a" type="checkbox" name="1" value="A" ng-true-value="A" ng-false-value="" />
-        <p ng-class="{'correct':correct}">{{question.a}}</p>
-      </label>
-      <label class="label_check">
-        <input ng-change="checkAnswerBox()" ng-model="answer_b" type="checkbox" name="1" value="B" ng-true-value="B" ng-false-value="" />
-        <p ng-class="{'correct':correct}">{{question.b}}</p>
-      </label>
-      <label class="label_check">
-        <input ng-change="checkAnswerBox()" ng-model="answer_c" type="checkbox" name="1" value="C" ng-true-value="C" ng-false-value="" />
-        <p ng-class="{'correct':correct}">{{question.c}}</p>
-      </label>
-      <label class="label_check">
-        <input ng-change="checkAnswerBox()" ng-model="answer_d" type="checkbox" name="1" value="D" ng-true-value="D" ng-false-value="" />
-        <p ng-class="{'correct':correct}">{{question.d}}</p>
-      </label>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>{{ question.question }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 col-offset-1">
+        <div class="row">
+          <label class="label_check">
+            <input ng-change="checkAnswerBox()" ng-model="answer_a" type="checkbox" name="1" value="A" ng-true-value="A" ng-false-value="" />
+            <p ng-class="{'correct':correct}">{{question.a}}</p>
+          </label>
+        </div>
+        <div class="row">
+          <label class="label_check">
+            <input ng-change="checkAnswerBox()" ng-model="answer_b" type="checkbox" name="1" value="B" ng-true-value="B" ng-false-value="" />
+            <p ng-class="{'correct':correct}">{{question.b}}</p>
+          </label>
+        </div>
+        <div class="row">
+          <label class="label_check">
+            <input ng-change="checkAnswerBox()" ng-model="answer_c" type="checkbox" name="1" value="C" ng-true-value="C" ng-false-value="" />
+            <p ng-class="{'correct':correct}">{{question.c}}</p>
+          </label>
+        </div>
+        <div class="row">
+          <label class="label_check">
+            <input ng-change="checkAnswerBox()" ng-model="answer_d" type="checkbox" name="1" value="D" ng-true-value="D" ng-false-value="" />
+            <p ng-class="{'correct':correct}">{{question.d}}</p>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row push-down">
+      <div class="col-lg-6">
+        <p>Percentage: {{ percentage }}%</p>
+      </div>
+      <div class="col-lg-6">
+        <a ng-href="#/questions/random/">One more please!</a>
+      </div>
     </div>
   </div>
-  <a ng-href="#/questions/random/">One more please!</a>
-  <p>Percentage: {{ percentage }}%</p>
 </div>
