@@ -12,6 +12,9 @@ angular.module('trainee.controllers')
     rainbow.changeColor();
     Score.bind("RandomQuestion");
 
+    // Only count incorrect answers after number of valid choices
+    var tries = 0;
+
     $scope.percentage = Score.percentage();
 
     // Grab the random question
@@ -31,13 +34,13 @@ angular.module('trainee.controllers')
       console.log("Given: " + $scope.answer + ". Real: " + $scope.question.answer[0]);
       if ($scope.question.answer[0] === $scope.answer) {
         $scope.correct = true;
-        Score.correct("RandomQuestion");
+        Score.correct();
       }
       else {
         $scope.correct = false;
-        Score.incorrect("RandomQuestion");
+        Score.incorrect();
       }
-      console.log(Score.percentage("RandomQuestion"));
+      console.log(Score.percentage());
     };
 
     // Specialized check for checkboxes
@@ -52,20 +55,17 @@ angular.module('trainee.controllers')
       console.log(answers);
       console.log($scope.question.answer);
 
-      // Only count incorrect answers after number of valid choices
-      var tries = 0;
-
       // Use angular.equals() to compare arrays
       if (angular.equals($scope.question.answer, answers)) {
         $scope.correct = true;
-        Score.correct("RandomQuestion");
+        Score.correct();
       }
       else {
         $scope.correct = false;
         if (tries++ >= answers.length) {
-          Score.incorrect("RandomQuestion");
+          Score.incorrect();
         }
       }
-      console.log(Score.percentage("RandomQuestion"));
+      console.log(Score.percentage());
     };
   }]);
