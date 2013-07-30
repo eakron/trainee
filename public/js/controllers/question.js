@@ -2,11 +2,13 @@ angular.module('trainee.controllers')
   .controller('QuestionCtrl',
               ['$scope',
                '$routeParams',
+               '$location',
                'Questions',
                'Score',
                'Helpers',
                function ($scope,
                          $routeParams,
+                         $location,
                          Questions,
                          Score,
                          Helpers) {
@@ -22,10 +24,13 @@ angular.module('trainee.controllers')
 
     // Grab the random question
     Questions.get(function (questions) {
-
       var size = questions.length;
       $scope.index = parseInt($routeParams["index"], 10) || Math.floor(Math.random()*size);
       $scope.question = questions[$scope.index];
+
+      // Update browser adress to reflect page
+      $location.path("/questions/ordered/" + $scope.index);
+      $location.replace();
 
       console.log($scope.question);
       console.log($scope.index);
