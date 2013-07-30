@@ -7,6 +7,367 @@ angular.module('trainee', ['trainee.controllers', 'trainee.services'])
     $routeProvider.otherwise({redirectTo: '/questions/random'});
   }]);
 
+var test_examtips = [
+{
+    "id": 1,
+    "examtip": "EXAM TIP \r\n\r\nEach of these navigational types has merit. For a group of users who are unfamiliar with \r\ncreating and maintaining terms and term sets, structural navigation might be a more \r\nappropriate choice.\r\n\r\n\r\n"
+}, {
+    "id": 2,
+    "examtip": "EXAM TIP \r\n\r\nContent types that are syndicated function exactly as those built within site collections. \r\nWhen a content type is published into a web application, it is simply placed into the content \r\ntype gallery of each site collection for use.\r\n\r\n\r\n"
+}, {
+    "id": 3,
+    "examtip": "EXAM TIP \r\n\r\nSearch is a critical component of any SharePoint 2013 farm. A thorough understanding of \r\neach search component’s role within the farm helps determine which component(s) are \r\nassigned to a particular server.\r\n\r\n\r\n"
+}, {
+    "id": 4,
+    "examtip": "EXAM TIP \r\n\r\nUnderstand the limits placed on managed properties created at the site collection level \r\n(text/Boolean, neither sortable nor refinable) versus those created at the service application \r\nlevel. \r\n\r\r\n"
+}, {
+    "id": 5,
+    "examtip": "EXAM TIP \r\n\r\nAlthough one stage is the requirement for a retention policy to be considered valid, it is \r\npossible to build multiple stages as your business needs require.\r\n\r\n\r\n"
+}, {
+    "id": 6,
+    "examtip": "EXAM TIP \r\n\r\nSite collection policies are scoped to a single site collection. For the sake of consistency, \r\nit is possible to export a policy from one site collection and then import it to another for \r\nreuse. Be familiar with the steps required in this process.\r\n\r\n\r\n"
+}, {
+    "id": 7,
+    "examtip": "EXAM TIP \r\n\r\nRegardless of which navigation type you choose, the ability to create a reliable navigational \r\nstructure is a critical component in site hierarchy design. Be familiar with the structural \r\nnavigation concepts (such as managed paths) as well as metadata navigation configuration \r\nrequirements.\r\n\r\n\r\n"
+}, {
+    "id": 8,
+    "examtip": "EXAM TIP \r\n\r\nSharePoint administrators are often not the people who define term sets. Most term sets \r\nstart as tags and keywords (folksonomy) and are then promoted to a more formal status as \r\npart of a term set (taxonomy). Be familiar with how this transition takes place.\r\n\r\n\r\n"
+}, {
+    "id": 9,
+    "examtip": "EXAM TIP \r\n\r\nIn the section on planning for software boundaries, you will note that the supported limit \r\nfor web applications in a farm is set to 20. This is not a per-web application pool limit, \r\nbut a limit for the entirety of the SharePoint farm. As with the web application pools, this \r\nlimitation is memory-dependent, and baseline RAM monitoring is recommended before \r\nincreasing the web application count to that level.\r\n\r\n\r\n"
+}, {
+    "id": 10,
+    "examtip": "EXAM TIP \r\n\r\nThere is a significant number of these metrics given for SharePoint 2013. It would be quite \r\nhard to memorize each limit and know whether it is a boundary, threshold, or limit (for the \r\ntest); concentrate on the ones that have the largest impact—those that affect RAM, storage, \r\nand processor capacity.\r\n\r\n\r\n"
+}, {
+    "id": 11,
+    "examtip": "EXAM TIP \r\n\r\nIn some organizations, the data tier of your SharePoint farm will be administered by one or \r\nmore SQL database administrators. This team will most likely not be familiar with the specifications \r\nand limitations present in SharePoint 2013, so you will need to be able to explain \r\nthese metrics to them.\r\n\r\n\r\n"
+}, {
+    "id": 12,
+    "examtip": "EXAM TIP \r\n\r\nAs of this writing, the default behavior of the New-SPWebApplication cmdlet is to create \r\na web application in Windows classic authentication mode. This behavior can be averted \r\nby using the -AuthenticationProvider switch. Windows classic authentication mode is \r\ndeprecated (read: not preferred/might be removed at a later date), and should not be used; \r\nclaims authentication (Windows NTLM) should be used instead. PowerShell will dutifully \r\nwarn you of the missing switch, but only after it has executed the cmdlet and created the \r\nweb application in Windows classic mode.\r\n\r\n\r\n"
+}, {
+    "id": 13,
+    "examtip": "EXAM TIP \r\n\r\nCreating (and most of the maintenance duties for) host named site collections is done \r\nentirely in PowerShell.\r\n\r\n\r\n"
+}, {
+    "id": 14,
+    "examtip": "EXAM TIP \r\n\r\nAll network storage connected to SharePoint is required to meet two criteria. The first \r\ncriterion is that the storage must respond to a ping within 1 millisecond (ms), meaning that \r\nthe storage will most likely be located within the same datacenter as the host. The second \r\ncriterion is that the first byte of requested data must be returned within 20 ms (this is true \r\nregardless of the disk subsystem chosen).\r\n\r\n\r\n"
+}, {
+    "id": 15,
+    "examtip": "EXAM TIP \r\n\r\nUnless otherwise specified, throttling is enabled by default on each web app created in the \r\nfarm.\r\n\r\n\r\n"
+}, {
+    "id": 16,
+    "examtip": "EXAM TIP \r\n\r\nThe deployment mode can be configured using the -RoutingWeightScheme switch of the \r\nSet-SPRequestManagementSettings cmdlet.\r\n\r\n\r\n"
+}, {
+    "id": 17,
+    "examtip": "EXAM TIP \r\n\r\nThe amount of free disk space available on the system drive of a SharePoint server should \r\nnever fall below two times the amount of server RAM; this limit is specifically designed to \r\nallow memory dumps to be stored on the disk subsystem if necessary.\r\n\r\n\r\n"
+}, {
+    "id": 18,
+    "examtip": "EXAM TIP \r\n\r\nKnow the roles and servers assigned at each tier of the smallest fault-tolerant SharePoint \r\nfarm.\r\n\r\n\r\n"
+}, {
+    "id": 19,
+    "examtip": "EXAM TIP \r\n\r\nThe connection speed between all SharePoint servers in a farm must meet or exceed 1 \r\nGbps. Additionally, the network latency between the web/application tiers and the data \r\ntier should be less than 1 ms.\r\n\r\n\r\n"
+}, {
+    "id": 20,
+    "examtip": "EXAM TIP \r\n\r\nAlthough it might seem trivial at first, knowing which functionality is available at each subscription \r\nlevel is a critical component of your Office 365 design and planning effort.\r\n\r\n\r\n"
+}, {
+    "id": 21,
+    "examtip": "EXAM TIP \r\n\r\nAuthentication is the process of determining the identity of a principal; authorization is the \r\nprocess of verifying an authenticated user’s access to a system.\r\n\r\n\r\n"
+}, {
+    "id": 22,
+    "examtip": "EXAM TIP \r\n\r\nAlthough not present within Central Administration, SharePoint also supports Windows \r\nclassic mode for backward compatibility. Configuration of this authentication type is done \r\nentirely in Windows PowerShell; efforts should be made to move away from this type of \r\nauthentication because it does not support some SharePoint 2013 functionality (such as \r\nthe SharePoint App Store).\r\n\r\n\r\n"
+}, {
+    "id": 23,
+    "examtip": "EXAM TIP \r\n\r\nRemember that users always authenticate to the identity provider within their organization \r\nto receive a Security Assertion Markup Language (SAML) token.\r\n\r\n\r\n"
+}, {
+    "id": 24,
+    "examtip": "EXAM TIP \r\n\r\nIn the next few steps, you will configure ADFS for use with SharePoint. The SharePoint web \r\napplication that will use the trusted identity provider is required to use SSL.\r\n\r\n\r\n"
+}, {
+    "id": 25,
+    "examtip": "EXAM TIP \r\n\r\nBy default, this relationship requires that the relationship be carried out over HTTPS, which \r\nis always a best practice. If you need to establish S2S over HTTP, this is possible but not as \r\nsecure, and should be done only in development environments.\r\n\r\n\r\n"
+}, {
+    "id": 26,
+    "examtip": "EXAM TIP \r\n\r\nBe familiar with the three distinct processes that go into establishing the relationship between \r\nthese two environments.\r\n\r\n\r\n"
+}, {
+    "id": 27,
+    "examtip": "EXAM TIP \r\n\r\nIn addition to enabling anonymous authentication for a web application, you must also \r\nconfigure sites, lists, and libraries to enable anonymous users to have access.\r\n\r\n\r\n"
+}, {
+    "id": 28,
+    "examtip": "EXAM TIP \r\n\r\nThe capability to expire a token provides additional security for your SharePoint installation \r\nby disconnecting unused sessions. You may want to extend this value to 1200 seconds \r\n(10 minutes) for your SharePoint users, depending on how often you want them to log on.\r\n\r\n\r\n"
+}, {
+    "id": 29,
+    "examtip": "EXAM TIP \r\n\r\nIt is not uncommon to see a user added to more than one group within a SharePoint site \r\ncollection. As an example, consider a user who belongs to both the Visitors (Reader permissions) \r\nand Members (Contributor permissions) SharePoint groups for a site. This person \r\nwill receive the greater of the two permission sets, thus having the permissions that are \r\nassigned to the Contributor permission level. \r\n\r\r\n"
+}, {
+    "id": 30,
+    "examtip": "EXAM TIP \r\n\r\nThere are no Windows PowerShell cmdlets for the configuration of People Picker in \r\nSharePoint 2013. All the properties that provide People Picker configuration are done via \r\nSTSADM.\r\n\r\n\r\n"
+}, {
+    "id": 31,
+    "examtip": "EXAM TIP \r\n\r\nIf your site owners are missing the Access Request Settings icon or they cannot choose the \r\nShare icon (shown in the next section), you have not yet configured outgoing e-mail settings \r\nfor your SharePoint 2013 farm.\r\n\r\n\r\n"
+}, {
+    "id": 32,
+    "examtip": "EXAM TIP \r\n\r\nBreaking permission inheritance does not immediately change the effective permissions on \r\nthe site, list, or library. A copy of the parent’s permissions is made and applied to the object \r\nbefore permissions are split.\r\n\r\n\r\n"
+}, {
+    "id": 33,
+    "examtip": "EXAM TIP \r\n\r\nAuthentication relies on the presence of a user name/password challenge. Credentials are \r\nnever requested from anonymous users unless they attempt to access a location that is \r\nsecured or choose to sign in to the SharePoint farm.\r\n\r\n\r\n"
+}, {
+    "id": 34,
+    "examtip": "EXAM TIP \r\n\r\nKnow what the effect will be of altering each of these policies within a SharePoint farm, \r\nparticularly those that deny users access.\r\n\r\n\r\n"
+}, {
+    "id": 35,
+    "examtip": "EXAM TIP \r\n\r\nOne of the key balances to be struck in defining isolation is between security and utility. \r\nKnow not only the benefits of each isolation type but its drawbacks as well.\r\n\r\n\r\n"
+}, {
+    "id": 36,
+    "examtip": "EXAM TIP \r\n\r\nAs more and more SharePoint sites become externally facing, the need to secure anonymous \r\nresources from external search engines will become paramount. Be familiar with \r\nthese settings, which really affect the underlying web.config file components of a SharePoint \r\nweb application.\r\n\r\n\r\n"
+}, {
+    "id": 37,
+    "examtip": "EXAM TIP \r\n\r\nKnow which components of your SharePoint environment should exist in the demilitarized \r\nzone (DMZ) between your back-end and front-end firewalls.\r\n\r\n\r\n"
+}, {
+    "id": 38,
+    "examtip": "EXAM TIP \r\n\r\nSharePoint-aware virus scanning software should be installed on should be installed on all \r\nweb-tier servers within the farm; failure to do so causes the antivirus settings within Central \r\nAdministration to be ineffective.\r\n\r\n\r\n"
+}, {
+    "id": 39,
+    "examtip": "EXAM TIP \r\n\r\nKnow the different types of certificates that are required to secure interfarm communications \r\nand how to generate each type.\r\n\r\n\r\n"
+}, {
+    "id": 40,
+    "examtip": "EXAM TIP \r\n\r\nUnderstand the capabilities of RMS and what types of document and e-mail functionality it \r\ncan secure.\r\n\r\n\r\n"
+}, {
+    "id": 41,
+    "examtip": "EXAM TIP \r\n\r\nBy default, the local administrators group on a SharePoint Server has administrative privileges \r\nto the SharePoint farm, as shown in Figure 2-56 (BUILTIN\\Administrators). In fact, \r\nthey have more privilege than farm administrators because they can install and configure \r\nitems from the command line (but are still subject to the shell admin limitations). Don’t \r\nremove this group, but be sure that you know who in your organization is assigned to this \r\ngroup from an access auditing standpoint.\r\n\r\n\r\n"
+}, {
+    "id": 42,
+    "examtip": "EXAM TIP \r\n\r\nBecome familiar with the different administrative levels in the more common service applications \r\nfor delegation, such as the User Profile Service (UPA), Search Service, and Managed \r\nMetadata Service (MMS).\r\n\r\n\r\n"
+}, {
+    "id": 43,
+    "examtip": "EXAM TIP \r\n\r\nBecause the service accounts are also Active Directory accounts, a distributed Active \r\nDirectory team may not know to avoid changing passwords on your SharePoint service \r\naccounts. If this happens, know how to take the new credentials and apply them by editing \r\nthe managed accounts.\r\n\r\n\r\n"
+}, {
+    "id": 44,
+    "examtip": "EXAM TIP \r\n\r\nNewly blocked file types will have no effect on existing files already stored within a SharePoint \r\nweb application. For instance, if there are already .mp3 files present in a given web \r\napplication, blocking this file type prevents only the addition of new .mp3 files to document \r\nlibraries within the web application.\r\n\r\n\r\n"
+}, {
+    "id": 45,
+    "examtip": "EXAM TIP \r\n\r\nWeb Part page security is assigned on a per-web application basis.\r\n\r\n\r\n"
+}, {
+    "id": 46,
+    "examtip": "EXAM TIP \r\n\r\nAlthough you should have familiarity with the prerequisites for the new SharePoint farm, \r\nconcentrate on knowing which two roles are required for installation (Application Server \r\nRole, Web Server Role).\r\n\r\n\r\n"
+}, {
+    "id": 47,
+    "examtip": "EXAM TIP\r\n\r\nThe prerequisiteinstaller.exe command can check for prerequisites as well as download and \r\ninstall them.\r\n\r\n\r\n"
+}, {
+    "id": 48,
+    "examtip": "EXAM TIP \r\n\r\nAlthough SQL Server supports different settings for the Max Degree of Parallelism, SharePoint \r\ndoes not; the only valid value for this setting is 1.\r\n\r\n\r\n"
+}, {
+    "id": 49,
+    "examtip": "EXAM TIP \r\n\r\nUnderstand the required commands to expand the media for each patch and how to add \r\nit to the Updates folder of your installation media, whether on CD/DVD or over a network \r\nshare.\r\n\r\n\r\n"
+}, {
+    "id": 50,
+    "examtip": "EXAM TIP \r\n\r\nNo matter which language you download, the name of the file is always sharepointlanguagepack.\r\nexe (although the size changes), so it pays to store each language pack in its \r\nown directory to avoid confusion.\r\n\r\n\r\n"
+}, {
+    "id": 51,
+    "examtip": "EXAM TIP \r\n\r\nBy default, the address for the Application Discovery and Load Balancer Service (Topology \r\nservice) of a farm is stored in the SCP container. You can input the value of your choosing \r\n(say, the address for Central Admin), but if you want to discover the address for your Topology \r\nservice, you can do so with the Get-SPTopologyServiceApplication | select URI cmdlet. \r\nYou should know how to set a new SCP in this container using Windows PowerShell.\r\n\r\n\r\n"
+}, {
+    "id": 52,
+    "examtip": "EXAM TIP \r\n\r\nAlthough you will most likely not be called on to inspect this container in Active Directory, \r\nyou should know both the correct location in Active Directory where the SCPs are \r\nlocated (CN=Microsoft SharePoint Products) and the required permissions to write to this \r\ncontainer.\r\n\r\n\r\n"
+}, {
+    "id": 53,
+    "examtip": "EXAM TIP\r\n\r\nIf you don’t know which account is running your timer service, look for the SharePoint \r\ntimer service entry within Computer Management.\r\n\r\n\r\n"
+}, {
+    "id": 54,
+    "examtip": "EXAM TIP \r\n\r\nIf the Receive Connector configuration does not occur, it is likely that your SharePoint environment \r\ncannot send outbound e-mail to your users.\r\n\r\n\r\n"
+}, {
+    "id": 55,
+    "examtip": "EXAM TIP \r\n\r\nIf you create a new service application via Central Administration, by default it is automatically \r\nassigned to the default proxy group. Conversely, creating the service application (and \r\nits proxy) via Windows PowerShell does not automatically assign that service’s application \r\nproxy to any of the available proxy groups (by default).\r\n\r\n\r\n"
+}, {
+    "id": 56,
+    "examtip": "EXAM TIP \r\n\r\nA service application proxy can be associated with multiple proxy groups using Windows \r\nPowerShell. Also, a proxy group is not required to host each and every available service \r\napplication available within the farm.\r\n\r\n\r\n"
+}, {
+    "id": 57,
+    "examtip": "EXAM TIP \r\n\r\nAlthough you may not be personally responsible for making DNS changes in your domain, \r\nknowing how these requirements are implemented enables you to better relate them to \r\nyour DNS administrator.\r\n\r\n\r\n"
+}, {
+    "id": 58,
+    "examtip": "EXAM TIP \r\n\r\nIf you need more detail on the status of search in your farm, you can run the Get-SPEnterpriseSearchStatus \r\ncmdlet in Windows PowerShell.\r\n\r\n\r\n"
+}, {
+    "id": 59,
+    "examtip": "EXAM TIP \r\n\r\nKnow the differences between changing an active search topology (a topology with an \r\nindex requires cloning) and a no-content search topology (no cloning required).\r\n\r\n\r\n"
+}, {
+    "id": 60,
+    "examtip": "EXAM TIP \r\n\r\nKnow which content sources are available for use in a default setting: SharePoint Sites, Web \r\nSites, File Shares, Exchange Public Folders, and (conditionally) Line of Business Data. The \r\nLine of Business Data content source type requires that at least one Business Data Connectivity \r\n(BDC) service application has been created.\r\n\r\n\r\n"
+}, {
+    "id": 61,
+    "examtip": "EXAM TIP \r\n\r\nIf you ever need to reset the search index for your SharePoint farm, you have to do a full \r\ncrawl of all content sources that should be included within the newly created index.\r\n\r\n\r\n"
+}, {
+    "id": 62,
+    "examtip": "EXAM TIP \r\n\r\nContinuous crawls are available for use only with content sources that are SharePoint sites.\r\n\r\n\r\n"
+}, {
+    "id": 63,
+    "examtip": "EXAM TIP \r\n\r\nSpecific content access accounts are assigned as part of crawl rules within the Specify \r\nAuthentication section.\r\n\r\n\r\n"
+}, {
+    "id": 64,
+    "examtip": "EXAM TIP \r\n\r\nRemember that any given service application proxy can be assigned to more than one connection/\r\nproxy group at any given time.\r\n\r\n\r\n"
+}, {
+    "id": 65,
+    "examtip": "EXAM TIP \r\n\r\nWhen a content type is published from the hub to a site collection, the published copy \r\nof the content type is considered to be “sealed,” meaning that it cannot be modified. All \r\nmodifications to this content type must occur within the context of the content type hub.\r\n\r\n\r\n"
+}, {
+    "id": 66,
+    "examtip": "EXAM TIP \r\n\r\nDo not make more than one connection the default keyword storage location for any one \r\nweb app. And do not make more than one connection the default term set location for any \r\none web application.\r\n\r\n\r\n"
+}, {
+    "id": 67,
+    "examtip": "EXAM TIP \r\n\r\nTerm store permissions for both Group Managers and Contributors are assigned at the \r\nterm set group level. It is not possible to assign these permissions at the term set or individual \r\nterm level.\r\n\r\n\r\n"
+}, {
+    "id": 68,
+    "examtip": "EXAM TIP\r\n\r\nKnow how to specify a proxy group (including the default proxy group) in Windows PowerShell \r\nfor a new service application.\r\n\r\n\r\n"
+}, {
+    "id": 69,
+    "examtip": "EXAM TIP \r\n\r\nAlthough your domain administrator will be making the replication changes to Active \r\nDirectory, you should be familiar with this process and also know what versions of Active \r\nDirectory are supported for profile synchronization.\r\n\r\n\r\n"
+}, {
+    "id": 70,
+    "examtip": "EXAM TIP \r\n\r\nUntil an audience in UPA has been compiled, it is useless; no values exist in an audience \r\nuntil after it has been compiled.\r\n\r\n\r\n"
+}, {
+    "id": 71,
+    "examtip": "EXAM TIP \r\n\r\nThere are a supported maximum number of managed paths per web application (20). \r\nAlthough it is possible to exceed this number, doing so places an extra processing load on \r\nthe web tier servers in your farm.\r\n\r\n\r\n"
+}, {
+    "id": 72,
+    "examtip": "EXAM TIP \r\n\r\nIf the web application you are using hosts host named site collections, do not forget to \r\ninclude the -HostHeader switch with your New-ManagedPath cmdlet; otherwise, it does \r\nnot work correctly. Also, if the requirements for your new managed path indicate that you \r\nneed to build an explicit inclusion, don’t forget to add the -Explicit switch to the New-\r\nManagedPath cmdlet.\r\n\r\n\r\n"
+}, {
+    "id": 73,
+    "examtip": "EXAM TIP \r\n\r\nKnow the difference between Request Management and HTTP throttling. Request Management \r\nenables you to proactively account for the performance capability of each web \r\ntier server, whereas HTTP throttling is a purely reactionary behavior on the part of an \r\noverloaded web tier server.\r\n\r\n\r\n"
+}, {
+    "id": 74,
+    "examtip": "EXAM TIP\r\n\r\nBe familiar with the appropriate list thresholds, particularly the List View Threshold (LVT) \r\nfor users and the List View Lookup Threshold values.\r\n\r\n\r\n"
+}, {
+    "id": 75,
+    "examtip": "EXAM TIP\r\n\r\nAlthough it is perfectly reasonable to point multiple URLs to the same web site in IIS (and \r\nsupported in SharePoint), it is important to remember that SharePoint has to figure out \r\nhow to map URLs and so on to the incoming requests. If you receive error messages in \r\nEvent Viewer and Unified Logging Service (ULS) logs about missing AAM references, note \r\nwhat the inbound URL is and correct the AAM settings.\r\n\r\n\r\n"
+}, {
+    "id": 76,
+    "examtip": "EXAM TIP\r\n\r\nAlthough SharePoint 2013 still supports classic mode authentication for backward-\r\ncompatibility purposes, this authentication mechanism does not work with several key \r\ncomponents of SharePoint 2013. Use the Convert-SPWebApplication cmdlet to upgrade \r\nweb apps that are using classic mode authentication to claims-based authentication.\r\n\r\n\r\n"
+}, {
+    "id": 77,
+    "examtip": "EXAM TIP\r\n\r\nEach zone for a particular URL can (and most often does) have a different authentication \r\nprovider. Be familiar with the three main types of user authentication methods: Windows \r\nclaims (NTLM, Kerberos, and basic), SAML-based claims (using a trusted identity provider), \r\nand forms-based authentication (FBA) claims (using ASP.NET FBA).\r\n\r\n\r\n"
+}, {
+    "id": 78,
+    "examtip": "EXAM TIP\r\n\r\nEasily the most crucial configuration component for SPD, the customization/unghosting \r\nof pages can account for performance losses over time. Be familiar with what it means to \r\ncause a page to revert to its template.\r\n\r\n\r\n"
+}, {
+    "id": 79,
+    "examtip": "EXAM TIP\r\n\r\nIn order for search and other components to work effectively, there must be a root site collection \r\nin a host header web application. This site should only be created; it should never \r\nbe configured or used.\r\n\r\n\r\n"
+}, {
+    "id": 80,
+    "examtip": "EXAM TIP \r\n\r\nAlthough the default behavior is to build self-service sites beneath the My Site web \r\napplication, there is no reason why you cannot choose the URL of another web app for \r\noption D in the previous list. The only thing you must do in addition is to configure SSSC \r\non the destination web app.\r\n\r\n\r\n"
+}, {
+    "id": 81,
+    "examtip": "EXAM TIP\r\n\r\nIt is possible to add individuals to the SCAs from within a site collection; additionally, you \r\ncan designate someone as an owner of an individual site. However, neither of these people \r\nis responsible for receiving notifications about site status and resourcing—that role is only \r\nfor the primary and secondary SCAs of a site collection.\r\n\r\n\r\n"
+}, {
+    "id": 82,
+    "examtip": "EXAM TIP\r\n\r\nUsers do not receive reminder e-mail if the SharePoint farm does not have outgoing e-mail \r\nconfigured and functional. Ensure that this service is available before placing any quota \r\nrestrictions within your farm.\r\n\r\n\r\n"
+}, {
+    "id": 83,
+    "examtip": "EXAM TIP\r\n\r\nA site that has been closed is very different from a site that has been deleted.\r\n\r\n\r\n"
+}, {
+    "id": 84,
+    "examtip": "EXAM TIP\r\n\r\nPrior to configuring a team mailbox, some configuration effort has to take place both on \r\nthe part of the Exchange Server and the SharePoint Server admins. This effort includes \r\ninstalling the Exchange Web Services API on the SharePoint Server, and the establishment \r\nof OAuth Trust and Service permissions on both Exchange and SharePoint Server \r\nenvironments. \r\n\r\r\n"
+}, {
+    "id": 85,
+    "examtip": "EXAM TIP\r\n\r\nAccess requests are some of the few e-mail interactions that are not sent directly to a site \r\ncollection administrator (by default). These e-mail messages are often sent to a group e-\r\nmail box because you can choose only a single e-mail address.\r\n\r\n\r\n"
+}, {
+    "id": 86,
+    "examtip": "EXAM TIP \r\n\r\nDepending on the security considerations for your SharePoint farm, you may want to make \r\nthe store available for users to view but review and approve any app before it is installed.\r\n\r\n\r\n"
+}, {
+    "id": 87,
+    "examtip": "EXAM TIP \r\n\r\nMerely allowing anonymous access at the web application makes little difference to the \r\ncontent available within the web application. Be aware of how anonymous access is applied \r\nto each site or site collection and audit each web app occasionally. External search engines \r\ncan be used for this task and quickly expose any security flaws you may have.\r\n\r\n\r\n"
+}, {
+    "id": 88,
+    "examtip": "EXAM TIP\r\n\r\nIt is very important to note that the act of re-inheriting permissions not only affects this \r\nsite but also all sites beneath this level that inherit permissions from this site. You may \r\ninadvertently expose content if you apply these changes incorrectly.\r\n\r\n\r\n"
+}, {
+    "id": 89,
+    "examtip": "EXAM TIP\r\n\r\nAlthough you can alter the OOB permission levels (with the exception of Full Control and \r\nLimited Access), doing so would not be wise until you understand the ramifications of such \r\na change. For instance, you may decide that users holding the Contribute permission level \r\nshould not be able to delete items (a fairly common request). Instead of altering the OOB \r\npermission Contribute permission level, consider building a similar permission level, perhaps \r\ncalled Contribute (No Delete), and assigning users to that permission level.\r\n\r\n\r\n"
+}, {
+    "id": 90,
+    "examtip": "EXAM TIP\r\n\r\nIt is possible (although not very likely) to cause a security breach by having an iframe \r\nrepresent content in a site that has been compromised. Choosing to limit your users to a \r\nparticular subset of external domains is the best way to strike a balance between showing \r\nexternal content and showing none at all.\r\n\r\n\r\n"
+}, {
+    "id": 91,
+    "examtip": "EXAM TIP\r\n\r\nAlthough search scopes are deprecated, they can still be viewed and used in queries. They \r\ncannot, however, be edited in SharePoint 2013; if you need to change a scope, you will \r\ninstead need to replace it with a new result source that accomplishes the same function.\r\n\r\n\r\n"
+}, {
+    "id": 92,
+    "examtip": "EXAM TIP\r\n\r\nBe familiar with each of the query conditions and the potential effect they can have on the \r\nquery rules.\r\n\r\n\r\n"
+}, {
+    "id": 93,
+    "examtip": "EXAM TIP\r\n\r\nIf you look at your settings menu, but do not see the Design Manager link, there is a good \r\nchance that you do not have the publishing features activated in this site collection. These \r\nfeatures are a requirement for much of the ease-of-design functionality in SharePoint \r\nServer 2013.\r\n\r\n\r\n"
+}, {
+    "id": 94,
+    "examtip": "EXAM TIP\r\n\r\nBe familiar with the structure of a meta tag and the way it can be added for your Internet–\r\nfacing SharePoint site.\r\n\r\n\r\n"
+}, {
+    "id": 95,
+    "examtip": "EXAM TIP\r\n\r\nBe familiar with the four different display templates folders and which affect the result \r\ntype functionality.\r\n\r\n\r\n"
+}, {
+    "id": 96,
+    "examtip": "EXAM TIP\r\n\r\nBe familiar with the four different display templates folders and which affect the result \r\ntype functionality.\r\n\r\n\r\n"
+}, {
+    "id": 97,
+    "examtip": "EXAM TIP\r\n\r\nBe familiar with the configuration and process of converting a crawled property to a \r\nmanaged property.\r\n\r\n\r\n"
+}, {
+    "id": 98,
+    "examtip": "EXAM TIP\r\n\r\nAlthough the designated site collections do indeed have read access to the original term \r\nset, they cannot change it.\r\n\r\n\r\n"
+}, {
+    "id": 99,
+    "examtip": "EXAM TIP\r\n\r\nUnderstand the differences between these two types of navigation. Faceted navigation has \r\nto do with refining content based on the context; site navigation enables you to use a term \r\nset for global and current navigation.\r\n\r\n\r\n"
+}, {
+    "id": 100,
+    "examtip": "EXAM TIP\r\n\r\nBe familiar with the process of building a product catalog, assigning terms in the term set, \r\nand then allowing another publishing site to consume the result.\r\n\r\n\r\n"
+}, {
+    "id": 101,
+    "examtip": "EXAM TIP\r\n\r\nCustom properties are almost never used outside of custom development efforts.\r\n\r\n\r\n"
+}, {
+    "id": 102,
+    "examtip": "EXAM TIP\r\n\r\nBe familiar with the different refiners available OOB and what each one can provide from a \r\nfunctionality standpoint (such as the modified date slider control). \r\n\r\r\n"
+}, {
+    "id": 103,
+    "examtip": "EXAM TIP\r\n\r\nBe familiar with the configuration steps required to configure a refiner both in the term set \r\nas well as a web part.\r\n\r\n\r\n"
+}, {
+    "id": 104,
+    "examtip": "EXAM TIP \r\n\r\nUsing the –MinimumLevel switch with Get-SPLogEvent enables you to look for events that \r\nare equal to or more severe than the level you specify. There are only two valid values: Error \r\nor Warning.\r\n\r\n\r\n"
+}, {
+    "id": 105,
+    "examtip": "EXAM TIP \r\n\r\nThe counters listed previously are those commonly used to troubleshoot core performance \r\nlevels on a SharePoint server. Optimal values for the major performance counters can be \r\nfound on TechNet at http://technet.microsoft.com/en-us/library/ff758658.aspx. \r\n\r\r\n"
+}, {
+    "id": 106,
+    "examtip": "EXAM TIP \r\n\r\nAlthough these caching mechanisms all enhance performance in a SharePoint farm, know \r\nwhich are enabled by default versus those that you must enable manually. Also know which \r\ntypes of items might be affected by each of the three cache types.\r\n\r\n\r\n"
+}, {
+    "id": 107,
+    "examtip": "EXAM TIP \r\n\r\nBe familiar with the steps required to both enable and configure usage and health \r\nproviders—specifically how to schedule the log collection and select the events being \r\ncaptured.\r\n\r\n\r\n"
+}, {
+    "id": 108,
+    "examtip": "EXAM TIP \r\n\r\nMonitoring the content database is important, but addressing its growth is even more \r\nimportant. Know how to move site collections from one content database to another (hint: \r\nWindows PowerShell), how to create a new content database attached to the same web \r\napplication, and how to restrict the addition of new site collections to a content database \r\nthat is already quite large.\r\n\r\n\r\n"
+}, {
+    "id": 109,
+    "examtip": "EXAM TIP \r\n\r\nBecause of Windows PowerShell’s integration with the object model, the need for a system \r\nadministrator to understand the properties of an object is more important than ever. Be \r\nfamiliar with the concepts to both retrieve and alter these properties.\r\n\r\n\r\n"
+}, {
+    "id": 110,
+    "examtip": "EXAM TIP \r\n\r\nNetwork Attached Storage (NAS) can be used for SharePoint storage, but this configuration \r\nis supported only for Remote Blob Storage (RBS).\r\n\r\n\r\n"
+}, {
+    "id": 111,
+    "examtip": "EXAM TIP \r\n\r\nThe URL of a host-named site collection is automatically considered to be in the Default \r\nzone.\r\n\r\n\r\n"
+}, {
+    "id": 112,
+    "examtip": "EXAM TIP \r\n\r\nAlthough there are dozens of boundaries in SharePoint, there are a few that every administrator \r\nshould know by heart. Maximum file size, zones in a farm, and crawl document size \r\nlimits are all good metrics to be familiar with.\r\n\r\n\r\n"
+}, {
+    "id": 113,
+    "examtip": "EXAM TIP \r\n\r\nRecycle bins are some of the most straightforward and most misunderstood components \r\nin SharePoint. Knowing and understanding the behaviors of how a document moves from \r\none stage recycle bin to another is key to understanding how documents that are “hidden” \r\nmight be consuming space.\r\n\r\n\r\n"
+}, {
+    "id": 114,
+    "examtip": "EXAM TIP \r\n\r\nThe use of the ASP.NET output cache requires that the publishing feature be active on your \r\nsite. The ASP.NET output cache functionality is disabled by default.\r\n\r\n\r\n"
+}, {
+    "id": 115,
+    "examtip": "EXAM TIP \r\n\r\nNetwork administration is not a core requirement for being a SharePoint administrator. \r\nKnowing how concepts such as subnets and VLANs can work to separate client and server \r\ncommunications, however, may be key to understanding a very simple way to improve \r\nSharePoint connectivity and performance.\r\n\r\n\r\n"
+}, {
+    "id": 116,
+    "examtip": "EXAM TIP \r\n\r\nPerfMon is one of the most misunderstood and underutilized tools in Windows Server. \r\nUnderstanding not only how to capture point-in-time metrics but also how to capture a \r\nperformance baseline over time is a must-have skill for an experienced SharePoint farm \r\nadministrator.\r\n\r\n\r\n"
+}, {
+    "id": 117,
+    "examtip": "EXAM TIP \r\n\r\nSharePoint farm administrators are becoming more and more versatile. One of the key \r\ntoolsets we are learning to master is the simple SSMS tool. Understand how to connect to a \r\nserver, run a simple query, and view the result.\r\n\r\n\r\n"
+}, {
+    "id": 118,
+    "examtip": "EXAM TIP \r\n\r\nThe Developer Dashboard is an indispensable tool for a SharePoint troubleshooter, especially \r\nbecause it can retrieve correlation IDs and their meaning from the back-end server. \r\nUnderstand how to enable this tool via Windows PowerShell and also how to activate/deactivate/\r\nuse this tool at a basic level.\r\n\r\n\r\n"
+}, {
+    "id": 119,
+    "examtip": "EXAM TIP \r\n\r\nRegardless of how you choose to analyze the ULS logs/trace logs, knowing their function \r\nand being able to configure and evaluate them are key SharePoint skills.\r\n\r\n\r\n"
+}
+];
+
 var test_questions = [
 {
     "id": 0,
