@@ -1,5 +1,5 @@
 angular.module('trainee.controllers')
-  .controller('OrderedQuestionCtrl',
+  .controller('QuestionCtrl',
               ['$scope',
                '$routeParams',
                'Questions',
@@ -11,33 +11,37 @@ angular.module('trainee.controllers')
                          Score,
                          Helpers) {
 
-    // Rainbowify
     rainbow.changeColor();
-    Score.bind();
-
-    // Get the index to render from routeParams
-    $scope.index = parseInt($routeParams["index"], 10);
-    $scope.percentage = Score.percentage();
+    Score.bind("Question");
 
     // Only count incorrect answers after number of valid choices
     var tries = 0;
 
+    // Put the percentage on scope
+    $scope.percentage = Score.percentage();
+
     // Grab the random question
     Questions.get(function (questions) {
-      size = questions.length;
+
+      var size = questions.length;
+      $scope.index = parseInt($routeParams["index"], 10) || Math.floor(Math.random()*size);
+      $scope.question = questions[$scope.index];
+
+      console.log($scope.question);
+      console.log($scope.index);
 
       // Used for next/prev buttons
       $scope.hasNext     = size > $scope.index;
       $scope.hasPrevious = size < $scope.index;
-
-      $scope.question = questions[$scope.index];
     });
 
     // Setup some defaults for answer checking
     $scope.correct = false;
 
     // Determine whether to use radio or checkbox
-    $scope.isMultiple = $scope.question.answer.length > 1;
+    $scope.isMultiple = function () {
+      return $scope.question.answer.length > 1;
+    };
 
     // Check if answer is correct on changes to the form
     $scope.checkAnswer = function () {
