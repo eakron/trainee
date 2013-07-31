@@ -1,4 +1,4 @@
-angular.module('trainee', ['trainee.controllers', 'trainee.services'])
+angular.module('trainee', ['ngMobile','trainee.controllers', 'trainee.services'])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/questions/random', {templateUrl: 'partials/question.html', controller: 'QuestionCtrl'});
     $routeProvider.when('/questions/ordered/:index', {templateUrl: 'partials/question.html', controller: 'QuestionCtrl'});
