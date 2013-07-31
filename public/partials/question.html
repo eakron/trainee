@@ -1,4 +1,4 @@
-<div ng-hide="isMultiple" class="center-content">
+<div ng-hide="isMultiple()" class="center-content">
   <div class="center-content-inner">
     <div class="row">
       <div class="col-lg-12">
@@ -33,17 +33,28 @@
         </div>
       </div>
     </div>
-    <div class="row push-down">
-      <div class="col-lg-6">
-        <p>Percentage: {{ percentage }}%</p>
+
+    <p class="percentage">{{ percentage }}%</p>
+    <div class="row">
+      <div class="col-lg-2 col-offset-6">
+        <a ng-href="#/questions/ordered/{{ index - 1 }}" class="btn btn-default trainee-hundred">
+          <span class="glyphicon glyphicon-chevron-left"> Previous</span>
+        </a>
       </div>
-      <div class="col-lg-6">
-        <a ng-href="#/questions/random/">One more please!</a>
+      <div class="col-lg-2">
+        <a ng-href="#/questions/random/" class="btn btn-default trainee-hundred">Random  
+          <span class="glyphicon glyphicon-random">
+        </a>
+      </div>
+      <div class="col-lg-2">
+        <a ng-href="#/questions/ordered/{{ index + 1 }}" class="btn btn-default trainee-hundred">Next 
+          <span class="glyphicon glyphicon-chevron-right">
+        </a>
       </div>
     </div>
+
   </div>
 </div>
-
 <div ng-show="isMultiple" class="center-content">
   <div class="center-content-inner">
     <div class="row">
@@ -79,12 +90,22 @@
         </div>
       </div>
     </div>
-    <div class="row push-down">
-      <div class="col-lg-6">
-        <p>Percentage: {{ percentage }}%</p>
+    <p class="percentage">{{ percentage }}%</p>
+    <div class="row">
+      <div class="col-lg-2 col-offset-6">
+        <a ng-href="#/questions/ordered/{{ index - 1 }}" class="btn btn-default trainee-hundred">
+          <span class="glyphicon glyphicon-chevron-left"> Previous</span>
+        </a>
       </div>
-      <div class="col-lg-6">
-        <a ng-href="#/questions/random/">One more please!</a>
+      <div class="col-lg-2">
+        <a ng-href="#/questions/random/" class="btn btn-default trainee-hundred">Random  
+          <span class="glyphicon glyphicon-random">
+        </a>
+      </div>
+      <div class="col-lg-2">
+        <a ng-href="#/questions/ordered/{{ index + 1 }}" class="btn btn-default trainee-hundred">Next 
+          <span class="glyphicon glyphicon-chevron-right">
+        </a>
       </div>
     </div>
   </div>

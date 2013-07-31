@@ -1,0 +1,1 @@
+sass --watch scss\trainee.scss:public\css\trainee.css

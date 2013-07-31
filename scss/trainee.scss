@@ -61,10 +61,10 @@ a:focus{
 				CONTENT
 *****************************************************/
  .center-content{
- 	padding: 50px;
+ 	padding: 6%;
  	margin-top: 60px;
 	background: white;
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 	.center-content-inner{
 		min-height:300px;
 	}
@@ -72,9 +72,6 @@ a:focus{
 		font-size: 18px;
 		line-height: 1.5;
 		margin-bottom: 30px;
-	}
-	a{
-		float:right;
 	}
 	input{
 		margin-left: 60px;
@@ -89,7 +86,6 @@ a:focus{
 .push-down{
 	margin-top: 60px;
 }
-
 
 /*****************************************************
 				input
@@ -115,6 +111,20 @@ input:checked+p.correct {
 label{
 	font-weight: normal;
 }
+
+
+/*****************************************************
+				BUTTONS
+*****************************************************/
+.btn-default{
+
+}
+.trainee-hundred{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
 /*****************************************************
 				REBECKAS COLORS
 *****************************************************/
