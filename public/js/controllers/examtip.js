@@ -11,10 +11,9 @@ angular.module('trainee.controllers')
 
     $scope.index = parseInt($routeParams["index"], 10);
 
-    $(window).on("swipeLeft", function () {
+    $scope.navigatePrevious = function () {
       $location.path("/examtips/ordered/" + ($scope.index-1));
-      $scope.$apply();
-    });
+    };
 
     ExamTips.get(function (data) {
       var size = data.length;
