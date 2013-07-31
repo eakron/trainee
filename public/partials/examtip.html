@@ -1,21 +1,26 @@
 <div ng-hide="isMultiple" class="center-content">
   <div class="center-content-inner">
     <div class="row">
-      <div class="col-lg-10 col-offset-1">
-        <div class="row">
-					<p class="examtip-content">{{ examtip.examtip }}<p>
-        </div>
+      <div class="col-lg-12">
+  			<p class="examtip-content">{{ examtip.examtip }}<p>
       </div>
     </div>
-    <div class="row push-down">
-      <div class="col-lg-4">
-      	<a ng-href="#/examtips/ordered/{{ index - 1 }}">Previous</a>
+
+    <div class="row">
+      <div class="col-lg-2 col-offset-6">
+        <a ng-href="#/examtips/ordered/{{ index - 1 }}" class="btn btn-default trainee-hundred">
+          <span class="glyphicon glyphicon-chevron-left"> Previous</span>
+        </a>
       </div>
-      <div class="col-lg-4">
-      	<a ng-href="#/examtips/random/">Random</a>
+      <div class="col-lg-2">
+        <a ng-href="#/examtips/random/" class="btn btn-default trainee-hundred">Random  
+          <span class="glyphicon glyphicon-random">
+        </a>
       </div>
-      <div class="col-lg-4">
-      	<a ng-href="#/examtips/ordered/{{ index + 1 }}">Next</a>
+      <div class="col-lg-2">
+        <a ng-href="#/examtips/ordered/{{ index + 1 }}" class="btn btn-default trainee-hundred">Next 
+          <span class="glyphicon glyphicon-chevron-right">
+        </a>
       </div>
     </div>
   </div>
