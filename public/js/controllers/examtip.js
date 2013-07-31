@@ -12,11 +12,12 @@ angular.module('trainee.controllers')
     $scope.index = parseInt($routeParams["index"], 10);
 
     ExamTips.get(function (data) {
-      $scope.index = $scope.index || Math.floor(Math.random()*data.length);
+      var size = data.length;
+      $scope.index = $scope.index || Math.floor(Math.random()*size);
       $scope.examtip = data[$scope.index];
 
       // Update browser adress to reflect page
-      $location.path("/questions/ordered/" + $scope.index);
+      $location.path("/examtips/ordered/" + $scope.index);
       $location.replace();
 
       // Used for next/prev buttons
