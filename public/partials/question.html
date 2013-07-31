@@ -34,16 +34,31 @@
       </div>
     </div>
     <div class="row push-down">
-      <div class="col-lg-4">
-        <a ng-href="#/questions/ordered/{{ index - 1 }}">Previous</a>
+      <p class="percentage">{{ percentage }}%</p>
+
+<!--       <div class="col-lg-1 col-offset-9">
+        <div></div>
+        <a ng-href="#/questions/ordered/{{ index - 1 }}" class="btn btn-default">Previous</a>
       </div>
-      <div class="col-lg-4">
-        <a ng-href="#/questions/random/">Random</a>
-        <p class="percentage">{{ percentage }}%</p>
+      <div class="col-lg-1">
+        <a ng-href="#/questions/random/" class="btn btn-default">Random</a>
       </div>
-      <div class="col-lg-4">
-        <a ng-href="#/questions/ordered/{{ index + 1 }}">Next</a>
+      <div class="col-lg-1">
+        <a ng-href="#/questions/ordered/{{ index + 1 }}" class="btn btn-default">Next</a>
       </div>
+ -->
+      <div class="col-lg-5 col-offset-7">
+        <div class="btn-group trainee-right">
+
+          <a ng-href="#/questions/ordered/{{ index - 1 }}" class="btn btn-default">
+            <span class="glyphicon glyphicon-chevron-left"> Previous</span>
+          </a>
+          <a ng-href="#/questions/random/" class="btn btn-default">Random  <span class="glyphicon glyphicon-random"></a>
+          <a ng-href="#/questions/ordered/{{ index + 1 }}" class="btn btn-default">Next <span class="glyphicon glyphicon-chevron-right"></a>
+        </div>
+      </div>
+
+
     </div>
   </div>
 </div>
