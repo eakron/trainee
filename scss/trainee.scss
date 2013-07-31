@@ -73,9 +73,6 @@ a:focus{
 		line-height: 1.5;
 		margin-bottom: 30px;
 	}
-	a{
-		float:right;
-	}
 	input{
 		margin-left: 60px;
 	}
@@ -115,6 +112,19 @@ input:checked+p.correct {
 label{
 	font-weight: normal;
 }
+
+
+/*****************************************************
+				BUTTONS
+*****************************************************/
+.btn-default{
+
+}
+.trainee-right{
+	float:right;
+}
+
+
 /*****************************************************
 				REBECKAS COLORS
 *****************************************************/
