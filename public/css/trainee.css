@@ -60,6 +60,9 @@ a:focus {
     margin-left: 60px; }
   .center-content label {
     padding-bottom: 10px; }
+  @media (min-width: 768px) {
+    .center-content .col-sm-2, .center-content .col-sm-6 {
+      padding-right: 0px; } }
 
 .trainee-hundred {
   width: 100%; }
@@ -67,6 +70,9 @@ a:focus {
 .trainee-min-height {
   min-height: 300px;
   margin-bottom: 60px; }
+
+p.percentage {
+  line-height: 1.1; }
 
 /*****************************************************
 				input

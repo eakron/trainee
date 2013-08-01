@@ -81,10 +81,16 @@ a:focus{
 	-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+
+	@media (min-width: 768px){
+		.col-sm-2, .col-sm-6{
+			padding-right: 0px;
+		}
+	}
 }
 
 .trainee-hundred{
-	width: 100%;
+	width:100%;
 }
 .trainee-min-height{
 	min-height: 300px;
@@ -92,7 +98,7 @@ a:focus{
 }
 
 p.percentage{
-
+	line-height: 1.1;
 }
 /*****************************************************
 				input
