@@ -17,7 +17,7 @@
       });
     }
   }
-  $('.container')
+  $('#view')
     .on("click",
         ".label_check, .label_radio",
         function (event) {
