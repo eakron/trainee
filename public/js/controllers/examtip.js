@@ -11,6 +11,11 @@ angular.module('trainee.controllers')
 
     rainbow.changeColor();
 
+    window.addEventListener('shake', function (event) {
+      $location.path("/examtips/random");
+      $scope.$apply();
+    }, false);
+
     $scope.index = parseInt($routeParams["index"], 10);
 
     ExamTips.get(function (data) {
