@@ -22,7 +22,7 @@ angular.module('trainee.controllers')
     // Put the percentage on scope
     $scope.percentage = Score.percentage();
 
-    $(window).on("swipeLeft", function (event) {
+    $(document).on("swipeLeft", function (event) {
       $location.path("/questions/ordered/" + $scope.index + 1);
       $scope.$apply();
     });
