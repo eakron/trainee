@@ -9,19 +9,9 @@ angular.module('trainee.controllers')
                          $location,
                          ExamTips) {
 
+    rainbow.changeColor();
+
     $scope.index = parseInt($routeParams["index"], 10);
-
-    $(window).hammer().on("swipeleft", function (e) {
-      e.gesture.preventDefault();
-      $location.path("/examtips/ordered/" + ($scope.index + 1));
-      $scope.$apply();
-    });
-
-    $(window).hammer().on("swiperight", function (e) {
-      e.gesture.preventDefault();
-      $location.path("/examtips/ordered/" + ($scope.index - 1));
-      $scope.$apply();
-    });
 
     ExamTips.get(function (data) {
       var size = data.length;
