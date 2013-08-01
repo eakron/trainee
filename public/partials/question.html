@@ -38,23 +38,26 @@
     </div>
     
     <div class="row">
-      <div class="col-lg-6">
-        <p class="percentage btn btn-default trainee-hundred">{{ percentage }}%</p>
-      </div>
-      <div class="col-lg-2">
-        <a ng-href="#/questions/ordered/{{ index - 1 }}" class="btn btn-default trainee-hundred">
-          <span class="glyphicon glyphicon-chevron-left"> Previous</span>
+      <div class="col-lg-2 col-sm-2 col-push-10">
+        <a ng-href="#/questions/ordered/{{ index + 1 }}" class="btn btn-default trainee-hundred">Next 
+          <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
       </div>
-      <div class="col-lg-2">
+      
+      <div class="col-lg-2 col-sm-2 col-push-6">
         <a ng-href="#/questions/random/" class="btn btn-default trainee-hundred">Random  
           <span class="glyphicon glyphicon-random"></span>
         </a>
       </div>
-      <div class="col-lg-2">
-        <a ng-href="#/questions/ordered/{{ index + 1 }}" class="btn btn-default trainee-hundred">Next 
-          <span class="glyphicon glyphicon-chevron-right"></span>
+
+      <div class="col-lg-2 col-sm-2 col-push-2">
+        <a ng-href="#/questions/ordered/{{ index - 1 }}" class="btn btn-default trainee-hundred">
+          <span class="glyphicon glyphicon-chevron-left"> Previous</span>
         </a>
+      </div>
+      
+      <div class="col-lg-6 col-sm-6 col-pull-6">
+        <p class="percentage btn btn-default trainee-hundred">{{ percentage }}%</p>
       </div>
     </div>
 </div>
