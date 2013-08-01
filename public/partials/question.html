@@ -57,7 +57,12 @@
       </div>
       
       <div class="col-lg-6 col-sm-6 col-pull-6">
-        <p class="percentage btn btn-default trainee-hundred">{{ percentage }}%</p>
+
+        <div class="btn-group trainee-hundred">
+          <p style="width: {{ percentage }}%" class="btn btn-default percentage">{{ percentage }}%</p>
+          <p style="width: {{ 100-percentage }}%" class="btn btn-default percentage">&nbsp;</p>
+        </div>
+
       </div>
     </div>
 </div>
@@ -121,7 +126,12 @@
       </div>
       
       <div class="col-lg-6 col-sm-6 col-pull-6">
-        <p class="percentage btn btn-default trainee-hundred">{{ percentage }}%</p>
+
+        <div class="btn-group trainee-hundred">
+          <p style="width: {{ percentage }}%" class="btn btn-default percentage">{{ percentage }}%</p>
+          <p style="width: {{ 100-percentage }}%" class="btn btn-default percentage">&nbsp;</p>
+        </div>
+
       </div>
     </div>
 </div>
