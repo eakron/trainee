@@ -73,6 +73,9 @@ a:focus{
 	input{
 		margin-left: 60px;
 	}
+	label{
+		padding-bottom: 10px;
+	}
 	opacity:0.9;
 
 	-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
@@ -195,3 +198,15 @@ label.c_on      { background: url(../img/check-on.png) no-repeat; }
 label.r_on      { background: url(../img/radio-on.png) no-repeat; }
 .label_check input,
 .label_radio input  { position: absolute; left: -9999px; }
+
+@media only screen and (max-width: 991px), only screen and (max-device-width: 991) {
+	.label_check, .label_radio    {  
+		margin-left:70px
+	}
+}
+
+@media only screen and (max-width: 400px), only screen and (max-device-width: 400) {
+	.label_check, .label_radio    {  
+		margin-left:45px
+	}
+}
