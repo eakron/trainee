@@ -17,21 +17,10 @@
       });
     }
   }
-  var interval = setInterval(function () {
-    if(!$(".label_check, .label_radio").length) {
-      return;
-    }
-
-    clearInterval(interval);
-
-    $('.container')
-      .on("click",
+  $('.container')
+    .on("click",
         ".label_check, .label_radio",
         function (event) {
           setupLabel();
       });
-
-    setupLabel();
-
-  },20);
 })(jQuery);
