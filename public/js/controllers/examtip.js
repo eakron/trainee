@@ -9,6 +9,8 @@ angular.module('trainee.controllers')
                          $location,
                          ExamTips) {
 
+    rainbow.changeColor();
+
     $scope.index = parseInt($routeParams["index"], 10);
 
     ExamTips.get(function (data) {
