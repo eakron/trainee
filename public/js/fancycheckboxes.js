@@ -1,35 +1,37 @@
-function setupLabel() {
+(function ($) {
+  function setupLabel() {
     if ($('.label_check input').length) {
-        $('.label_check').each(function(){
-            $(this).removeClass('c_on');
-        });
-        $('.label_check input:checked').each(function(){
-            $(this).parent('label').addClass('c_on');
-        });
+      $('.label_check').each(function(){
+        $(this).removeClass('c_on');
+      });
+      $('.label_check input:checked').each(function(){
+        $(this).parent('label').addClass('c_on');
+      });
     }
     if ($('.label_radio input').length) {
-        $('.label_radio').each(function(){
-            $(this).removeClass('r_on');
-        });
-        $('.label_radio input:checked').each(function(){
-            $(this).parent('label').addClass('r_on');
-        });
+      $('.label_radio').each(function(){
+        $(this).removeClass('r_on');
+      });
+      $('.label_radio input:checked').each(function(){
+        $(this).parent('label').addClass('r_on');
+      });
     }
-}
-var interval = setInterval(function () {
+  }
+  var interval = setInterval(function () {
     if(!$(".label_check, .label_radio").length) {
-        return;
+      return;
     }
 
     clearInterval(interval);
 
     $('.container')
-        .on("click",
-            ".label_check, .label_radio",
-            function (event) {
-                setupLabel();
-        });
+      .on("click",
+        ".label_check, .label_radio",
+        function (event) {
+          setupLabel();
+      });
 
     setupLabel();
 
-},20);
+  },20);
+})(jQuery);
