@@ -65,9 +65,6 @@ a:focus{
  	margin-top: 60px;
 	background: white;
 	margin-bottom: 60px;
-	.center-content-inner{
-		min-height:300px;
-	}
 	p{
 		font-size: 18px;
 		line-height: 1.5;
@@ -83,9 +80,14 @@ a:focus{
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 
-.push-down{
-	margin-top: 60px;
+.trainee-hundred{
+	width: 100%;
 }
+.trainee-min-height{
+	min-height: 300px;
+	margin-bottom: 60px;
+}
+
 
 /*****************************************************
 				input
@@ -120,7 +122,7 @@ label{
 
 }
 .trainee-hundred{
-	width: 100%;
+	
 	margin-bottom: 10px;
 }
 
