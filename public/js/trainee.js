@@ -1407,11 +1407,11 @@ var test_questions = [
     "a": "A. Active Directory Domain Services 2000",
     "b": "B. Sun Java System Directory Server 5.2",
     "c": "C. Novell eDirectory version 8.7.3",
-    "d": "D. IBM Tivoli version 5.2E. All of the above",
-    "a_answer": " Incorrect: Active Directory Domain Services 2003 SP2 is the minimum level required for use with SharePoint 2013.B.",
-    "b_answer": " Correct: This directory service is supported.C. Correct: This directory service is supported.",
-    "c_answer": " Correct: Limited Access cannot be altered (grayed-out).D. Incorrect: Read can be altered.Objective 4.4: Thought experimentYou might start by building a new result source that is capable of selecting just a single type of file. Next, you could create a query rule that returns a particular result set that includes the file type you chose.",
-    "d_answer": " Incorrect: Read can be altered.Objective 4.4: Thought experimentYou might start by building a new result source that is capable of selecting just a single type of file. Next, you could create a query rule that returns a particular result set that includes the file type you chose."
+    "d": "D. IBM Tivoli version 5.2",
+    "a_answer": "Incorrect: Active Directory Domain Services 2003 SP2 is the minimum level required for use with SharePoint 2013.B.",
+    "b_answer": "Correct: This directory service is supported.",
+    "c_answer": "",
+    "d_answer": ""
 }, {
     "id": 0,
     "question": "2. Which of the following authentication types is supported for use with SharePoint Active Directory import?",
