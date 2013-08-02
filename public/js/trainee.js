@@ -813,7 +813,7 @@ var test_questions = [
         "a": "A. Prohibit the use of keywords other than those in a specific term set. ",
         "b": "B. Create a global term set. ",
         "c": "C. Enable term pinning. ",
-        "e": "E. Create a local term set. ",
+        "d": "D. Create a local term set. ",
         "explanation":"Anyone can add a new term to an open term set. Only people who were identified as contributors to a term set group can add terms to a closed term set in the group. For example, a term set that represents cost centers would probably be closed. A term set that represents contributors to a charity might be open. On global term set see step 8) below. Make a term set available to other site collections After you create a term set on the authoring site collection, you have to make it available to publishing site collections. You can make a term set available to all site collections or to specific site collections. "
     },
     {
