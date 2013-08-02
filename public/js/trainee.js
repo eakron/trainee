@@ -842,7 +842,7 @@ var test_questions = [
         "id": 0,
         "source": "certexam",
         "question": "You are managing a site collection in a SharePoint farm.You need to configure the minimum level of permissions necessary for users to manage lists in the sitecollection.What permission level should you configure?",
-        "answer": ["C"],
+        "answer": ["B"],
         "a": "A. View Only",
         "b": "B. Edit",
         "c": "C. Full Control",
