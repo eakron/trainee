@@ -91,23 +91,26 @@ a:focus{
 	min-height: 300px;
 	margin-bottom: 60px;
 }
-.trainee-correct-background{
-	background-color: #fffeee;
-	border: 1px solid #e3e3e3;
-	line-height: 1.1;
 
-	-webkit-box-shadow: inset 2px 2px 11px -5px rgba(59,59,59,0.61);
-	-moz-box-shadow: inset 2px 2px 11px -5px rgba(59,59,59,0.61);
-	box-shadow: inset 2px 2px 11px -5px rgba(59,59,59,0.61);
-}
-p.percentage{
-	line-height: 1.1;
-	width: 50%;
-	&:first-of-type{
-		background-color: $correct-green;
+
+.trainee-percentage-background{
+	padding: 0;
+	&:hover{
+		cursor: default;
 	}
+}
+
+.percentage{
+	background-color: $correct-green;
 	padding-left: 0;
 	padding-right: 0;
+	margin: 0;
+	border: none;
+	float: left;
+	&:hover{
+		cursor: default;
+		background-color: $correct-green;
+	}
 }
 /*****************************************************
 				input
