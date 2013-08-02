@@ -555,7 +555,7 @@ var test_questions = [
     "id": 0,
     "source" : "certexam",
     "question": "QUESTION 68 \n You are the farm administrator for a single-server SharePoint 2010 Foundation environment.\n The company plans to upgrade to SharePoint 2013 Foundation.\n You need to ensure that the existing server meets the minimum requirements.\n Which three requirements must you meet? (Each correct answer presents part of the solution.\n Choose three.)\n",
-    "answer": ["B,C,D"],
+    "answer": ["B","C","D"],
     "a": "A. 64-bit edition of Windows Server 2008 SP2",
     "b": "B. 64-bit processor",
     "c": "C. 8 GB of RAM",
