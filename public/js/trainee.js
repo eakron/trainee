@@ -480,7 +480,7 @@ var test_questions = [
     "id": 0,
     "source" : "certexam",
     "question": "QUESTION 59 \n A SharePoint farm includes two front-end web servers, one application server, and two clustered servers \n that run Microsoft SQL Server. The SharePoint Foundation Web Application service is not running on the\n application server.\n You plan to configure the SharePoint farm to receive and store email messages and email message\n attachments in libraries.\n You need to ensure that users can send email messages and attachments directly to libraries across the\n entire farm. You must accomplish this goal by using the least amount of effort.\n Which two actions should you perform? \n (Each correct answer presents part of the solution. Choose two.)\n",
-    "answer": ["B,D"],
+    "answer": ["B","D"],
     "a": "A. Install and configure the Simple Mail Transfer Protocol (SMTP) service on each application server.",
     "b": "B. Install and configure the Simple Mail Transfer Protocol (SMTP) service on each front-end web server.",
     "c": "C. Enable incoming email by using the Automatic settings mode.",
