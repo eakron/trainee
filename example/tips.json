@@ -1,0 +1,171 @@
+[
+	{
+	    "id": 1,
+	    "examtip": "Frankenstein was not the name of the monster in the novel Frankenstein; or, The Modern Prometheus by Mary Shelley; rather it was the surname of the monster's creator, Victor Frankenstein. The monster is instead called Frankenstein's monster. Additionally, Frankenstein was a medical student in the novel, not a doctor as frequently portrayed"
+	}, {
+	    "id": 2,
+	    "examtip": "Thomas Edison did not invent the light bulb. He did, however, develop the first practical light bulb in 1880 (employing a carbonized bamboo filament), shortly prior to Joseph Swan, who invented an even more efficient bulb in 1881 (which used a cellulose filament)."
+	}, {
+	    "id": 3,
+	    "examtip": "Henry Ford did not invent either the automobile or the assembly line. He did improve the assembly line process substantially, sometimes through his own engineering but more often through sponsoring the work of his employees. Karl Benz (co-founder of Mercedes-Benz) is credited with the invention of the first modern automobile, and the assembly line has existed throughout history."
+	}, {
+	    "id": 4,
+	    "examtip": "Computers running Macintosh, Linux, or other non-Windows operating systems are not immune to malware such as trojan horses. These operating systems are capable of being infected by malware designed for them; however, due to the market dominance of Microsoft Windows operating systems, most malware is designed to target them rather than other operating systems."
+	}, {
+	    "id": 2,
+	    "examtip": "Toilet waste is never intentionally jettisoned from an aircraft. All waste is collected in tanks which are emptied on the ground by toilet waste vehicles. Blue ice is caused by accidental leakage from the waste tank. Passenger trains, on the other hand, have historically flushed onto the tracks; however, modern trains usually have retention tanks on board."
+	}, {
+	    "id": 3,
+	    "examtip": "The Quran does not promise martyrs 72 virgins in heaven. It does mention virgin companions, houri, to all people—martyr or not—in heaven, but no number is specified. The source for the 72 virgins is a hadith in Sunan al-Tirmidhi by Imam Tirmidhi. Hadiths are sayings and acts of the prophet Mohammed as reported by others and as such not part of the Quran itself. Especially the hadiths that are weakly sourced, such as this one, must not necessarily be believed by a Muslim. Furthermore, the correct translation of this hadith is a matter of debate."
+	}, {
+	    "id": 4,
+	    "examtip": "Mary Magdalene was not a prostitute. She is often confused with a different, unnamed woman in the Gospel of Luke (immediately before Mary Magdalene's introduction) who indeed was a prostitute. The misconception stems from a 6th-century homily from Pope Gregory I, who assumed that the seven demons that Jesus cast out of Mary Magdalene corresponded to the still-nascent concept of the seven deadly sins."
+	}, {
+	    "id": 2,
+	    "examtip": "Schizophrenia is not the same thing as dissociative identity disorder, namely split or multiple personalities. Etymologically, the term \"schizophrenia\" comes from the Greek roots skhizein (σχίζειν, \"to split\") and phrēn, phren- (φρήν, φρεν-; \"mind\") and is a juxtaposition proposed by the Swiss psychiatrist Eugen Bleuler, which may have given rise to this common misconception."
+	}, {
+	    "id": 3,
+	    "examtip": "It is not true that air takes the same time to travel above and below an aircraft's wing. This misconception, sometimes called the equal transit-time fallacy, is widespread among textbooks and non-technical reference books, and even appears in pilot training materials. In fact the air moving over the top of an airfoil generating lift is always moving much faster than the equal transit theory would imply, as described in the incorrect and correct explanations of lift force."
+	}, {
+	    "id": 4,
+	    "examtip": "A penny dropped from the Empire State Building will not kill a person or crack the sidewalk. The terminal velocity of a falling penny is about 30–50 miles per hour (48–80 km/h), and the penny will not exceed that speed regardless of the height from which it is dropped. At that speed, its energy is not enough to penetrate a human skull or crack concrete, as demonstrated on an episode of MythBusters. As MythBusters noted, the Empire State Building is a particularly poor setting for this misconception, since its tapered shape would make it impossible to drop anything directly from the top to street level."
+	}, {
+	    "id": 2,
+	    "examtip": "When an event with equally probable outcomes comes out the same way several times in succession, the other outcome is not more likely next time. For example, if a roulette ball ends up on black many times in a row, and not once on red (as reportedly happened 26 times on August 18, 1913, in the Monte Carlo Casino), the next ball is not more likely to land on red; red is not \"due\". For a fair wheel, neither is red less likely. This misconception is known as the gambler's fallacy; in reality statistical independence holds, and red is just as likely or unlikely on the next spin as always—sometimes expressed as \"the system has no memory\". If the event is physically determined, and not perfectly random, the repeated outcome may be more likely. For example, a die that has rolled a six ten consecutive times might be loaded or controlled by hidden magnets, and would be more likely to roll another six. The misconception is due to the true fact that, before starting to roll, probability theory predicts that a run of the same colour several times in succession is unlikely, increasingly so the longer the run."
+	}, {
+	    "id": 3,
+	    "examtip": "Glass does not flow at room temperature as a high-viscosity liquid.[272] Although glass shares some molecular properties found in liquids, glass at room temperature is an \"amorphous solid\" that only begins to flow above the glass transition temperature, though the exact nature of the glass transition is not considered settled among theorists and scientists. Panes of stained glass windows are often thicker at the bottom than at the top, and this has been cited as an example of the slow flow of glass over centuries. However, this unevenness is due to the window manufacturing processes used at the time. Normally the thick end of glass would be installed at the bottom of the frame, but it is also common to find old windows where the thicker end has been installed to the sides or the top. No such distortion is observed in other glass objects, such as sculptures or optical instruments, that are of similar or even greater age. One researcher estimated in 1998 that for glass to actually flow at room temperatures would take many times the age of the earth."
+	}, {
+	    "id": 4,
+	    "examtip": "Most diamonds are not formed from highly compressed coal. More than 99 percent of diamonds ever mined have formed in the conditions of extreme heat and pressure about 90 miles (140 km) below the earth's surface. Coal is formed from prehistoric plants close to earth surface, and is unlikely to migrate below 2 miles (3.2 km) through common geological processes. Most diamonds that have been dated are older than the first land plants, and are therefore older than coal. Diamonds can be formed from coal in two unlikely and commercially insignificant processes: in subduction zones, and in meteoroid impacts."
+	}, {
+	    "id": 2,
+	    "examtip": "Humans cannot catch warts from toads or other animals; the bumps on a toad are not warts. Warts on human skin are caused by viruses that are unique to humans (human papillomavirus)."
+	}, {
+	    "id": 3,
+	    "examtip": "Neither cracking one's knuckles nor exercising while in good health causes osteoarthritis."
+	}, {
+	    "id": 4,
+	    "examtip": "Vaccines do not cause autism or autism spectrum disorders. Although fraudulent research by Andrew Wakefield claimed a connection, repeated attempts to reproduce the results ended in failure, and the research was ultimately shown to have been manipulated."
+	}, {
+	    "id": 2,
+	    "examtip": "People do not use only ten percent of their brains. While it is true that a small minority of neurons in the brain are actively firing at any one time, the inactive neurons are important too. This misconception has been commonplace in American culture at least as far back as the start of the 20th century, and was attributed to William James, who apparently used the expression metaphorically."
+	}, {
+	    "id": 3,
+	    "examtip": "There is no physiological basis for the belief that having sex in the days leading up to a sporting event or contest is detrimental to performance. In fact it has been suggested that sex prior to sports activity can elevate the levels of testosterone in males, which could potentially enhance their performance."
+	}, {
+	    "id": 4,
+	    "examtip": "Swallowed chewing gum does not take seven years to digest. In fact, chewing gum is mostly indigestible, and passes through the digestive system at the same rate as other matter."
+	}, {
+	    "id": 2,
+	    "examtip": "Sugar does not cause hyperactivity in children. Double-blind trials have shown no difference in behavior between children given sugar-full or sugar-free diets, even in studies specifically looking at children with attention-deficit/hyperactivity disorder or those considered sensitive to sugar."
+	}, {
+	    "id": 3,
+	    "examtip": "Eight glasses or two to three litres of water a day are not needed to maintain health. The amount of water needed varies by person (weight), activity level, clothing, and environment (heat and humidity). Water actually need not be drunk in pure form, but can be derived from liquids such as juices, tea, milk, soups, etc., and from foods including fruits and vegetables."
+	}, {
+	    "id": 4,
+	    "examtip": "The redhead gene is not becoming extinct. In August 2007, many news organizations reported that redheads would become extinct, possibly as early as 2060, due to the gene for red hair being recessive. Although redheads may become more rare (for example, mixed marriages where one parent is from a group without the redhead gene will result in no children, but some grandchildren, with red hair), they will not die out unless everyone who carries the gene dies or fails to reproduce. This misconception has been around since at least 1865, and often resurfaces in American newspapers."
+	}, {
+	    "id": 2,
+	    "examtip": "Hair and fingernails do not continue to grow after a person dies. Rather, the skin dries and shrinks away from the bases of hairs and nails, giving the appearance of growth."
+	}, {
+	    "id": 3,
+	    "examtip": "Shaving does not cause terminal hair to grow back thicker or coarser or darker. This belief is due to hair which has never been cut having a tapered end, whereas after cutting there is no taper; the cut hair appears to be thicker, and feels coarser due to the sharper, unworn edges. The shorter hairs being \"harder\" (less flexible) than longer hairs also contributes to this effect."
+	}, {
+	    "id": 4,
+	    "examtip": "Water-induced wrinkles are not caused by the skin absorbing water and swelling. They are caused by the autonomic nervous system, which triggers localized vasoconstriction in response to wet skin, yielding a wrinkled appearance. This may have evolved because it gives ancestral primates a better grip in slippery, wet environments."
+	}, {
+	    "id": 2,
+	    "examtip": "All different tastes can be detected on all parts of the tongue by taste buds, with slightly increased sensitivities in different locations depending on the person, contrary to the popular belief that specific tastes only correspond to specific mapped sites on the tongue. The original tongue map was based on a mistranslation of a 1901 German thesis by Edwin Boring. In addition, there are not 4 but 5 primary tastes. In addition to bitter, sour, salty, and sweet, humans have taste receptors for umami, which is a savory or meaty taste."
+	}, {
+	    "id": 3,
+	    "examtip": "Humans have more than the commonly cited five senses. Although definitions vary, the actual number ranges from 9 to more than 20. In addition to sight, smell, taste, touch, and hearing, which were the senses identified by Aristotle, humans can sense balance and acceleration (equilibrioception), pain (nociception), body and limb position (proprioception or kinesthetic sense), and relative temperature (thermoception). Other senses sometimes identified are the sense of time, itching, pressure, hunger, thirst, fullness of the stomach, need to urinate, need to defecate, and blood carbon dioxide levels."
+	}, {
+	    "id": 4,
+	    "examtip": "Exposure to a vacuum, or experiencing uncontrolled decompression, does not cause the body to explode, or internal fluids to boil. Instead, it would lead to a loss of consciousness once the body has depleted the supply of oxygen in the blood, followed by death from hypoxia within minutes."
+	}, {
+	    "id": 2,
+	    "examtip": "Eating less than an hour before swimming does not increase the risk of experiencing muscle cramps or drowning. One study shows a correlation between alcohol consumption and drowning, but there is no evidence cited regarding stomach cramps or the consumption of food."
+	}, {
+	    "id": 3,
+	    "examtip": "Mammals did not evolve from any modern group of reptiles. Soon after the first reptiles appeared, they split into two branches, the sauropsids and the synapsids. The line leading to mammals diverged from the line leading to modern reptilian lines (the sauropsids) about 320 million years ago, in the mid Carboniferous period. Only later (in the late Carboniferous or early Permian) did the modern reptilian groups (lepidosaurs, turtles and crocodiles) diverge. The mammals themselves, being the only survivors of the synapsid line, are the \"cousins\" rather than \"siblings\" of modern reptiles."
+	}, {
+	    "id": 4,
+	    "examtip": "Humans did not evolve from chimpanzees. The two modern species (common chimpanzees and bonobos) are, however, humans' closest living relatives. The most recent common ancestor of humans and chimpanzees lived between 5 and 8 million years ago. Finds of the 4.4 million year old Ardipithecus indicate the ancestor was a moderately competent bipedal walker rather than a knucklewalker, and was small and rather more long limbed than a chimpanzee and with a shorter snout. Contrary to the idea of chimpanzees as \"primitive\", they too have evolved since the split, becoming larger, more aggressive and more capable climbers. Together with the other apes, humans and chimpanzees constitute the family Hominidae. This group evolved from a common ancestor with the Old World monkeys some 40 million years ago."
+	}, {
+	    "id": 2,
+	    "examtip": "Flowering sunflowers do not track the Sun across the sky. The heads point in a fixed direction (East) all day long. However, in an earlier development stage, before the appearance of flower heads, the buds do track the sun and the fixed alignment of the mature flowers is a result of this heliotropism."
+	}, {
+	    "id": 3,
+	    "examtip": "It is a common misconception that an earthworm becomes two worms when cut in half. However, only a limited number of earthworm species are capable of anterior regeneration. When such earthworms are bisected, only the front half of the worm (where the mouth is located) can feed and survive, while the other half dies. Species of the planaria family of flatworms actually do become two new planaria when bisected or split down the middle."
+	}, {
+	    "id": 4,
+	    "examtip": "Houseflies do not have an average lifespan of 24 hours. The average lifespan of a housefly is 20 to 30 days. However, a housefly maggot will hatch within 24 hours of being laid."
+	}, {
+	    "id": 2,
+	    "examtip": "The flight mechanism and aerodynamics of the bumblebee (as well as other insects) are actually quite well understood, in spite of the urban legend that calculations show that they should not be able to fly. In the 1930s, the French entomologist Antoine Magnan, using flawed techniques, indeed postulated that bumblebees theoretically should not be able to fly in his book Le Vol des Insectes (The Flight of Insects). Magnan later realized his error and retracted the suggestion. However, the hypothesis became generalized to the false notion that \"scientists think that bumblebees should not be able to fly\"."
+	}, {
+	    "id": 3,
+	    "examtip": "Sharks can actually suffer from cancer. The misconception that sharks do not get cancer was spread by the 1992 Avery Publishing book Sharks Don't Get Cancer by I. William Lane and used to sell extracts of shark cartilage as cancer prevention treatments. Reports of carcinomas in sharks exist, and current data do not allow any speculation about the incidence of tumors in sharks."
+	}, {
+	    "id": 4,
+	    "examtip": "A common misconception about chameleons and anoles is that the advantage of changing color is camouflage. In reality, changing color helps to regulate temperature and is used as a form of communication. Some species, such as the Smith's Dwarf Chameleon, do change color as an effective form of camouflage."
+	}, {
+	    "id": 2,
+	    "examtip": "The notion that goldfish have a memory span of just a few seconds is false. It is much longer, counted in months."
+	}, {
+	    "id": 3,
+	    "examtip": "The claim that a duck's quack does not echo is false, although the echo may be difficult to hear for humans under some circumstances."
+	}, {
+	    "id": 4,
+	    "examtip": "It is not harmful to baby birds to pick them up and return them to their nests, despite the common belief that doing so will cause the mother to reject them. Some birds have limited sense of smell, and many species primarily rely on visual cues. It is however still best to leave a baby bird alone, as the parents will usually be close by."
+	}, {
+	    "id": 2,
+	    "examtip": "Ostriches do not hide their heads in the sand to hide from enemies. This misconception was probably promulgated by Pliny the Elder (AD 23–79), who wrote that ostriches \"imagine, when they have thrust their head and neck into a bush, that the whole of their body is concealed\"."
+	}, {
+	    "id": 3,
+	    "examtip": "Bats are not blind. While many (most) bat species use echolocation as a primary sense, all bat species have eyes and are capable of sight. Furthermore, not all bats can echolocate and these bats have excellent night vision."
+	}, {
+	    "id": 4,
+	    "examtip": "Lemmings do not engage in mass suicidal dives off cliffs when migrating. They will, however, occasionally unintentionally fall off cliffs when venturing into unknown territory, with no knowledge of the boundaries of the environment. This misconception was popularized by the Disney film White Wilderness, which shot many of the migration scenes (also staged by using multiple shots of different groups of lemmings) on a large, snow-covered turntable in a studio. Photographers later pushed the lemmings off a cliff. The misconception itself is much older, dating back to at least the late 19th century."
+	}, {
+	    "id": 4,
+	    "examtip": "Contrary to popular belief, dogs do not sweat by salivating. It is not true that dogs do not have sweat glands or have sweat glands only on their tongues. They do sweat, mainly through the footpads. However, dogs do primarily regulate their body temperature through panting."
+	}, {
+	    "id": 4,
+	    "examtip": "Bulls are not enraged by the color red, used in capes by professional matadors. Cattle are dichromats, so red does not stand out as a bright color. It is not the color of the cape, but the perceived threat by the matador that incites it to charge."
+	}, {
+	    "id": 4,
+	    "examtip": "It is commonly claimed that the Great Wall of China is the only human-made object visible from the Moon. This is false. None of the Apollo astronauts reported seeing any specific human-made object from the Moon, and even Earth-orbiting astronauts can barely see it. City lights, however, are easily visible on the night side of Earth from orbit. Shuttle astronaut Jay Apt has been quoted as saying that \"the Great Wall is almost invisible from only 180 miles (290 km) up.\" ISS commander Chris Hadfield attempted to find it from space, but said that it was \"hard as it's narrow and dun-colored.\""
+	}, {
+	    "id": 4,
+	    "examtip": "Black holes, contrary to their common image, do not necessarily suck up all the matter in the vicinity. If, for example, the Sun were replaced by a black hole of equal mass, the orbits of the planets would be essentially unaffected, but in other situations a black hole can act like a cosmic vacuum cleaner and pull a substantial inflow of matter."
+	}, {
+	    "id": 4,
+	    "examtip": "When a spacecraft reenters the atmosphere, the heat of reentry is not (primarily) caused by friction, but by adiabatic compression of air in front of the spacecraft."
+	}, {
+	    "id": 4,
+	    "examtip": "\"420\" did not originate as the Los Angeles police or penal code for marijuana use. Police Code 420 means \"juvenile disturbance\", and California Penal Code section 420 prohibits the obstruction of access to public land. The use of \"420\" started in 1971 at San Rafael High School, where it indicated the time 4:20 pm, when a group of students would go to smoke under the statue of Louis Pasteur."
+	}, {
+	    "id": 4,
+	    "examtip": "It is rarely necessary to wait 24 hours before filing a missing person's report; in instances where there is evidence of violence or of an unusual absence, law enforcement agencies in the United States often stress the importance of beginning an investigation promptly. The UK government Web site says explicitly in large type \"You don’t have to wait 24 hours before contacting the police\"."
+	}, {
+	    "id": 4,
+	    "examtip": "Embassies and consulates are not the territory of the country they represent, but remain part of the host country, although they do enjoy special legal protections in accordance with the Vienna Convention on Diplomatic Relations, such as inviolability of diplomatic premises, which dictates that agents of the host state cannot enter without permission from the country represented. Inviolability has been challenged, however: when Wikileaks founder Julian Assange was given asylum in the embassy of Ecuador in London, England, the British government threatened to arrest him based on the Diplomatic and Consular Premises Act 1987."
+	}, {
+	    "id": 4,
+	    "examtip": "John F. Kennedy's words \"Ich bin ein Berliner\" are standard German for \"I am a Berliner.\" An urban legend has it that due to his use of the indefinite article ein, Berliner is translated as jelly doughnut, and that the population of Berlin was amused by the supposed mistake. The word Berliner is not commonly used in Berlin to refer to the Berliner Pfannkuchen; they are usually called ein Pfannkuchen."
+	}, {
+	    "id": 4,
+	    "examtip": "Napoleon Bonaparte was not short; rather he was slightly taller than the average Frenchman of his time. After his death in 1821, the French emperor’s height was recorded as 5 feet 2 inches in French feet, which is 5 feet 7 inches (1.69 m). Some believe that he was nicknamed le Petit Caporal (The Little Corporal) as a term of affection."
+	}, {
+	    "id": 4,
+	    "examtip": "There is no evidence that Vikings wore horns on their helmets. In fact, the image of Vikings wearing horned helmets stems from the scenography of an 1876 production of the Der Ring des Nibelungen opera cycle by Richard Wagner."
+	}, {
+	    "id": 4,
+	    "examtip": "It is true that mean life expectancy in the Middle Ages and earlier was low; however, one should not infer that people usually died around the age of 30. In fact, the low life expectancy is an average very strongly influenced by high infant mortality, and the life expectancy of people who lived to adulthood was much higher. A 21-year-old man in medieval England, for example, could by one estimate expect to live to the age of 64."
+	}, {
+	    "id": 4,
+	    "examtip": "In ancient Rome, the architectural feature called a vomitorium was the entranceway through which crowds entered and exited a stadium, not a special room used for purging food during meals. Vomiting was not a regular part of Roman dining customs."
+	}
+]
