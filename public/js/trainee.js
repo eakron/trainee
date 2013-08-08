@@ -480,7 +480,7 @@ var test_questions = [
     "id": 0,
     "source" : "certexam",
     "question": "QUESTION 59 \n A SharePoint farm includes two front-end web servers, one application server, and two clustered servers \n that run Microsoft SQL Server. The SharePoint Foundation Web Application service is not running on the\n application server.\n You plan to configure the SharePoint farm to receive and store email messages and email message\n attachments in libraries.\n You need to ensure that users can send email messages and attachments directly to libraries across the\n entire farm. You must accomplish this goal by using the least amount of effort.\n Which two actions should you perform? \n (Each correct answer presents part of the solution. Choose two.)\n",
-    "answer": ["B,D"],
+    "answer": ["B","D"],
     "a": "A. Install and configure the Simple Mail Transfer Protocol (SMTP) service on each application server.",
     "b": "B. Install and configure the Simple Mail Transfer Protocol (SMTP) service on each front-end web server.",
     "c": "C. Enable incoming email by using the Automatic settings mode.",
@@ -813,7 +813,7 @@ var test_questions = [
         "a": "A. Prohibit the use of keywords other than those in a specific term set. ",
         "b": "B. Create a global term set. ",
         "c": "C. Enable term pinning. ",
-        "e": "E. Create a local term set. ",
+        "d": "D. Create a local term set. ",
         "explanation":"Anyone can add a new term to an open term set. Only people who were identified as contributors to a term set group can add terms to a closed term set in the group. For example, a term set that represents cost centers would probably be closed. A term set that represents contributors to a charity might be open. On global term set see step 8) below. Make a term set available to other site collections After you create a term set on the authoring site collection, you have to make it available to publishing site collections. You can make a term set available to all site collections or to specific site collections. "
     },
     {
