@@ -1,0 +1,29 @@
+[
+    {
+        "id": 0,
+        "question": "",
+        "answer": ["D"],
+        "a": "A. Configure the service account to use a domain user account.",
+        "b": "B. Register the domain credentials in the Farm Administrators group.",
+        "c": "C. Configure the service account to use a local user account.",
+        "d": "D. Register the domain credentials as a SharePoint managed account.",
+    },
+    {
+        "id": 0,
+        "question": "",
+        "answer": ["D"],
+        "a": "A. Configure the service account to use a domain user account.",
+        "b": "B. Register the domain credentials in the Farm Administrators group.",
+        "c": "C. Configure the service account to use a local user account.",
+        "d": "D. Register the domain credentials as a SharePoint managed account.",
+    },
+    {
+        "id": 0,
+        "question": "",
+        "answer": ["D"],
+        "a": "A. Configure the service account to use a domain user account.",
+        "b": "B. Register the domain credentials in the Farm Administrators group.",
+        "c": "C. Configure the service account to use a local user account.",
+        "d": "D. Register the domain credentials as a SharePoint managed account.",
+    }
+]
