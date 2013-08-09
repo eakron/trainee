@@ -3,11 +3,11 @@ angular.module('trainee.services')
     return {
       name: 'Question Service',
       get: function (callback) {
-        // $http.get('data.json').success(function (data) {
-        //   callback(data);
-        // });
+        $http.get('/example/questions-minecraft.json').success(function (data) {
+          callback(data);
+        });
 
-        callback(test_questions);
+        /*callback(test_questions);*/
       }
     };
   }]);
