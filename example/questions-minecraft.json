@@ -6,7 +6,7 @@
     "a": "A. A Golden Apple can be eaten even though the player is not hungry",
     "b": "B. Golden Apples can be found on Golden Oaks",
     "c": "C. You can craft a Golden Apple with gold ingots and an apple",
-    "d": "D. A Golden Apple gives the player Fire Resistance",
+    "d": "D. A Golden Apple gives the player Fire Resistance"
   },
   {
     "id": 0,
@@ -15,7 +15,7 @@
     "a": "A. Carrots",
     "b": "B. Cocoa Beans",
     "c": "C. Wheat",
-    "d": "D. Melon Seeds",
+    "d": "D. Melon Seeds"
   },
   {
     "id": 0,
@@ -24,7 +24,7 @@
     "a": "A. 2 in any direction",
     "b": "B. 4 in any direction",
     "c": "C. 2 horizontally",
-    "d": "D. 4 horizontally",
+    "d": "D. 4 horizontally"
   },
   {
     "id": 0,
@@ -33,7 +33,7 @@
     "a": "A. If a player walks on it",
     "b": "B. Planting wheat on it more than 10 times",
     "c": "C. I an Enderman teleports directly on top of it",
-    "d": "D. Is a piston pushes the farmland block down",
+    "d": "D. Is a piston pushes the farmland block down"
   },
   {
     "id": 0,
@@ -42,7 +42,7 @@
     "a": "A. Pickaxe",
     "b": "B. Shovel",
     "c": "C. Hoe",
-    "d": "D. Shears",
+    "d": "D. Shears"
   },
   {
     "id": 0,
@@ -51,7 +51,7 @@
     "a": "A. Cobblestone",
     "b": "B. Stone",
     "c": "C. Gravel",
-    "d": "D. Rock",
+    "d": "D. Rock"
   },
   {
     "id": 0,
@@ -60,7 +60,7 @@
     "a": "A. Diamond pickaxe",
     "b": "B. Enchanted gold axe",
     "c": "C. It can't be destroyed",
-    "d": "D. TNT",
+    "d": "D. TNT"
   },
   {
     "id": 0,
@@ -69,7 +69,7 @@
     "a": "A. A Nether portal",
     "b": "B. To dig straight up for 50 levels",
     "c": "C. You can't get back once you are there",
-    "d": "D. Yoy need to die and respawn in the normal world",
+    "d": "D. Yoy need to die and respawn in the normal world"
   },
   {
     "id": 0,
@@ -78,7 +78,7 @@
     "a": "A. You enter the Nether",
     "b": "B. You hit the bottom of the map and can't get past it",
     "c": "C. You enter The End",
-    "d": "D. You enter the void and die from falling, unless you fly",
+    "d": "D. You enter the void and die from falling, unless you fly"
   },
   {
     "id": 0,
@@ -87,7 +87,7 @@
     "a": "A. Throw a Bottle o' Enchanting on it",
     "b": "B. Shoot it with an arrow",
     "c": "C. Blow it up with TNT",
-    "d": "D. Hit it with a pickaxe with silky touch enchantment",
+    "d": "D. Hit it with a pickaxe with silky touch enchantment"
   },
   {
     "id": 0,
@@ -96,7 +96,7 @@
     "a": "A. It drops an ender eye",
     "b": "B. It starts a chain reaction of explosions",
     "c": "C. The Ender Dragon attacks you",
-    "d": "D. You are returned to the overworld",
+    "d": "D. You are returned to the overworld"
   },
   {
     "id": 0,
@@ -105,7 +105,7 @@
     "a": "A. Flint",
     "b": "B. Stick",
     "c": "C. Iron",
-    "d": "D. Feather",
+    "d": "D. Feather"
   },
   {
     "id": 0,
@@ -114,7 +114,7 @@
     "a": "A. It traveles to the nether",
     "b": "B. It disappears",
     "c": "C. It catches on fire",
-    "d": "D. It goes straight through the portal and remains in the overworld.",
+    "d": "D. It goes straight through the portal and remains in the overworld."
   },
   {
     "id": 0,
@@ -123,7 +123,7 @@
     "a": "A. 8",
     "b": "B. 6",
     "c": "C. None, you need planks",
-    "d": "D. 9",
+    "d": "D. 9"
   },
   {
     "id": 0,
@@ -132,7 +132,7 @@
     "a": "A. Bread",
     "b": "B. Stone Sword",
     "c": "C. Stone Shovel",
-    "d": "D. Oak Wood Planks",
+    "d": "D. Oak Wood Planks"
   },
   {
     "id": 0,
@@ -141,7 +141,7 @@
     "a": "A. You need one diamon to create an Ender Chest",
     "b": "B. You can use a Dropper to place items in an Ender Chest",
     "c": "C. What you put in one Ender Chest shows up in another",
-    "d": "D. Ender Chest works between dimensions",
+    "d": "D. Ender Chest works between dimensions"
   },
   {
     "id": 0,
@@ -150,7 +150,7 @@
     "a": "A. Wheat",
     "b": "B. Potatoes",
     "c": "C. Apples",
-    "d": "D. Carrots",
+    "d": "D. Carrots"
   },
   {
     "id": 0,
@@ -159,7 +159,7 @@
     "a": "A. Lava",
     "b": "B. Block of diamond",
     "c": "C. Iron door",
-    "d": "D. Monster spawner",
+    "d": "D. Monster spawner"
   },
   {
     "id": 0,
@@ -168,7 +168,7 @@
     "a": "A. Nether reck",
     "b": "B. Glass",
     "c": "C. Sand",
-    "d": "D. Bed",
+    "d": "D. Bed"
   },
   {
     "id": 0,
@@ -177,25 +177,25 @@
     "a": "A. You use the normal controls for steering, which will work if the pig has a saddle",
     "b": "B. You need to have a whip in your hand",
     "c": "C. You need to have a carrot on a stick in your hand",
-    "d": "D. Punch it",
+    "d": "D. Punch it"
   },
   {
     "id": 0,
-    "question": "What do you need to do in order to reach the achievement \"The Lie\"?",
+    "question": "What do you need to do in order to reach the achievement 'The Lie'?",
     "answer": ["B"],
     "a": "A. Push an enemy into lava",
     "b": "B. Pick up a cake from a Crafting Table",
     "c": "C. Hit another player",
-    "d": "D. Recieve the enchantment 'invisibilty' on a piece of armor",
+    "d": "D. Recieve the enchantment 'invisibilty' on a piece of armor"
   },
   {
     "id": 0,
-    "question": "What do you need to do in order to reach the achievement \"When pigs fly\"?",
+    "question": "What do you need to do in order to reach the achievement 'When pigs fly'?",
     "answer": ["D"],
     "a": "A. Push a pig into lava",
     "b": "B. Kill a pig in a tree",
     "c": "C. Take damage from a pig falling on you",
-    "d": "D. Ride a pig off a cliff",
+    "d": "D. Ride a pig off a cliff"
   },
   {
     "id": 0,
@@ -204,7 +204,7 @@
     "a": "A. On edges of swamps",
     "b": "B. In forests",
     "c": "C. They are dropped by zombies",
-    "d": "D. In villagers",
+    "d": "D. In villagers"
   },
   {
     "id": 0,
@@ -213,6 +213,6 @@
     "a": "A. 10 minutes",
     "b": "B. 5 minutes",
     "c": "C. 7 minutes",
-    "d": "D. 12 minutes",
+    "d": "D. 12 minutes"
   }
 ]
