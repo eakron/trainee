@@ -3,7 +3,7 @@ angular.module('trainee.services')
     return {
       name: 'ExamTips Service',
       get: function (callback) {
-        $http.get('/example/questions-minecraft.json').success(function (data) {
+        $http.get('/example/tips.json').success(function (data) {
           callback(data);
         });
 
