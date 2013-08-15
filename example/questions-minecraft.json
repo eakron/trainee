@@ -204,7 +204,259 @@
     "a": "A. On edges of swamps",
     "b": "B. In forests",
     "c": "C. They are dropped by zombies",
-    "d": "D. In villagers"
+    "d": "D. In villages"
+  },
+  {
+    "id": 0,
+    "question": "What is a charged creeper?",
+    "answer": ["C"],
+    "a": "A. A creeper that has spotted you and are attacking you",
+    "b": "B. A creeper that's been hit by a sword with fire aspect",
+    "c": "C. A creeper that's been charged by lightning",
+    "d": "D. A creeper that you are attacking at the moment"
+  },
+  {
+    "id": 0,
+    "question": "How do you get a creeper to drop music discs?",
+    "answer": ["A"],
+    "a": "A. If it gets killed by an arrow from a skeleton",
+    "b": "B. If it gets killed while standing on soul sand",
+    "c": "C. If it gets killed by another creeper exploding",
+    "d": "D. If it gets killed by a sword with looting III"
+  },
+  {
+    "id": 0,
+    "question": "Which of the following items can be enchanted with efficiency?",
+    "answer": ["A", "B" "C", "D"],
+    "a": "A. Shears",
+    "b": "B. Axe",
+    "c": "C. Pickaxe",
+    "d": "D. Shovel"
+  },
+  {
+    "id": 0,
+    "question": "Which of the following items can be obtained only by the use of silky touch?",
+    "answer": ["C", "D"],
+    "a": "A. Monster Spawner",
+    "b": "B. Nether wart",
+    "c": "C. Cobweb",
+    "d": "D. Ice"
+  },
+  {
+    "id": 0,
+    "question": "Which of the following recieve extra damage if they are attacked by a sword with Bane of Arthropods?",
+    "answer": ["A", "C", "D"],
+    "a": "A. Silverfish",
+    "b": "B. Skeleton",
+    "c": "C. Cave spiders",
+    "d": "D. Spiders"
+  },
+  {
+    "id": 0,
+    "question": "What happens if you mine a monster egg?",
+    "answer": ["C"],
+    "a": "A. It drops an egg that containes either a spider or a cave spider",
+    "b": "B. A cave spider will attack you",
+    "c": "C. A silverfish will emerge and attack you",
+    "d": "D. It drops an emerald"
+  },
+  {
+    "id": 0,
+    "question": "Which of the following are ways to travel in minecraft?",
+    "answer": ["A", "C", "D"],
+    "a": "A. Boat",
+    "b": "B. Horse",
+    "c": "C. Skating",
+    "d": "D. Cart"
+  },
+  {
+    "id": 0,
+    "question": "Which is the default mob that comes from a mob/monster spawner?",
+    "answer": ["D"],
+    "a": "A. Spider",
+    "b": "B. Chicken",
+    "c": "C. Zombie",
+    "d": "D. Pig"
+  },
+  {
+    "id": 0,
+    "question": "How can a zombie pigman be created, outside of the Nether?",
+    "answer": ["B"],
+    "a": "A. If a regular zombie is killed by raw pork",
+    "b": "B. If lightning strikes close to a pig",
+    "c": "C. If a regular zombie is fed a potion of undead",
+    "d": "D. If you feed two zombie pigmen cooked pork close to each other"
+  },
+  {
+    "id": 0,
+    "question": "What is the requirement for a iron golem to spawn in a village?",
+    "answer": ["A"],
+    "a": "A. At least 10 villagers and 21 houses",
+    "b": "B. At least 10 villagers and 10 houses",
+    "c": "C. At least 5 villagers and 10 houses",
+    "d": "D. At least 20 villagers and 29 houses"
+  },
+  {
+    "id": 0,
+    "question": "What shape does a firework take if you add a head to the recipie when crafting the firework star?",
+    "answer": ["D"],
+    "a": "A. Same as the head it came from",
+    "b": "B. Smiley face",
+    "c": "C. Burst",
+    "d": "D. Creeper"
+  },
+  {
+    "id": 0,
+    "question": "How many diamonds do you need for a full diamond armor?",
+    "answer": ["B"],
+    "a": "A. 22",
+    "b": "B. 24",
+    "c": "C. 20",
+    "d": "D. 18"
+  },
+  {
+    "id": 0,
+    "question": "How do you find a Stronghold?",
+    "answer": ["D"],
+    "a": "A. By following an abandoned mineshaft",
+    "b": "B. By going 1372 blocks in any direction from your original spawn point",
+    "c": "C. By the use of a compass",
+    "d": "D. By the use of an Eye of Ender"
+  },
+  {
+    "id": 0,
+    "question": "In a village, how many doors are there per villager?",
+    "answer": ["A"],
+    "a": "A. 3",
+    "b": "B. 5",
+    "c": "C. 1",
+    "d": "D. 10"
+  },
+  {
+    "id": 0,
+    "question": "Which of the following has the highest power when exploding?",
+    "answer": ["D"],
+    "a": "A. Creeper",
+    "b": "B. TNT",
+    "c": "C. Ghast fireball",
+    "d": "D. A bed in the Nether"
+  },
+  {
+    "id": 0,
+    "question": "What happens to a zombie when the sun rises, if it's wearing a pumpkin on its head?",
+    "answer": ["B"],
+    "a": "A. When it dies by burning the pumpkin lands on the ground",
+    "b": "B. It is unaffected by the sun and doesn't die",
+    "c": "C. It burns significantly slower than a regular zombie",
+    "d": "D. It becomes immobile and easy to kill"
+  },
+  {
+    "id": 0,
+    "question": "From where do the glyphs that float from bookshelves to an enchantment table originate?",
+    "answer": ["A"],
+    "a": "A. The Standard Galactic Alphabet",
+    "b": "B. Egypt",
+    "c": "C. 0x10c" ,
+    "d": "D. The Mayan Alphabet"
+  },
+  {
+    "id": 0,
+    "question": "What is the recipie for creating a snow golem?",
+    "answer": ["A"],
+    "a": "A. 2 blocks of snow and a pumpkin",
+    "b": "B. 2 iron ingots, 1 snowball and a pumpkin",
+    "c": "C. 1 carrot, 4 snowballs and a pumpkin",
+    "d": "D. 6 snowballs, 1 pair of shoes and a pumpkin"
+  },
+  {
+    "id": 0,
+    "question": "What gives the most experience?",
+    "answer": ["A"],
+    "a": "A. Killing a Blaze",
+    "b": "B. Killing a Zombie pigman",
+    "c": "C. Mining a block of diamond",
+    "d": "D. Killing a iron golem"
+  },
+  {
+    "id": 0,
+    "question": "How many wheats do you need to create bread?",
+    "answer": ["B"],
+    "a": "A. 4",
+    "b": "B. 3",
+    "c": "C. 5",
+    "d": "D. 6"
+  },
+  {
+    "id": 0,
+    "question": "How do you achieve the slowest non-zero speed in minecraft?",
+    "answer": ["B"],
+    "a": "A. Bu walking on soul sand",
+    "b": "B. By placing lava and a cobweb on soul sand, then placing ice under the soul sand, and finally, walking through it with Sneak Mode activated, walking backward and blocking with a sword in a slowness potion effect amplified by 5 using the /effect command.",
+    "c": "C. By walking in cobweb",
+    "d": "D. By walking in sneak mode"
+  },
+  {
+    "id": 0,
+    "question": "What happens if water flows horizontally into downwards flowing lava?",
+    "answer": ["D"],
+    "a": "A. It becomes stone",
+    "b": "B. It becomes cobblestone",
+    "c": "C. It becomes obsidian",
+    "d": "D. Nothing"
+  },
+  {
+    "id": 0,
+    "question": "Which of the following has the highest blast resistance?",
+    "answer": ["C"],
+    "a": "A. Wool",
+    "b": "B. Block of quartz",
+    "c": "C. Melon",
+    "d": "D. Sandstone"
+  },
+  {
+    "id": 0,
+    "question": "How many bookshelves are required for the maximum enchantments?",
+    "answer": ["D"],
+    "a": "A. 30",
+    "b": "B. 20",
+    "c": "C. 12",
+    "d": "D. 15"
+  },
+  {
+    "id": 0,
+    "question": "What gives the least experience when you cook it?",
+    "answer": ["B"],
+    "a": "A. Wood",
+    "b": "B. Netherrack",
+    "c": "C. Cactus",
+    "d": "D. Clay"
+  },
+  {
+    "id": 0,
+    "question": "Which of the following materials can be mined with a gold pickaxe?",
+    "answer": ["A", "D"],
+    "a": "A. Gold ore",
+    "b": "B. Diamond",
+    "c": "C. Emerald",
+    "d": "D. Obsidian"
+  },
+  {
+    "id": 0,
+    "question": "What is the only sinlge animal that can provide an infinite food source?",
+    "answer": ["D"],
+    "a": "A. Hitting the same cow over and over again with a bow enchanted with infinite",
+    "b": "B. Giving a pig a potion of infinite",
+    "c": "C. Feeding a chicken a seed from the desert biome",
+    "d": "D. Milking a mooshroom with a bowl"
+  },
+  {
+    "id": 0,
+    "question": "What happens if you shear a mooshroom?",
+    "answer": ["B", "C"],
+    "a": "A. It drops leather",
+    "b": "B. It turns into a regular cow",
+    "c": "C. It drops 5 mushrooms",
+    "d": "D. It takes damage"
   },
   {
     "id": 0,
