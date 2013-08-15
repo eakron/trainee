@@ -227,7 +227,7 @@
   {
     "id": 0,
     "question": "Which of the following items can be enchanted with efficiency?",
-    "answer": ["A", "B" "C", "D"],
+    "answer": ["A", "B", "C", "D"],
     "a": "A. Shears",
     "b": "B. Axe",
     "c": "C. Pickaxe",
