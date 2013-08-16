@@ -460,12 +460,12 @@
   },
   {
     "id": 0,
-    "question": "What happens if you shear a mooshroom?",
-    "answer": ["B", "C"],
-    "a": "A. It drops leather",
-    "b": "B. It turns into a regular cow",
-    "c": "C. It drops 5 mushrooms",
-    "d": "D. It takes damage"
+    "question": "Which of these items/blocks will fall when a block undernieth them is removed?",
+    "answer": ["B", "D"],
+    "a": "A. Iron furnace",
+    "b": "B. Gravel",
+    "c": "C. Block of iron",
+    "d": "D. Anvil"
   },
   {
     "id": 0,
