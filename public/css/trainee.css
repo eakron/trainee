@@ -13,53 +13,163 @@ body {
   background-color: green; }
 =======
 @font-face {
-	font-family: Raleway;
-	  src: url("../fonts/Raleway-Regular.ttf");
-}
-
-
-$backgroundcolor:			#fd6a62;
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Regular.ttf"); }
 
 ul {
-	list-style: none;
-}
-
-
-
-.red {
-	background-color:red;
-}
-
-.green {
-	background-color:green;
-}
+  list-style: none; }
 
 /*****************************************************
 				GENERAL
 *****************************************************/
 body {
-	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-	background: $backgroundcolor;
-	font-family: Raleway;
-}
+  padding-top: 60px;
+  /* 60px to make the container go all the way to the bottom of the topbar */
+  background: #fd6a62;
+  font-family: Raleway; }
 
-.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container{
-	width: 950px;
-}
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+  max-width: 950px; }
+
+a:focus {
+  outline: none; }
 
 /*****************************************************
 				NAVBAR
 *****************************************************/
-.navbar-inner{
-	background: white;
-}
+.navbar {
+  background-color: white;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); }
 
-
-
+.navbar-nav > .active > a:focus, .navbar-nav > .active > a {
+  background-color: #ececec; }
+  .navbar-nav > .active > a:focus:hover, .navbar-nav > .active > a:hover {
+    background-color: #d9d9d9; }
 
 /*****************************************************
 				CONTENT
 *****************************************************/
+.center-content {
+  padding: 6%;
+  margin-top: 60px;
+  background: white;
+  margin-bottom: 60px;
+  opacity: 0.9;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); }
+  .center-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px; }
+  .center-content input {
+    margin-left: 60px; }
+  .center-content label {
+    padding-bottom: 10px; }
+  @media (min-width: 768px) {
+    .center-content .col-sm-2, .center-content .col-sm-6 {
+      padding-right: 0px; } }
+
+.trainee-hundred {
+  width: 100%; }
+
+.trainee-min-height {
+  min-height: 300px;
+  margin-bottom: 60px; }
+
+.trainee-percentage-background {
+  padding: 0; }
+  .trainee-percentage-background:hover {
+    cursor: default; }
+
+.percentage {
+  background-color: #67c62d;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  border: none;
+  float: left; }
+  .percentage:hover {
+    cursor: default;
+    background-color: #67c62d; }
+
+/*****************************************************
+				input
+*****************************************************/
+.center-content-inner label > p {
+  font-size: 16px; }
+
+input + p {
+  border-bottom: 3px solid transparent;
+  display: inline; }
+
+input:checked + p.correct {
+  border-bottom: 3px solid #67c62d;
+  display: inline; }
+
+label {
+  font-weight: normal; }
+
+/*****************************************************
+				BUTTONS
+*****************************************************/
+.trainee-hundred {
+  margin-bottom: 10px; }
+
+/*****************************************************
+				REBECKAS COLORS
+*****************************************************/
+.pink {
+  background-color: #EFCDF8; }
+
+.bluegreen {
+  background-color: #e8aecc; }
+
+.purple {
+  background-color: #a8ebd1; }
+
+.lightgreen {
+  background-color: #bad3ef; }
+
+.magnus {
+  background-color: #b2ffe5; }
+
+.butteryellow {
+  background-color: #fffec2; }
+
+.slajmgreen {
+  background-color: #d1fe86; }
+
+.violpurple {
+  background-color: #e0c1fa; }
+
+.stina {
+  background-color: #0ac2d2; }
+
+.elephant {
+  background-color: #7bb7fa; }
+
+.panda {
+  background-color: #60d7a9; }
+
+.labradoodle {
+  background-color: #fdc162; }
+
+.dog {
+  background-color: #fd6a62; }
+
+.palecat {
+  background-color: #f68dbb; }
+
+.sparkling-faerie-horse {
+  background-color: #A45CDB; }
+
+/*****************************************************
+				FANCY CHECKBOXES
+*****************************************************/
+<<<<<<< HEAD
  .center-content{
  	padding: 50px;
  	margin-top: 60px;
@@ -78,4 +188,33 @@ body {
 	-moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
+>>>>>>> origin/master
+=======
+.label_check,
+.label_radio {
+  padding-left: 34px; }
+
+.label_radio {
+  background: url(../img/radio-off.png) no-repeat; }
+
+.label_check {
+  background: url(../img/check-off.png) no-repeat; }
+
+label.c_on {
+  background: url(../img/check-on.png) no-repeat; }
+
+label.r_on {
+  background: url(../img/radio-on.png) no-repeat; }
+
+.label_check input,
+.label_radio input {
+  position: absolute;
+  left: -9999px; }
+
+@media only screen and (max-width: 991px), only screen and (max-device-width: 991) {
+  .label_check, .label_radio {
+    margin-left: 70px; } }
+@media only screen and (max-width: 400px), only screen and (max-device-width: 400) {
+  .label_check, .label_radio {
+    margin-left: 45px; } }
 >>>>>>> origin/master

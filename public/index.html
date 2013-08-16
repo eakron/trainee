@@ -6,60 +6,61 @@
 
     <!-- Le styles -->
     <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="lib/bootstrap/css/bootstrap-glyphicons.css" rel="stylesheet">
     <link href="css/trainee.css" rel="stylesheet">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="lib/bootstrap/js/html5shiv.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="lib/bootstrap/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="lib/bootstrap/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="lib/bootstrap/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="lib/bootstrap/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="lib/bootstrap/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="lib/bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="lib/bootstrap/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="lib/bootstrap/ico/favicon.png">
   </head>
 
-  <body ng-cloak class="rainbow">
+  <body class="rainbow">
 
     <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">Trainee</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a ng-href="#/questions/random/">Random Question</a></li>
-              <li><a ng-href="#/questions/ordered/0/">Questions</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Trainee</a>
+        <div class="nav-collapse collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a ng-href="#/questions/random/">Questions</a></li>
+            <li><a ng-href="#/examtips/random/">Exam Tips</a></li>
+          </ul>
         </div>
       </div>
     </div>
 
     <div class="container">
-      <div ng-view></div>
-    </div> <!-- /container -->
+      <div ng-view id="view"></div>
+    </div>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="lib/underscore.js"></script>
     <script src="lib/jquery.js"></script>
     <script src="lib/angular.js"></script>
     <script src="js/services.js"></script>
+    <script src="js/services/helpers.js"></script>
+    <script src="js/services/persistence.js"></script>
+    <script src="js/services/questions.js"></script>
+    <script src="js/services/examtips.js"></script>
+    <script src="js/services/score.js"></script>
     <script src="js/controllers.js"></script>
-    <script src="js/controllers/randomquestion.js"></script>
-    <script src="js/controllers/orderedquestion.js"></script>
+    <script src="js/controllers/question.js"></script>
+    <script src="js/controllers/examtip.js"></script>
     <script src="js/trainee.js"></script>
     <script src="js/rainbow.js"></script>
     <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="js/fancycheckboxes.js"></script>
   </body>
 </html>
