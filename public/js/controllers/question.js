@@ -26,11 +26,16 @@ angular.module('trainee.controllers')
     Questions.get(function (questions) {
       var size = questions.length;
       $scope.index = parseInt($routeParams["index"], 10) || Math.floor(Math.random()*size);
-      $scope.question = questions[$scope.index];
+
+      if (size <= $scope.index || $scope.index < 0) {
+        $scope.index = 0;
+      }
 
       // Update browser adress to reflect page
       $location.path("/questions/ordered/" + $scope.index);
       $location.replace();
+
+      $scope.question = questions[$scope.index];
 
       console.log($scope.question);
       console.log($scope.index);
