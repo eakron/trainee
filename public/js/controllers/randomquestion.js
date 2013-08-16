@@ -1,6 +1,8 @@
 angular.module('trainee.controllers')
   .controller('RandomQuestionCtrl', ['$scope', 'Questions', function ($scope, Questions) {
 
+    rainbow.changeColor();
+
     // Grab the random question
     Questions.get(function (questions) {
       var randomnum = Math.floor(Math.random()*questions.length);
