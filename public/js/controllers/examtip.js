@@ -16,6 +16,11 @@ angular.module('trainee.controllers')
     ExamTips.get(function (data) {
       var size = data.length;
       $scope.index = $scope.index || Math.floor(Math.random()*size);
+
+      if (size <= $scope.index || $scope.index < 0) {
+        $scope.index = 0;
+      }
+      
       $scope.examtip = data[$scope.index];
 
       // Update browser adress to reflect page
