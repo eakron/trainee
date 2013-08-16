@@ -263,7 +263,7 @@
   {
     "id": 0,
     "question": "Which of the following are ways to travel in minecraft?",
-    "answer": ["A", "C", "D"],
+    "answer": ["A", "B", "D"],
     "a": "A. Boat",
     "b": "B. Horse",
     "c": "C. Skating",
@@ -433,8 +433,8 @@
   },
   {
     "id": 0,
-    "question": "Which of the following materials can be mined with a gold pickaxe?",
-    "answer": ["A", "D"],
+    "question": "Which of the following materials can not be mined with a gold pickaxe?",
+    "answer": ["A", "B", "D"],
     "a": "A. Gold ore",
     "b": "B. Diamond",
     "c": "C. Emerald",
@@ -457,6 +457,24 @@
     "b": "B. It turns into a regular cow",
     "c": "C. It drops 5 mushrooms",
     "d": "D. It takes damage"
+  },
+  {
+    "id": 0,
+    "question": "What happens if you shear a mooshroom?",
+    "answer": ["B", "C"],
+    "a": "A. It drops leather",
+    "b": "B. It turns into a regular cow",
+    "c": "C. It drops 5 mushrooms",
+    "d": "D. It takes damage"
+  },
+  {
+    "id": 0,
+    "question": "Whick of the recipes for these items does not include one or more sticks?",
+    "answer": ["C", "D"],
+    "a": "A. Painting",
+    "b": "B. Rails",
+    "c": "C. Door",
+    "d": "D. Boat"
   },
   {
     "id": 0,
