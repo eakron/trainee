@@ -38,6 +38,7 @@ a:focus {
 				CONTENT
 *****************************************************/
 .center-content {
+  min-height: 522px;
   padding: 6%;
   margin-top: 60px;
   background: white;

@@ -56,6 +56,7 @@ a:focus{
 				CONTENT
 *****************************************************/
  .center-content{
+  min-height:522px;
  	padding: 6%;
  	margin-top: 60px;
 	background: white;
@@ -145,7 +146,7 @@ label{
 
 }
 .trainee-hundred{
-	
+
 	margin-bottom: 10px;
 }
 
@@ -218,13 +219,13 @@ label.r_on      { background: url(../img/radio-on.png) no-repeat; }
 .label_radio input  { position: absolute; left: -9999px; }
 
 @media only screen and (max-width: 991px), only screen and (max-device-width: 991) {
-	.label_check, .label_radio    {  
+	.label_check, .label_radio    {
 		margin-left:70px
 	}
 }
 
 @media only screen and (max-width: 400px), only screen and (max-device-width: 400) {
-	.label_check, .label_radio    {  
+	.label_check, .label_radio    {
 		margin-left:45px
 	}
 }
