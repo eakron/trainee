@@ -51,6 +51,27 @@ a:focus {
 /*****************************************************
 				LOG IN MODAL
 *****************************************************/
+.trainee-green {
+  background-color: #8fd568;
+  border-color: #80cf54; }
+  .trainee-green:hover {
+    background-color: #71ca40;
+    border-color: #65bc34; }
+
+.trainee-purple {
+  background-color: #aa81cd;
+  border-color: #9e6fc6; }
+  .trainee-purple:hover {
+    background-color: #915cbf;
+    border-color: #854ab7; }
+
+.trainee-red {
+  background-color: #e8aecc;
+  border-color: #e29abf; }
+  .trainee-red:hover {
+    background-color: #dd86b3;
+    border-color: #d772a6; }
+
 /*****************************************************
 				CONTENT
 *****************************************************/
