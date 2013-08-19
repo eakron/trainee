@@ -10,7 +10,10 @@
 
 $backgroundcolor:			#fd6a62;
 $correct-green:				#67c62d;
-$pink-button:				#e8aecc;
+$pink:						#e8aecc;
+$green:						#8fd568;
+$purple:					#aa81cd;
+$red:						#fd6a62;
 
 
 @import "mixins";
@@ -61,7 +64,7 @@ a:focus{
 *****************************************************/
 .trainee-login-button{
 	margin-top: 6px;
-	@include colorify-button ($pink-button, 5%, 15%);
+	@include colorify-button ($pink, 5%, 15%);
 }
 
 
@@ -70,8 +73,17 @@ a:focus{
 				LOG IN MODAL
 *****************************************************/
 
+.trainee-green{
+	@include colorify-button ($green, 5%, 10%);
+}
 
+.trainee-purple{
+	@include colorify-button ($purple, 5%, 10%);
+}
 
+.trainee-red{
+	@include colorify-button ($pink, 5%, 10%);
+}
 
 
 
