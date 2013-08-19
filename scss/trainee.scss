@@ -14,6 +14,7 @@ $pink:						#e8aecc;
 $green:						#8fd568;
 $purple:					#aa81cd;
 $red:						#fd6a62;
+$link-color:				$purple;
 
 
 @import "mixins";
@@ -147,6 +148,10 @@ a:focus{
 		cursor: default;
 		background-color: $correct-green;
 	}
+}
+
+.forgot-link{
+	color: $link-color;
 }
 /*****************************************************
 				input
