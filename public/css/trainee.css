@@ -2,6 +2,9 @@
   font-family: Raleway;
   src: url("../fonts/Raleway-Regular.ttf"); }
 
+/*****************************************************
+				VARIABLES
+*****************************************************/
 ul {
   list-style: none; }
 
@@ -34,6 +37,20 @@ a:focus {
   .navbar-nav > .active > a:focus:hover, .navbar-nav > .active > a:hover {
     background-color: #d9d9d9; }
 
+/*****************************************************
+				LOG IN BUTTON
+*****************************************************/
+.trainee-login-button {
+  margin-top: 6px;
+  background-color: #e8aecc;
+  border-color: #e29abf; }
+  .trainee-login-button:hover {
+    background-color: #d772a6;
+    border-color: #d15f9a; }
+
+/*****************************************************
+				LOG IN MODAL
+*****************************************************/
 /*****************************************************
 				CONTENT
 *****************************************************/
@@ -105,6 +122,9 @@ label {
 .trainee-hundred {
   margin-bottom: 10px; }
 
+/*****************************************************
+				MIXINS
+*****************************************************/
 /*****************************************************
 				REBECKAS COLORS
 *****************************************************/
@@ -183,3 +203,8 @@ label.r_on {
 @media only screen and (max-width: 400px), only screen and (max-device-width: 400) {
   .label_check, .label_radio {
     margin-left: 45px; } }
+/*****************************************************
+				UTILITIES
+*****************************************************/
+.float-right {
+  float: right; }
