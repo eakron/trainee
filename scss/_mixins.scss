@@ -1,0 +1,8 @@
+@mixin colorify-button ($color, $darken-border, $darken-hover) {
+	background-color: $color;
+	border-color: darken($color, $darken-border);
+	&:hover{
+		background-color: darken($color, $darken-hover);
+		border-color: darken($color, $darken-hover+$darken-border);
+	}
+}
