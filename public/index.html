@@ -38,9 +38,12 @@
             <li><a ng-href="#/questions/random/">Questions</a></li>
             <li><a ng-href="#/examtips/random/">Exam Tips</a></li>
           </ul>
+          <a data-toggle="modal" href="#loginModal" class="btn btn-primary btn-lg float-right trainee-login-button">Log in</a>
         </div>
       </div>
     </div>
+
+    <div ng-include=" 'partials/loginmodals.html' "></div>
 
     <div class="container">
       <div class="center-content">
@@ -64,5 +67,8 @@
     <script src="js/rainbow.js"></script>
     <script src="lib/bootstrap/js/bootstrap.js"></script>
     <script src="js/fancycheckboxes.js"></script>
+
+    <img src="img/check-on.png" class="preloading">
+    <img src="img/radio-on.png" class="preloading">
   </body>
 </html>

@@ -4,10 +4,20 @@
 }
 
 
+/*****************************************************
+				VARIABLES
+*****************************************************/
+
 $backgroundcolor:			#fd6a62;
 $correct-green:				#67c62d;
+$pink:						#e8aecc;
+$green:						#8fd568;
+$purple:					#aa81cd;
+$red:						#fd6a62;
+$link-color:				$purple;
 
 
+@import "mixins";
 
 
 ul {
@@ -49,6 +59,32 @@ a:focus{
 	}
 }
 
+
+/*****************************************************
+				LOG IN BUTTON
+*****************************************************/
+.trainee-login-button{
+	margin-top: 6px;
+	@include colorify-button ($pink, 5%, 15%);
+}
+
+
+
+/*****************************************************
+				LOG IN MODAL
+*****************************************************/
+
+.trainee-green{
+	@include colorify-button ($green, 5%, 10%);
+}
+
+.trainee-purple{
+	@include colorify-button ($purple, 5%, 10%);
+}
+
+.trainee-red{
+	@include colorify-button ($pink, 5%, 10%);
+}
 
 
 
@@ -112,6 +148,10 @@ a:focus{
 		cursor: default;
 		background-color: $correct-green;
 	}
+}
+
+.forgot-link{
+	color: $link-color;
 }
 /*****************************************************
 				input
@@ -204,8 +244,6 @@ label{
 
 
 
-
-
 /*****************************************************
 				FANCY CHECKBOXES
 *****************************************************/
@@ -228,4 +266,18 @@ label.r_on      { background: url(../img/radio-on.png) no-repeat; }
 	.label_check, .label_radio    {
 		margin-left:45px
 	}
+}
+
+
+
+
+/*****************************************************
+				UTILITIES
+*****************************************************/
+.float-right{
+	float: right;
+}
+
+.preloading{
+	display:none;
 }

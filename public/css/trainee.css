@@ -2,6 +2,9 @@
   font-family: Raleway;
   src: url("../fonts/Raleway-Regular.ttf"); }
 
+/*****************************************************
+				VARIABLES
+*****************************************************/
 ul {
   list-style: none; }
 
@@ -33,6 +36,41 @@ a:focus {
   background-color: #ececec; }
   .navbar-nav > .active > a:focus:hover, .navbar-nav > .active > a:hover {
     background-color: #d9d9d9; }
+
+/*****************************************************
+				LOG IN BUTTON
+*****************************************************/
+.trainee-login-button {
+  margin-top: 6px;
+  background-color: #e8aecc;
+  border-color: #e29abf; }
+  .trainee-login-button:hover {
+    background-color: #d772a6;
+    border-color: #d15f9a; }
+
+/*****************************************************
+				LOG IN MODAL
+*****************************************************/
+.trainee-green {
+  background-color: #8fd568;
+  border-color: #80cf54; }
+  .trainee-green:hover {
+    background-color: #71ca40;
+    border-color: #65bc34; }
+
+.trainee-purple {
+  background-color: #aa81cd;
+  border-color: #9e6fc6; }
+  .trainee-purple:hover {
+    background-color: #915cbf;
+    border-color: #854ab7; }
+
+.trainee-red {
+  background-color: #e8aecc;
+  border-color: #e29abf; }
+  .trainee-red:hover {
+    background-color: #dd86b3;
+    border-color: #d772a6; }
 
 /*****************************************************
 				CONTENT
@@ -81,6 +119,9 @@ a:focus {
   .percentage:hover {
     cursor: default;
     background-color: #67c62d; }
+
+.forgot-link {
+  color: #aa81cd; }
 
 /*****************************************************
 				input
@@ -183,3 +224,11 @@ label.r_on {
 @media only screen and (max-width: 400px), only screen and (max-device-width: 400) {
   .label_check, .label_radio {
     margin-left: 45px; } }
+/*****************************************************
+				UTILITIES
+*****************************************************/
+.float-right {
+  float: right; }
+
+.preloading {
+  display: none; }
