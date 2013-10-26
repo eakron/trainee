@@ -6,8 +6,6 @@ angular.module('trainee.services')
         $http.get('/example/tips.json').success(function (data) {
           callback(data);
         });
-
-        /*callback(test_examtips);*/
       }
     };
   }]);

@@ -6,8 +6,6 @@ angular.module('trainee.services')
         $http.get('/example/questions-minecraft.json').success(function (data) {
           callback(data);
         });
-
-        /*callback(test_questions);*/
       }
     };
   }]);
