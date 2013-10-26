@@ -21,6 +21,3 @@ $ gem install sass
 
 Run from root folder of the repo to start sass watch:  
 $ sass --watch scss\trainee.scss:public\css\trainee.css  
-
-OR  
-run the start-sass file (.bat for windows, .sh for osx)
