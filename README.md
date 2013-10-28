@@ -2,6 +2,8 @@ trainee
 =======
 A JavaScript app using angular that helps you study for a test. Reads questions in Json format, outputs them and displays if your answer was correct
 
+Pro tip: hosting is easy using "python -m SimpleHTTPServer" but you have to make sure the example files are in the right place.
+
 JavaScript libraries:  
 jQuery
 Underscore
